@@ -9,14 +9,15 @@ PLEASE READ CAREFULLY BEFORE PROCEEDING
 This is NOT a mixed firmware modification.This will modify the ACTUAL 306 module on Mavics runnig the STOCK 01.04.0300 firmware, therefore, it does not require an internal sd card installed like other modification methods. Percision RTH works normally after this modification(other methods prevent this feature from working properly.)\par
 This modification is to be done ONLY on a Mavic Pro or Mavic Pro Platinum- that has a STOCK 01.04.0300 firmware installed!
 
-If your current firmware is a mixed with the flight controller from 01.03.0700  DO NOT PROCEED before reflashing a clean stock version of 01.04.0300 using DUMLdore! Flash stock 01.04.0300 twice to be sure the entire firware has fully installed\par
+If your current firmware is a mixed with the flight controller from 01.03.0700  DO NOT PROCEED before reflashing a clean stock version of 01.04.0300 using DUMLdore! Flash stock 01.04.0300 twice to be sure the entire firware has fully installed
 
 This modification will automatically:
- [1]Remove height limits from the firmware. 
- [2]  Turn off aircraft side nfz restrictions. 
- [3]  Enable Gallileo satellite reception. 
- [4]  Significantly reduced yaw movement limit (yaw speed) in Cinematic Mode (can be undone in DJI Go 4 or Assistant 1.1.2) 
- [5] Extends the parameter range that yaw movement limit can be set for normal mode, avoid mode, sport mode, cinematic mode, and tripod mode, in Assistant 1.1.2 by the user.
+
+[1]Remove height limits from the firmware. 
+[2] Turn off aircraft side nfz restrictions. 
+[3] Enable Gallileo satellite reception. 
+[4] Significantly reduced yaw movement limit (yaw speed) in Cinematic Mode (can be undone in DJI Go 4 or Assistant 1.1.2) 
+[5] Extends the parameter range that yaw movement limit can be set for normal mode, avoid mode, sport mode, cinematic mode, and tripod mode, in Assistant 1.1.2 by the user.
  
 These modifications are automatic but can be undone by reflashing the original stock firmware 01.04.0300 firmware. Additional modifications can be enabled by the user using Assistant 2 1.1.2 in debug mode. Some parameter ranges have been expanded.
 
