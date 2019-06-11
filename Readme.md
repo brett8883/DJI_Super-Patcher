@@ -12,22 +12,27 @@ This modification will automatically:
  [1]Remove height limits from the firmware. 
  [2]  Turn off aircraft side nfz restrictions. 
  [3]  Enable Gallileo satellite reception. 
- [4]  Significantly reduced yaw movement limit (yaw speed) in Cinematic Mode
-(can be undone in DJI Go 4 or Assistant 1.1.2) 
- [5] Extends the parameter range that yaw movement limit can be set for normal mode, avoid mode, sport mode, cinematic mode, and tripod mode, in Assistant 1.1.2 by the user.\par
+ [4]  Significantly reduced yaw movement limit (yaw speed) in Cinematic Mode (can be undone in DJI Go 4 or Assistant 1.1.2) 
+ [5] Extends the parameter range that yaw movement limit can be set for normal mode, avoid mode, sport mode, cinematic mode, and tripod mode, in Assistant 1.1.2 by the user.
+ 
 These modifications are automatic but can be undone by reflashing the original stock firmware 01.04.0300 firmware. Additional modifications can be enabled by the user using Assistant 2 1.1.2 in debug mode. Some parameter ranges have been expanded.
 
-**The purpose of this modification is to allow experienced and law abiding citizens to unlock their Mavic Pro without the need to contact DJI to fly their aircraft. \par
-*Use at your own risk**
+**The purpose of this modification is to allow experienced and law abiding citizens to unlock their Mavic Pro without the need to contact DJI to fly their aircraft.
+
+**Use at your own risk**
+
 *The pilot in command is always resposible for flight safety and following local regulations. This removes some of the "idiot-proofing" designed into DJI products so take extra care to know your local laws before each flight**
 
 **DO NOT PROCEED IF YOU DONT UNDERSTAND**
 
-Download or clone complete repository and keep all files in original folders.\par
-Double click the "auto-install.bat" and follow instructions to install.\par
+Download or clone complete repository and keep all files in original folders.
+Double click the "auto-install.bat" and follow instructions to install.
 
 Acknowledgments
-A special thanks to \b Henfri\b0  and \b lukasx\b0  for taking the plunge to test this with their birds before knowing what would happen and their continued contributions throughout development.
-Also thanks to \b D95GAS\b0 , \b frank2006\b0 , and \b Kilrah\b0  for consulting.\par
-This project is made possible by the work done by many contributers and dependencies. This project contains alomost no new programming and serves as an easy to use deployment of the /o-gs/DJI_FC_Patcher project{HYPERLINK https://github.com/o-gs/DJI_FC_Patcher }}{\fldrslt{https://github.com/o-gs/DJI_FC_Patcher\ul0\cf0}}}}\f0\fs22  that anyone can use with almost no technical ability.\par
-This project relies on the hard work of jezzab and the jezzab/DUMLdore application 
+A special thanks to Henfri\b0  and lukasx  for taking the plunge to test this with their birds before knowing what would happen and their continued contributions throughout development.
+
+Also thanks to D95GAS, frank2006, and Kilrah for consulting.
+
+This project is made possible by the work done by many contributers and dependencies. This project contains alomost no new programming and serves as an easy to use deployment of the /o-gs/DJI_FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher that anyone can use with almost no technical ability.
+
+This project relies on the hard work of jezzab and the jezzab/DUMLdore application https://github.com/jezzab/DUMLdore
