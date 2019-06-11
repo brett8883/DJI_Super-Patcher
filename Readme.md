@@ -1,4 +1,4 @@
-Super Patcher
+Super Patcher For Mavic Pro and Mavic Pro Platinum
 
 This package is for installing a custom patched 306 flight controller for the Mavic Pro or Mavic Pro Platinum 
 	on a Mavic running a 100% stock version of the 01.04.0300 firmware. 
