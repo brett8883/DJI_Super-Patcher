@@ -36,3 +36,15 @@ This removes some of the "idiot-proofing" designed into DJI products so take ext
 Download or clone complete repository and keep all files in original folders. 
 
 Double click the "auto-install.bat" to continue. 
+
+
+Acknowledgments 
+A special thanks to Henfri and lukasx for taking the plunge to test this with their birds before knowing what would happen and their continued contributions throughout development. 
+
+Also thanks to D95GAS, frank2006, and Kilrah for consulting.  
+
+This project is made possible by the work done by many contributers and dependencies. 
+This project contains alomost no new programming and serves as an easy to use deployment of the /o-gs/DJI_FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher that anyone can use with almost no technical ability. 
+
+Both this project and the DJI_FC_Patcher project rely on the hard work of jezzab and the DUMLdore application https://github.com/jezzab/DUMLdore
+
