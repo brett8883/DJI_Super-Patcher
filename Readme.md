@@ -3,6 +3,7 @@ Super Patcher For Mavic Pro and Mavic Pro Platinum
 This package is for installing a custom patched 306 flight controller for the Mavic Pro or Mavic Pro Platinum on a Mavic running a 100% stock version of the 01.04.0300 firmware.
 
 This is a Flight Controller Patch for DJI Mavic Pro and Pro Plantinum. It will not work on any other drones!
+
 PLEASE READ CAREFULLY BEFORE PROCEEDING
 
 This is NOT a mixed firmware modification.This will modify the ACTUAL 306 module on Mavics runnig the STOCK 01.04.0300 firmware, therefore, it does not require an internal sd card installed like other modification methods. Percision RTH works normally after this modification(other methods prevent this feature from working properly.)\par
