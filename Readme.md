@@ -35,6 +35,7 @@ These modifications are automatic but can be undone by reflashing the original s
 Download or clone complete repository and keep all files in original folders. Double click the "auto-install.bat" and follow instructions to install.
 
 **Acknowledgments**
+
 A special thanks to Henfri\b0 and lukasx for taking the plunge to test this with their birds before knowing what would happen and their continued contributions throughout development.
 
 Also thanks to D95GAS, frank2006, and Kilrah for consulting.
