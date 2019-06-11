@@ -10,12 +10,16 @@ This is NOT a mixed firmware modification.This will modify the ACTUAL 306 module
 
 If your current firmware is a mixed with the flight controller from 01.03.0700 DO NOT PROCEED before reflashing a clean stock version of 01.04.0300 using DUMLdore! Flash stock 01.04.0300 twice to be sure the entire firware has fully installed
 
-This modification will:
+This modification will
 
 Remove height limits from the firmware. 
+
 Turn off aircraft side nfz restrictions. 
+
 Enable Gallileo satellite reception. 
-Significantly reduced yaw movement limit (yaw speed) in Cinematic Mode (can be undone in DJI Go 4 or Assistant 1.1.2) 
+
+Significantly reduced yaw movement limit (yaw speed) in Cinematic Mode (can be undone in DJI Go 4 or Assistant 1.1.2)
+
 Extends the parameter range that yaw movement limit can be set for normal mode, avoid mode, sport mode, cinematic mode, and tripod mode, in Assistant 1.1.2 by the user.
 
 These modifications are automatic but can be undone by reflashing the original stock firmware 01.04.0300 firmware. Additional modifications can be enabled by the user using Assistant 2 1.1.2 in debug mode. Some parameter ranges have been expanded.
