@@ -1,3 +1,5 @@
+(Project should be considered in the public beta phase currently. The mod itself has been proven in a private beta repeatedly but still refining the .bat files that automatically do all the commands so a "manual_instructions.md" has been included as a back up. Please open an issue if theres any part that you think could be clearer or you have trouble with.) 
+
 ***Super Patcher For Mavic Pro and Mavic Pro Platinum***
 
 This package is for installing a custom patched 306 flight controller for the Mavic Pro or Mavic Pro Platinum on a Mavic running a 100% stock version of the 01.04.0300 firmware.
