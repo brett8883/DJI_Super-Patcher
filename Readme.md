@@ -36,7 +36,7 @@ Download or clone complete repository and keep all files in original folders. Do
 
 **Acknowledgments**
 
-A special thanks to Henfri\b0 and lukasx for taking the plunge to test this with their birds before knowing what would happen and their continued contributions throughout development.
+A special thanks to Henfri and lukasx for taking the plunge to test this with their birds before knowing what would happen and their continued contributions throughout development.
 
 Also thanks to D95GAS, frank2006, and Kilrah for consulting.
 
