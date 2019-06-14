@@ -12,6 +12,9 @@ This is NOT a mixed firmware modification.This will modify the ACTUAL 306 module
 
 If your current firmware is a mixed with the flight controller from 01.03.0700 DO NOT PROCEED before reflashing a clean stock version of 01.04.0300 using DUMLdore! Flash stock 01.04.0300 twice to be sure the entire firware has fully installed
 
+You can download a stock version of 01.04.0300 if you need one with the DankDownloader tool https://github.com/cs2000/DankDroneDownloader or directly from 
+http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%20(Incl%20Platinum%20and%20Alpine)/V01.04.0300_Mavic_dji_system.bin
+
 This modification will
 
 Remove height limits from the firmware. 
@@ -20,7 +23,7 @@ Turn off aircraft side nfz restrictions.
 
 Enable Gallileo satellite reception. 
 
-Significantly reduced yaw movement limit (yaw speed) in Cinematic Mode (can be undone in DJI Go 4 or Assistant 1.1.2)
+Enable setting yaw speed to as low as 1 degree per second in any mode using Assistant 2 1.1.2 in debug mode or with DJI Go 4 in normal and cinematic mode to get much smoother and slower cinematic pans. I perfer sport at 30 degrees per second, avoid mode at 28 d/s cinematic and tripod mode at 3 d/s
 
 Extends the parameter range that yaw movement limit can be set for normal mode, avoid mode, sport mode, cinematic mode, and tripod mode, in Assistant 1.1.2 by the user.
 
