@@ -43,6 +43,8 @@ A special thanks to Henfri and lukasx for taking the plunge to test this with th
 
 Also thanks to D95GAS, frank2006, and Kilrah for consulting.
 
-This project is made possible by the work done by many contributers and dependencies. This project contains alomost no new programming and serves as an easy to use deployment of the /o-gs/DJI_FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher that anyone can use with almost no technical ability.
+This project is made possible by the work done by many contributers and dependencies. This project contains alomost no new programming and serves as an easy to use deployment of the /o-gs/DJI_FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi that anyone can use with almost no technical ability.
 
 This project relies on the hard work of jezzab and the jezzab/DUMLdore application https://github.com/jezzab/DUMLdore
+
+There are many others whos names I do not know that contributed to the dependencies without which this project could never have happened. I apologise for not having all of their names acknowleged but I will update this list as I discover them.
