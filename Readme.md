@@ -47,4 +47,6 @@ This project is made possible by the work done by many contributers and dependen
 
 This project relies on the hard work of jezzab and the jezzab/DUMLdore application https://github.com/jezzab/DUMLdore
 
-There are many others whos names I do not know that contributed to the dependencies without which this project could never have happened. I apologise for not having all of their names acknowleged but I will update this list as I discover them.
+Thanks to the OGs who, by making their work open and open source, not only powers this poject but have enabled me to liberate myself from the limits imposed on my property by DJI and inspired me to help others liberate themselves.
+
+There are many whos names I do not know that contributed to the dependencies required for this project. I apologise for not having all of their names acknowleged but I will update this list as I discover them.
