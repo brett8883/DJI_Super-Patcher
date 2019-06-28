@@ -13,6 +13,8 @@ If your current firmware is a mixed with the flight controller from 01.03.0700 D
 You can download a stock version of 01.04.0300 if you need one with the DankDownloader tool https://github.com/cs2000/DankDroneDownloader or directly from 
 http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%20(Incl%20Platinum%20and%20Alpine)/V01.04.0300_Mavic_dji_system.bin
 
+Then load and then flash it with DUMLdore https://github.com/jezzab/DUMLdore
+
 This modification will
 
 Remove height limits from the firmware. 
