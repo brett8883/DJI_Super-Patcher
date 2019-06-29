@@ -51,7 +51,7 @@ Echo If NLD app shows your Flight Controller # is not 03.02.44.10
 ECHO then Super-Patcher was not successful and you should restart this process from the begining 
 Echo Ready to start NLD and check FC number?
 pause 
-start NLD.exe
+start NLDApp.exe
 ECHO Once you have verified Super-Patcher was successful you can optionally 
 ECHO aconnect to Assistant 2 and use the simulator to ensure proper working order in the sim before testing outside 
 Echo You may now also modify any paramters you'd like using Assistant 2 1.1.2 in debug mode
