@@ -1,6 +1,37 @@
+# ***Super-Patcher Firmware Info***
+
+*By Brett8883*
+
+
 This file was produced when the "custom_306_super_patcher_MavicPro_MPP_dji_system.bin" fligth controller file was made with FC_Patcher. 
-It includes a list of ALL the parameters in the flight controller module including hard-coded parameters that are in the Super-Patcher. 
+It includes a list of ALL the parameters in the custom flight controller module including hard-coded parameters that are in Super-Patcher. 
 Each parameter includes the parameter name, default value, as well as min/max possible parameter value range. 
+
+*******************************************************************************************************************************************
+
+**EXAMPLE:**
+
+			{
+			"index" : 730,
+			"typeID" : 8,
+			"size" : 4,
+			"attribute" : 41,
+			"minValue" : 1.000000,
+
+		- *(This is the lowest possible value for normal mode yaw speed that can be set)*
+		           
+			"maxValue" : 250.000000,
+
+		- *(This is the highest possible allowable value normal mode yaw that can be set)*
+
+			"defaultValue" : 100.000000,
+
+		- *(This is the default value that yaw speed in normal mode will be set to unless changed by the user)*
+  
+			"name":"g_config.mode_normal_cfg.tors_gyro_range" 
+
+		- *(This is the name of the parameter. In this case this is the max yaw speed in normal mode)*
+*******************************************************************************************************************************************
 
 This file serves as reference because hard-coded values on the 01.04.0300 (like height limits, airport limits, and motor restart when 
 inverted parameters) are not visible in Assistant 2 1.1.2 and therefore their values cannot be confirmed by the end user unless 
@@ -14,7 +45,8 @@ This file is the same as the "flyc_param_info" but with this explaination added.
 advanced users may be able to use this file to make their own custom variants of the Super-Patcher flight controller. If you dont know 
 how this file is useful that is ok you don't have to understand it to use Super-Patcher. In fact it is because of Super-Patcher that you do 
 not need to understand this file. It is for reference only for advanced users. 
-
+*******************************************************************************************************************************************
+*******************************************************************************************************************************************
 
 
 [
@@ -1757,7 +1789,9 @@ not need to understand this file. It is for reference only for advanced users.
 		"minValue" : 0.000000,
 		"maxValue" : 100.000000,
 		"defaultValue" : 1.200000,
-		"name" : "g_config.takeoff.auto_takeoff_height"
+		"name" : "g_config.takeoff.auto_takeoff_
+
+"
 	},
 	{
 		"index" : 173,
