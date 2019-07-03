@@ -25,7 +25,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
   -Even though the user is able to enter a value in for height limit in DJI Go 4, the drone WILL NOT obey this hight limit command.
   
-      - **Please fly with caution**
+    - **Please fly with caution!**
     
 - *This is not optional and is hard-coded into the firmware. There will be no height limit parameters visable in Assistant 2*
     
@@ -43,11 +43,11 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
 - As soon as the Super-Patcher process is complete the drone will ignore all forced GeoZone and NFZ limitations
 
-- **This is not an optional and is hard coded into the firmware.** 
+  - **This is not an optional and is hard coded into the firmware.** 
 
 - Please note:
 
-- GeoZones will still be marked in the app and the app will still warn you when the drone is close to or in an NFZ, 
+  - GeoZones will still be marked in the app and the app will still warn you when the drone is close to or in an NFZ, 
           
   however…
           
@@ -57,6 +57,8 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
           
     - You drone will not be preventing from taking off
     
+      - **Please fly with caution!**
+      
 - The airport limit parameters are hard-coded and will not be visable in Assistant 2. Airport limits have already been disabled. These parameters have been modified to disable airport limits altogether even though they are not visable. 
 
     **It is always the responsibility of the pilot to fly safely and to know local regulations.**
@@ -189,7 +191,7 @@ These are optional
 
 1. Ensure the prerequisites above are met
 
-2. Download or clone the entire repository form GitHub brett8883/DJI_Super-Patcher
+2. Download or clone the entire repository or click here https://github.com/brett8883/DJI_Super-Patcher/archive/master.zip
   - Be sure to keep all files in original folders
 
 3. Double click the file called “auto_install.bat”
@@ -204,7 +206,7 @@ These are optional
     
       - these are the main reasons for Super-Patcher not being sucessful
 
-5. You will be prompted to verify flight controller version at the end to ensure Super-Patcher is sucessful 
+5. You will be prompted to verify flight controller version at the end to confirm Super-Patcher is sucessful 
 
 6. You may optionally use the simulator in Assistant 2 or DJI Go 4 to verify working order before testing outside. 
 
