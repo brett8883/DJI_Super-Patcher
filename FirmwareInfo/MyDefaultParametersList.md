@@ -1783,7 +1783,7 @@ This file is the same as the "flyc_param_info" but with this explaination added.
 		"defaultValue" : 1.200000,
 		"name" : "g_config.takeoff.auto_takeoff_
 
-"
+
 	},
 	{
 		"index" : 173,
