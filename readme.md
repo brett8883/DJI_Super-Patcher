@@ -22,10 +22,16 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 - There is nothing additional the user needs to do to enable this feature and it is always enabled.
   
 - As soon as the Super-Patcher process is complete the drone will ignore ALL height limitations even if set by the user in DJI Go 4.
+
+  -Even though the user is able to enter a value in for height limit in DJI Go 4, the drone WILL NOT obey this hight limit command.
+  
+      - **Please fly with caution**
     
-- *This is not optional and is hard-coded into the firmware.*
+- *This is not optional and is hard-coded into the firmware. There will be no height limit parameters visable in Assistant 2*
     
 - To enable height limits again would require uninstalling Super-Patcher which can be done simply by flashing to a stock firmware version
+
+- Please note that the height limit parameters in Assistant 2 1.1.2 in debug mode will NOT be visable beacuse they are hard-coded to the firmware. These parameters have been modified to disable height limit altogether even though they are not visable.  
 
      **It is always the responsibility of the pilot to fly safely and to know local regulations. **
       
@@ -37,7 +43,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
 - As soon as the Super-Patcher process is complete the drone will ignore all forced GeoZone and NFZ limitations
 
-- **This is not an optional and is hard coded into the firmware.**
+- **This is not an optional and is hard coded into the firmware.** 
 
 - Please note:
 
@@ -50,8 +56,12 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
     - Your drone will not be forced to auto-land.
           
     - You drone will not be preventing from taking off
-          
-**It is always the responsibility of the pilot to fly safely and to know local regulations.**
+    
+- The airport limit parameters are hard-coded and will not be visable in Assistant 2. Airport limits have already been disabled. These parameters have been modified to disable airport limits altogether even though they are not visable. 
+
+    **It is always the responsibility of the pilot to fly safely and to know local regulations.**
+***************************************************************************************************************************
+   -*For more highly detailed information about hard-coded parameters and other parameters please see the MyDefaultParameterslist.md located in the FirmwareInfo folder or at https://github.com/brett8883/DJI_Super-Patcher/blob/master/FirmwareInfo/MyDefaultParametersList.md*
 ***************************************************************************************************************************
 
    **Enable Galileo satellite reception by default**
@@ -148,6 +158,7 @@ These are optional
       
 - *If your bird already has jkson_fcc_mod installed it will NOT interfere with Super-Patcher but you will need to reinstall jkson_fcc_mod after the Super-Patcher process is complete.*
 
+    **This is optional**
 ***************************************************************************************************************************
 ***************************************************************************************************************************
       
@@ -179,7 +190,7 @@ These are optional
 1. Ensure the prerequisites above are met
 
 2. Download or clone the entire repository form GitHub brett8883/DJI_Super-Patcher
-- Be sure to keep all files in original folders
+  - Be sure to keep all files in original folders
 
 3. Double click the file called “auto_install.bat”
 
@@ -187,15 +198,21 @@ These are optional
 
   - **Please do what it says when it says to do it**
   
-    - Follow all the steps even if you think you don't need to do them **YOU DO**
+    - Follow all the steps even if you think you don't need to do them... **YOU DO!**
   
     - Don't try to outsmart the process or do anything extra "for good measure"
     
       - these are the main reasons for Super-Patcher not being sucessful
 
-5. You will be prompted to verify flight controller version with NLD APP 
-  - This is built into Super-Patcher and is free
-    - Thanks NLD Team!
+5. You will be prompted to verify flight controller version at the end to ensure Super-Patcher is sucessful 
+
+6. You may optionally use the simulator in Assistant 2 or DJI Go 4 to verify working order before taking outside. 
+
+- If there issues with flight in the simulator there will be issues with flight in real life.
+
+  - Reflash stock 01.04.0300 and then redo ENTIRE Super-Patcher process in case of an issue.
+  
+    - To date there has never been an issue with flight after instaling Super-Patcher. This reccomendation is only a matter of good practice whenever modifying or flashing firmware
 
 Done!
 
