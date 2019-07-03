@@ -206,13 +206,13 @@ These are optional
 
 5. You will be prompted to verify flight controller version at the end to ensure Super-Patcher is sucessful 
 
-6. You may optionally use the simulator in Assistant 2 or DJI Go 4 to verify working order before taking outside. 
+6. You may optionally use the simulator in Assistant 2 or DJI Go 4 to verify working order before testing outside. 
 
-- If there issues with flight in the simulator there will be issues with flight in real life.
+- If there are issues with flight in the simulator there will be issues with flight in real life.
 
   - Reflash stock 01.04.0300 and then redo ENTIRE Super-Patcher process in case of an issue.
   
-    - To date there has never been an issue with flight after instaling Super-Patcher. This reccomendation is only a matter of good practice whenever modifying or flashing firmware
+    - *Please Note: To date there has never been an issue with flight after instaling Super-Patcher. This reccomendation is only a matter of good practice whenever modifying or flashing firmware*
 
 Done!
 
@@ -220,7 +220,6 @@ Done!
     
 ***************************************************************************************************************************    
 **DO NOT PROCEED IF YOU DONT UNDERSTAND**
-    
 ***************************************************************************************************************************
 ***************************************************************************************************************************
 
