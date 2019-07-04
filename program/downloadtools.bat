@@ -18,4 +18,5 @@ ECHO ---------------------------------------------------------------------------
 ECHO.
 ECHO.
 java -jar download.jar https://github.com/brett8883/Super-Tools/archive/master.zip master.zip
-pause
+cd \TOOLS\unzip\Super-Tools-master\TOOLS\TOOLS\
+call verify_step.bat
