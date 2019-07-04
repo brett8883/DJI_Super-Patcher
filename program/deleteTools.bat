@@ -1,5 +1,4 @@
 @echo off
-rd tools
-timeout 1
+rmdir /Q /S nonemptydir tools
 del downloadtools.bat
 exit
