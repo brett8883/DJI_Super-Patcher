@@ -1,3 +1,3 @@
 @echo off
 cd program
-call downloadtools.bat
+call CheckJAVA.bat
