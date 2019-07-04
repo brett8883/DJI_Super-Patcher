@@ -1,4 +1,6 @@
 @echo off
+del tools
+timeout 1
 java -version >nul 2>&1 && ( GOTO:MAIN
   ) || ( call )
 javac -version >nul 2>&1 && ( GOTO:MAIN
