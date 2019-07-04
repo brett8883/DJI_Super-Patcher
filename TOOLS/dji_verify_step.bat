@@ -1,19 +1,35 @@
 @Echo off
-echo **************************************************************************
-ECHO PLEASE TAKE CARE TO FOLLOW INSTRUCTIONS EXACTLY 
-ECHO GO SLOW AND READ INSTRUCTIONS CAREFULLY BEFORE ACTING 
-ECHO DO NOT SKIP STEPS, DO NOT DO EXTRA STEPS
+SET APPVER=2.0
 cls
 Echo *****************************************************************************************************
 Echo *****************************************************************************************************
-ECHO STARTING PATCH SEQUENCE 
+ECHO 					SUPER-PATCHER %appver%
+echo 					By Brett8883
+Echo *****************************************************************************************************
+Echo *****************************************************************************************************
+ECHO PLEASE TAKE CARE TO FOLLOW INSTRUCTIONS EXACTLY 
+ECHO GO SLOW AND READ INSTRUCTIONS CAREFULLY BEFORE ACTING 
+ECHO DO NOT SKIP STEPS, DO NOT DO EXTRA STEPS
+Echo *****************************************************************************************************
+pause
+cls
+Echo *****************************************************************************************************
+Echo *****************************************************************************************************
+ECHO 					SUPER-PATCHER %appver%
+echo 					By Brett8883
 Echo *****************************************************************************************************
 Echo *****************************************************************************************************
 Echo Please turn on the Mavic and after it has fully started, connect to the PC
 echo Continue when ready to begin
+Echo *****************************************************************************************************
 cd ProgramFiles
 Pause
 cls
+Echo *****************************************************************************************************
+Echo *****************************************************************************************************
+ECHO 					SUPER-PATCHER %appver%
+echo 					By Brett8883
+Echo *****************************************************************************************************
 Echo *****************************************************************************************************
 Echo Please ensure DUMLdore says you are on firmware v01.04.0300 
 echo and that this is stock version 
@@ -22,8 +38,14 @@ Echo The front lights will usually flash, turn on, or turn off
 echo then close DUMLdore 
 Echo Continue once ADB has been enabled and DUMLdore is closed
 start DUMLdoreV3.exe
+Echo *****************************************************************************************************
 pause
 cls
+Echo *****************************************************************************************************
+Echo *****************************************************************************************************
+ECHO 					SUPER-PATCHER %appver%
+echo 					By Brett8883
+Echo *****************************************************************************************************
 Echo *****************************************************************************************************
 Echo WORKING PLEASE WAIT... 
 adb shell mount -o remount,rw /vendor
@@ -33,63 +55,53 @@ adb shell cd /vendor/bin/; chown root:root dummy_verify.sh; chmod 755 dummy_veri
 adb shell mount -o remount,ro /vendor
 cls
 Echo *****************************************************************************************************
+Echo *****************************************************************************************************
+ECHO 					SUPER-PATCHER %appver%
+echo 					By Brett8883
+Echo *****************************************************************************************************
+Echo *****************************************************************************************************
 Echo please restart your aircraft
 echo Allow the aircraft to fully restart then reconnect to the PC
 echo Once fully restarted and connected please continue
 pause
+Echo *****************************************************************************************************
 cls
+Echo *****************************************************************************************************
+Echo *****************************************************************************************************
+ECHO 					SUPER-PATCHER %appver%
+echo 					By Brett8883
+Echo *****************************************************************************************************
 Echo *****************************************************************************************************
 echo click "Enable ADB" in DUMLdore and then close DUMLdore before proceeding
 start DUMLdoreV3.exe
+Echo *****************************************************************************************************
 Pause
 cls
-Echo *****************************************************************************************************
-ECHO WORKING... PLEASE WAIT
-Echo *****************************************************************************************************
 adb shell mount -o bind /vendor/bin/dummy_verify.sh /sbin/dji_verify
-Echo *****************************************************************************************************
 cls
-echo *****************************************************************************************************
-echo DO NOT TURN OFF AIRCRAFT
+Echo *****************************************************************************************************
+Echo *****************************************************************************************************
+ECHO 					SUPER-PATCHER %appver%
+echo 					By Brett8883
+Echo *****************************************************************************************************
+Echo *****************************************************************************************************
+echo DO NOT TURN OFF AIRCRAFT!
 Echo *****************************************************************************************************
 echo please click "Load Firmware" button in DUMLdore 
-echo and choose the file
-echo "custom_306_super_patcher_MavicPro_MPP_dji_system.bin"  
+echo and choose the file "custom_306_super_patcher_MavicPro_MPP_dji_system.bin"
+echo (  
 ECHO then click "Flash Firmware" in DUMLdore
+echo (
 ECHO Please allow DUMLdore to do its thing and do not disconnect the Mavic untill DUMLdore says it is ok to
-Ech ******************************************************************************************************* 
+Echo ******************************************************************************************************* 
 echo Once DUMLdore is finished please restart the aircraft
 Echo ******************************************************************************************************
 echo Once aircraft has restarted fully and connected to PC 
 echo Then you may continue
 start DUMLdoreV3.exe
+Echo *****************************************************************************************************
 pause
 cls 
-Echo *****************************************************************************************************
-Echo *****************************************************************************************************
-Echo *****************************************************************************************************
-Echo You have completed the Super-Patcher process!
-Echo To verify Super-Patcher was successful 
-Echo I will open the NLD app which will show you the flight controller number 
-Echo for your aircraft. If Super-Patcher was successful this will show your 
-Echo Flight Controller number as 03.02.44.10
-Echo *****************************************************************************************************
-Echo If NLD app shows your Flight Controller # is not 03.02.44.10 
-ECHO then Super-Patcher was not successful and you should restart this process from the begining 
-Echo Ready to start NLD and check FC number?
-pause 
-cls
-start NLDApp.exe
-Echo *****************************************************************************************************
-ECHO Once you have verified Super-Patcher was successful you can optionally 
-ECHO connect to Assistant 2 or DJI Go 4 and use the simulator to ensure proper 
-Echo working order in the sim before testing outside 
-Echo You may now also modify any paramters you'd like using Assistant 2 1.1.2 in debug mode
-echo ******************************************************************************************************
-Echo ******************************************************************************************************
-Echo You have completed the patching operation. Please note all settings and parameters are likely now reset
-Echo remember to check your RTH altitude and such.
-Echo The aircraft may ask you to recalibrate sensors but if it does not then it isn't neccesary
-Echo Bye 
-Pause 
+cd ..
+Call jkson_verify.bat
 
