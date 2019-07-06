@@ -1,6 +1,6 @@
 # ***DJI Super-Patcher 1.3***
 
-*For unlocking height limits, NFZ limits, Galileo Satellites and more for the Mavic Pro/Mavic Pro Platinum/Mavic Pro Alpine White*
+*For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for the Mavic Pro/Mavic Pro Platinum/Mavic Pro Alpine White, and Spark. Other aircraft coming soon 
 ***************************************************************************************************************************
 ***1.3 UPDATES***
 - Added Spark support
