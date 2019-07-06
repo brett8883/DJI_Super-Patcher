@@ -23,4 +23,4 @@ exit)
 
 :main
 cls
-call downloadupdates.bat
+call deletetools.bat
