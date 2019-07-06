@@ -1,15 +1,23 @@
-# ***DJI Super-Patcher***
+# ***DJI Super-Patcher 1.3***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites and more for the Mavic Pro/Mavic Pro Platinum/Mavic Pro Alpine White*
 ***************************************************************************************************************************
+***1.3 UPDATES***
+- Added Spark support
+- Added jkson_fcc_mod for Mavic Pro
+- Added ability to add support for other Aircraft remotely
 
 **OBJECTIVE SUMMARY**
 
-This package is for installing a custom patched 306 flight controller for the Mavic Pro or Mavic Pro Platinum on a Mavic running a 100% stock version of the 01.04.0300 firmware.
+This package is for installing a custom 306 flight controller for:
+
+- ***Mavic Pro or Mavic Pro Platinum*** running a 100% stock version of the v01.04.0300 firmware.
+
+- ***Spark*** running a 100% stock version of the v01.00.0900_ firmware.
 
 The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
 
-Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module of the v01.04.0300 firmware that is already installed on your Mavic. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
+Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module already installed on your aircraft. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
 
 ***************************************************************************************************************************
 **Please carefully read through the through explanation of the benefits below. Directions to get started will follow**
@@ -166,17 +174,15 @@ These are optional
       
 **PREREQUSITES**
 
-- Firmware on bird has to be STOCK v01.04.0300 for all modules
+- Firmware on Mavic Pro or Mavic Pro Platinum has to be STOCK v01.04.0300 for all modules
 
-- *This means if your firmware is mixed with the 01.03.0700 flight controller, even though it says you are on 01.04.0300 you will need to flash a stock version of v01.04.0300 TWICE to ensure all modules get flashed.* 
+- Firmware on Spark has to be STOCK V01.00.0900 for all modules 
+
+- *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.* 
           
-    - When in doubt flash v01.04.0300 **TWICE** with DUMLdore 
+    - When in doubt flash the correct stock firmware **TWICE** with DUMLdore 
         
-- Get stock v01.04.0300 from here:
-
-  http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%201%20-%20Incl%20Platinum%20and%20Alpine/V01.04.0300_Mavic_dji_system.bin  
-
-    - or with DankDroneDownloader Tool https://github.com/cs2000/DankDroneDownloader
+- Get correct stock firmware versions with DankDroneDownloader Tool https://github.com/cs2000/DankDroneDownloader:
 
 - Get DUMLdore from here:
 
@@ -212,7 +218,7 @@ These are optional
 
 - If there are issues with flight in the simulator there will be issues with flight in real life.
 
-  - Reflash stock 01.04.0300 and then redo ENTIRE Super-Patcher process in case of an issue.
+  - Reflash stock firmware and then redo ENTIRE Super-Patcher process in case of an issue.
   
     - *Please Note: To date there has never been an issue with flight after instaling Super-Patcher. This reccomendation is only a matter of good practice whenever modifying or flashing firmware*
 
@@ -242,6 +248,8 @@ Done!
 
 A special thanks to Henfri and lukasx for taking the plunge to test this with their birds before knowing what would happen and their continued contributions throughout development.
 
+Thanks to DigDat0 for helping with the 1.3 upgrades
+
 Also thanks to D95GAS, frank2006, and Kilrah for consulting.
 
 This project is made possible by the work done by many contributers and dependencies. 
@@ -250,9 +258,9 @@ This project contains alomost no new programming and serves as an easy to use de
 
 This project relies on the hard work of jezzab and the jezzab/DUMLdore application https://github.com/jezzab/DUMLdore
 
-Thanks to the OGs who, by making their work open and open source, not only powers this poject but have enabled me to liberate myself from the limits imposed on my property by DJI and inspired me to help others liberate themselves.
+JKSON5 is the author of the jkson fcc mod which I have barrowed and intregrated into Super-Patcher 1.3
 
-Thanks to DigDat0 for giving me an idea to clean up the interface.
+Thanks to the OGs who, by making their work open and open source, not only powers this poject but have enabled me to liberate myself from the limits imposed on my property by DJI and inspired me to help others liberate themselves.
 
 Thanks to the NoLimitDronez team https://nolimitdronez.com/ for letting me embed their free desktop app into Super-Patcher 
 
