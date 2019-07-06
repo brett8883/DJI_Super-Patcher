@@ -1,5 +1,4 @@
 @echo off
-@echo off
 rmdir /Q /S nonemptydir TOOLS
 del downloadtools.bat
 cls
