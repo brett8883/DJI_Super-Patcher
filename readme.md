@@ -11,9 +11,9 @@
 
 This package is for installing a custom 306 flight controller for:
 
-- ***Mavic Pro or Mavic Pro Platinum*** running a 100% stock version of the 01.04.0300 firmware.
+- ***Mavic Pro or Mavic Pro Platinum*** running a 100% stock version of the v01.04.0300 firmware.
 
-- ***Spark*** running a 100% stock version of the 01.04.0300 firmware.
+- ***Spark*** running a 100% stock version of the v01.00.0900_ firmware.
 
 The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
 
@@ -174,17 +174,15 @@ These are optional
       
 **PREREQUSITES**
 
-- Firmware on bird has to be STOCK v01.04.0300 for all modules
+- Firmware on Mavic Pro or Mavic Pro Platinum has to be STOCK v01.04.0300 for all modules
 
-- *This means if your firmware is mixed with the 01.03.0700 flight controller, even though it says you are on 01.04.0300 you will need to flash a stock version of v01.04.0300 TWICE to ensure all modules get flashed.* 
+- Firmware on Spark has to be STOCK V01.00.0900 for all modules 
+
+- *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.* 
           
-    - When in doubt flash v01.04.0300 **TWICE** with DUMLdore 
+    - When in doubt flash the correct stock firmware **TWICE** with DUMLdore 
         
-- Get stock v01.04.0300 from here:
-
-  http://dji.polybotes.feralhosting.com/DJI-Firmware/BIN/Mavic%20Pro%201%20-%20Incl%20Platinum%20and%20Alpine/V01.04.0300_Mavic_dji_system.bin  
-
-    - or with DankDroneDownloader Tool https://github.com/cs2000/DankDroneDownloader
+- Get correct stock firmware versions with DankDroneDownloader Tool https://github.com/cs2000/DankDroneDownloader:
 
 - Get DUMLdore from here:
 
@@ -220,7 +218,7 @@ These are optional
 
 - If there are issues with flight in the simulator there will be issues with flight in real life.
 
-  - Reflash stock 01.04.0300 and then redo ENTIRE Super-Patcher process in case of an issue.
+  - Reflash stock firmware and then redo ENTIRE Super-Patcher process in case of an issue.
   
     - *Please Note: To date there has never been an issue with flight after instaling Super-Patcher. This reccomendation is only a matter of good practice whenever modifying or flashing firmware*
 
