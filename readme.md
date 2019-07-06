@@ -17,7 +17,7 @@ This package is for installing a custom 306 flight controller for:
 
 The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
 
-Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module of the v01.04.0300 firmware that is already installed on your Mavic. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
+Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module already installed on your aircraft. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
 
 ***************************************************************************************************************************
 **Please carefully read through the through explanation of the benefits below. Directions to get started will follow**
