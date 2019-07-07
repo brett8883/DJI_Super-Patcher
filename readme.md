@@ -1,3 +1,0 @@
-Under construction...
-
-Adding Support for Phantom series 
