@@ -1,14 +1,7 @@
 @echo off
+cls
 del whichAC.bat
 cls
-rmdir /Q /S nonemptydir TOOLS
-timeout 1
-cls
-mkdir tools 
-java -jar download.jar https://raw.githubusercontent.com/brett8883/Super-Tools/2.0/whichAC.bat whichAC.bat
-cd tools
-copy *.* ..
-cd ..
-rmdir /Q /S nonemptydir TOOLS
+wget https://raw.githubusercontent.com/brett8883/Super-Tools/%appver%/whichAC.bat
 cls
 call whichAC.bat
