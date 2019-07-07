@@ -1,11 +1,18 @@
-# ***DJI Super-Patcher 1.3***
+# ***DJI Super-Patcher 1.5***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for the Mavic Pro/Mavic Pro Platinum/Mavic Pro Alpine White, and Spark. Other aircraft coming soon 
 ***************************************************************************************************************************
-***1.3 UPDATES***
-- Added Spark support
+***1.5 UPDATES***
+- Added P4p support
+
+- Back to mostly offline programming
+
+- bug fixes
+
+***other recent updates***
+- Spark support
 - Added jkson_fcc_mod for Mavic Pro
-- Added ability to add support for other Aircraft remotely
+- Automatically downloads FC at run time 
 
 **OBJECTIVE SUMMARY**
 
@@ -13,7 +20,9 @@ This package is for installing a custom 306 flight controller for:
 
 - ***Mavic Pro or Mavic Pro Platinum*** running a 100% stock version of the v01.04.0300 firmware.
 
-- ***Spark*** running a 100% stock version of the v01.00.0900_ firmware.
+- ***Spark*** running a 100% stock version of the v01.00.0900 firmware.
+
+- ***Phantom 4 Professional*** running a 100% stock version of the v1.05.0600 firmware.
 
 The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
 
@@ -132,31 +141,22 @@ These are optional
     
           g_config_avoid_cfg_avoid_tors_rate_range
 
-         - *Stock is 70. My personal preference is 27*
-
     - **P-GPS** *mode with front sensors OFF*
     
           g_config_mode_normal_cfg_tors_gyro_range
 
-         - *Stock is 100. My personal preference is 25*
          
     - **Sport Mode**
     
           g_config_mode_sport_cfg_tors_gyro_range
 
-         - *Stock is 200. My personal preference is 30*
-
     - **Tripod mode**
 
           g_config_mode_tripod_cfg_tors_gyro_range
 
-         - *Stock is 30. My personal preference is 3*
-         
     - **Cinematic Mode**
 
            CM_tors_range
-           
-         - *Stock is 50. My personal preference is 3*
          
     **These are optional**
     
@@ -164,9 +164,7 @@ These are optional
                                                                
    **Optional ability to enable full time FCC or FCC boost mode with jkson_fcc_mod by jkson5** https://github.com/jkson5/jkson_fcc_mod
 
-- *This is not actually part of Super-Patcher and I did not make this mod but it is frequently asked if this mod can be done on top of Super-Patcher so I have decided to include the information here that **YES** jkson_fcc_mod can be done after Super-Patcher is complete.*
-      
-- *If your bird already has jkson_fcc_mod installed it will NOT interfere with Super-Patcher but you will need to reinstall jkson_fcc_mod after the Super-Patcher process is complete.*
+- This is now integrated with Super-Patcher. You will be asked if you'd like to enable jkson_fcc_mod. Jkson_fcc_mod is only availible for Mavic Pro, Mavic Pro Platinum, and Mavic Pro Artic White on Super-Patcher at this time. P4PV2 coming soon!
 
     **This is optional**
 ***************************************************************************************************************************
@@ -176,9 +174,15 @@ These are optional
 
 - Firmware on Mavic Pro or Mavic Pro Platinum has to be STOCK v01.04.0300 for all modules
 
+or
+
 - Firmware on Spark has to be STOCK V01.00.0900 for all modules 
 
-- *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.* 
+or
+
+- Firmware on P4P has to be STOCK v1.05.0600  for all modules
+
+  - *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.* 
           
     - When in doubt flash the correct stock firmware **TWICE** with DUMLdore 
         
@@ -197,7 +201,7 @@ These are optional
 
 1. Ensure the prerequisites above are met
 
-2. Download or clone the entire repository or click here https://github.com/brett8883/DJI_Super-Patcher/archive/master.zip
+2. Download or clone the entire repository
   - Be sure to keep all files in original folders
 
 3. Double click the file called “auto_install.bat”
@@ -239,7 +243,7 @@ Done!
 
 *Q. Do I need to do anything with the controller? Like upgrade/downgrade the controller?*
 
-**A. No, Super-Patcher doesn’t do anything with the controller and it makes no difference which controller firmware you are using. They are all the same.**
+**A. No, Super-Patcher doesn’t do anything with the controller and it makes no difference which controller firmware you are using.**
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
