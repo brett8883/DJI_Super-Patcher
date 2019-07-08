@@ -64,11 +64,11 @@ call mpspk_verify.bat
 @echo off
 cls
 set AC=Spark
-set fc=03.02.44.09
+set fc=03.02.43.09
 set stock=1.00.0900 
 set vt=1
 set fw=hhttps://github.com/brett8883/Super-Firmware_Cache/raw/master/dji_system_wm100_0306_03.02.43.09_dji_system.bin
-set fw2=Spark_Super_Patcher_03.02.44.09_dji_sytem.bin
+set fw2=dji_system_wm100_0306_03.02.43.09_dji_system.bin
 cls
 wget %fw%
 copy *.bin ..
