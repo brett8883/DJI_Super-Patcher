@@ -1,6 +1,8 @@
 @echo off
 cls
 SETLOCAL EnableDelayedExpansion
-SET appver=1.7
 cd program
-call whichac.bat
+del startup.bat
+wget https://raw.githubusercontent.com/brett8883/Super-Tools/master/startup.bat
+call startup.bat 
+
