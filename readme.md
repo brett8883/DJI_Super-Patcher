@@ -20,4 +20,4 @@ Phantom 4 standard 2.00.0700
 
 Phantom 4 advanced 1.00.0128
 
-PLEASE CHECK BACK SOON!!
+**CHECK BACK SOON!!**
