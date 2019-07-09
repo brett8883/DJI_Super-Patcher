@@ -2,10 +2,10 @@
 
 ***Under Construction***
 
-Sorry for the mess but I am bust at work adding:
+Sorry for the mess but I am busy at work adding:
 
 - Support for the Phantom 4 Advanced and the Phantom 4 Standard
-- New optional battery parameter mods 
+- New optional Smart battery parameter mods 
 
 
 **Compatible firmwares for upcoming 1.7 release**
@@ -21,3 +21,12 @@ Phantom 4 standard 2.00.0700
 Phantom 4 advanced 1.00.0128
 
 **CHECK BACK SOON!!**
+
+
+***NEW!***
+
+**New optional Smart battery parameter mods**
+
+- *BACKGOUND*
+
+	-   
