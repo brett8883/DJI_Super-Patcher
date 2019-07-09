@@ -11,9 +11,13 @@ Sorry for the mess but I am bust at work adding:
 **Compatible firmwares for upcoming 1.7 release**
 
 Mavic Pro 1.04.0300
+
 Spark 1.00.0900 
+
 Phantom 4 Pro 1.05.0600 
+
 Phantom 4 standard 2.00.0700 
+
 Phantom 4 advanced 1.00.0128
 
 PLEASE CHECK BACK SOON!!
