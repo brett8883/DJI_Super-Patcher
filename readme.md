@@ -1,4 +1,4 @@
-# ***DJI Super-Patcher 1.7***
+# ***DJI Super-Patcher 2.0***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for the Mavic Pro/Mavic Pro Platinum/Mavic Pro Alpine White, and Spark. Other aircraft coming soon 
 ***************************************************************************************************************************
@@ -7,7 +7,12 @@
 
 - Added Phantom 4 Advanced support 
 
+<<<<<<< HEAD
 - Fixed some GUI bugs (will no longer ask if you want jkson if its not avilible for your aircraft) 
+=======
+- Support for the Phantom 4 Advanced and the Phantom 4 Standard
+
+>>>>>>> 8c5ad3fd5bbb19536d44c75504a5c7ff0a90469a
 
 Super-Patcher now supports the following aircraft and firmwares:
 
@@ -286,8 +291,11 @@ This project relies on the hard work of jezzab and the jezzab/DUMLdore applicati
 
 JKSON5 is the author of the jkson fcc mod which I have barrowed and intregrated into Super-Patcher 1.3
 
+<<<<<<< HEAD
 Thanks to the OGs who, by making their work open and open source, not only powers this poject but have enabled me to liberate myself from the limits imposed on my property by DJI and inspired me to help others liberate themselves.
 
 Thanks to the NoLimitDronez team https://nolimitdronez.com/ for letting me embed their free desktop app into Super-Patcher 
+=======
+>>>>>>> 8c5ad3fd5bbb19536d44c75504a5c7ff0a90469a
 
 There are many whos names I do not know that contributed to the dependencies required for this project. I apologise for not having all of their names acknowleged but I will update this list as I discover them.
