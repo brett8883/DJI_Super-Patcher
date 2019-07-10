@@ -1,6 +1,18 @@
 @echo off
 cls
-SETLOCAL EnableDelayedExpansion
-SET appver=1.5
-cd program
-call whichac.bat
+rmdir /Q /S nonemptydir Super-Tools-master
+cls
+Echo *****************************************************************************************************
+Echo *****************************************************************************************************
+ECHO SUPER-PATCHER Set Up Widget
+echo By Brett8883
+Echo *****************************************************************************************************
+Echo *****************************************************************************************************
+Echo Please wait while I set things up. This wont take long...
+Timeout 5
+wget https://github.com/brett8883/Super-Tools/archive/master.zip
+unzip master.zip
+del master.zip
+cd Super-Tools-master
+call startup.bat 
+

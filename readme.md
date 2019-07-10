@@ -1,18 +1,30 @@
-# ***DJI Super-Patcher 1.5***
+# ***DJI Super-Patcher 1.7***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for the Mavic Pro/Mavic Pro Platinum/Mavic Pro Alpine White, and Spark. Other aircraft coming soon 
 ***************************************************************************************************************************
-***1.5 UPDATES***
-- Added P4p support
+***1.7 UPDATES***
+- Added Phantom 4 Standard support
 
-- Back to mostly offline programming
+- Added Phantom 4 Advanced support 
 
-- bug fixes
+<<<<<<< HEAD
+- Fixed some GUI bugs (will no longer ask if you want jkson if its not avilible for your aircraft) 
+=======
+- Support for the Phantom 4 Advanced and the Phantom 4 Standard
 
-***other recent updates***
-- Spark support
-- Added jkson_fcc_mod for Mavic Pro
-- Automatically downloads FC at run time 
+>>>>>>> 8c5ad3fd5bbb19536d44c75504a5c7ff0a90469a
+
+Super-Patcher now supports the following aircraft and firmwares:
+
+Mavic Pro 1.04.0300
+
+Spark 1.00.0900 
+
+Phantom 4 Pro 1.05.0600
+ 
+Phantom 4 standard 2.00.0700
+ 
+Phantom 4 advanced 1.00.0128
 
 **OBJECTIVE SUMMARY**
 
@@ -23,6 +35,12 @@ This package is for installing a custom 306 flight controller for:
 - ***Spark*** running a 100% stock version of the v01.00.0900 firmware.
 
 - ***Phantom 4 Professional*** running a 100% stock version of the v1.05.0600 firmware.
+
+- Phantom 4 advanced running a 100% sotock version of the v1.00.0128 firmware.
+
+- ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700. 
+
+
 
 The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
 
@@ -172,15 +190,24 @@ These are optional
       
 **PREREQUSITES**
 
-- Firmware on Mavic Pro or Mavic Pro Platinum has to be STOCK v01.04.0300 for all modules
+- Mavic Pro or Mavic Pro Platinum has to be STOCK v01.04.0300 fw for all modules
 
 or
 
-- Firmware on Spark has to be STOCK V01.00.0900 for all modules 
+- Spark has to be STOCK V01.00.0900 fw for all modules 
 
 or
 
-- Firmware on P4P has to be STOCK v1.05.0600  for all modules
+- Phantom 4 Professional has to be on STOCK v1.05.0600 fw for all modules
+
+or
+
+Phantom 4 standard has to be on 2.00.0700  fw for all modules
+
+or
+
+Phantom 4 advanced has to be on 1.00.0128 fw for all modules
+
 
   - *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.* 
           
@@ -264,8 +291,11 @@ This project relies on the hard work of jezzab and the jezzab/DUMLdore applicati
 
 JKSON5 is the author of the jkson fcc mod which I have barrowed and intregrated into Super-Patcher 1.3
 
+<<<<<<< HEAD
 Thanks to the OGs who, by making their work open and open source, not only powers this poject but have enabled me to liberate myself from the limits imposed on my property by DJI and inspired me to help others liberate themselves.
 
 Thanks to the NoLimitDronez team https://nolimitdronez.com/ for letting me embed their free desktop app into Super-Patcher 
+=======
+>>>>>>> 8c5ad3fd5bbb19536d44c75504a5c7ff0a90469a
 
 There are many whos names I do not know that contributed to the dependencies required for this project. I apologise for not having all of their names acknowleged but I will update this list as I discover them.
