@@ -23,7 +23,4 @@ Phantom 4 advanced 1.00.0128
 **CHECK BACK SOON!!**
 
 
-***NEW!***
-
-**New optional Smart battery parameter mods**
 
