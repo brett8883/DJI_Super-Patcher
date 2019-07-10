@@ -3,6 +3,7 @@
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for the Mavic Pro/Mavic Pro Platinum/Mavic Pro Alpine White, and Spark. Other aircraft coming soon 
 ***************************************************************************************************************************
 ***1.7 UPDATES***
+
 - Added Phantom 4 Standard support
 
 - Added Phantom 4 Advanced support 
@@ -35,7 +36,7 @@ This package is for installing a custom 306 flight controller for:
 
 - ***Phantom 4 Professional*** running a 100% stock version of the v1.05.0600 firmware.
 
-- Phantom 4 advanced running a 100% sotock version of the v1.00.0128 firmware.
+- ***Phantom 4 advanced*** running a 100% sotock version of the v1.00.0128 firmware.
 
 - ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700. 
 
@@ -201,11 +202,11 @@ or
 
 or
 
-Phantom 4 standard has to be on 2.00.0700  fw for all modules
+- Phantom 4 standard has to be on 2.00.0700  fw for all modules
 
 or
 
-Phantom 4 advanced has to be on 1.00.0128 fw for all modules
+- Phantom 4 advanced has to be on 1.00.0128 fw for all modules
 
 
   - *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.* 
