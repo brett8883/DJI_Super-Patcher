@@ -8,11 +8,9 @@
 
 - Added Phantom 4 Advanced support 
 
-<<<<<<<
 - Fixed some GUI bugs (will no longer ask if you want jkson if its not avilible for your aircraft) 
-=======
 
-- Support for the Phantom 4 Advanced and the Phantom 4 Standard 
+-------------------------------------------------------------------------------------------------------------------------
 
 Super-Patcher now supports the following aircraft and firmwares:
 
@@ -25,6 +23,9 @@ Super-Patcher now supports the following aircraft and firmwares:
 - Phantom 4 standard 2.00.0700
  
 - Phantom 4 advanced 1.00.0128
+
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
 **OBJECTIVE SUMMARY**
 
