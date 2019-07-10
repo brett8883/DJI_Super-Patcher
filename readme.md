@@ -5,7 +5,7 @@
 Sorry for the mess but I am busy at work adding:
 
 - Support for the Phantom 4 Advanced and the Phantom 4 Standard
-- New optional Smart battery parameter mods 
+
 
 
 **Compatible firmwares for upcoming 1.7 release**
