@@ -7,24 +7,23 @@
 
 - Added Phantom 4 Advanced support 
 
-<<<<<<< HEAD
+<<<<<<<
 - Fixed some GUI bugs (will no longer ask if you want jkson if its not avilible for your aircraft) 
 =======
-- Support for the Phantom 4 Advanced and the Phantom 4 Standard
 
->>>>>>> 8c5ad3fd5bbb19536d44c75504a5c7ff0a90469a
+- Support for the Phantom 4 Advanced and the Phantom 4 Standard 
 
 Super-Patcher now supports the following aircraft and firmwares:
 
-Mavic Pro 1.04.0300
+- Mavic Pro 1.04.0300
 
-Spark 1.00.0900 
+- Spark 1.00.0900 
 
-Phantom 4 Pro 1.05.0600
+- Phantom 4 Pro 1.05.0600
  
-Phantom 4 standard 2.00.0700
+- Phantom 4 standard 2.00.0700
  
-Phantom 4 advanced 1.00.0128
+- Phantom 4 advanced 1.00.0128
 
 **OBJECTIVE SUMMARY**
 
@@ -277,25 +276,27 @@ Done!
 
 **Acknowledgments**
 
+While I brought everything together into a single easy to use project and maintain this repo, Super-Patcher is the culmination of work of many various other projects, contributors, and beta testers. 
+
 A special thanks to Henfri and lukasx for taking the plunge to test this with their birds before knowing what would happen and their continued contributions throughout development.
 
-Thanks to DigDat0 for helping with the 1.3 upgrades
+Thanks to D95GAS, frank2006, and Kilrah for consulting during initial conceptual development. 
 
-Also thanks to D95GAS, frank2006, and Kilrah for consulting.
+A special thanks to Matioupi and the OG’s /o-gs/DJI_FC_Patcher https://github.com/o-gs/DJI_FC_Patcher project and all its contributors of which Super-Patcher can be considered as a branch of and very much dependent on. DJI_FC_Patcher is the engine that drives this project. Super-Patcher serves as an easy to use deployment of the DJI_FC_Patcher that anyone can use with almost no technical ability.
 
-This project is made possible by the work done by many contributers and dependencies. 
+A special thanks to jezzab and the jezzab/DUMLdore application https://github.com/jezzab/DUMLdore a full copy of which is included in Super-Patcher and without it Super-Patcher would not be possible. 
 
-This project contains alomost no new programming and serves as an easy to use deployment of the /o-gs/DJI_FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi that anyone can use with almost no technical ability.
+Thanks to mefisto for his https://github.com/o-gs/dji-firmware-tools and tutoring me on how to use them. 
 
-This project relies on the hard work of jezzab and the jezzab/DUMLdore application https://github.com/jezzab/DUMLdore
+Thanks to cs2000 and his DankDroneDownloader https://github.com/cs2000/DankDroneDownloader without which this project would have been much more difficult or impossible. Also thanks to cs2000 for hosting the custom flight controller files and providing continued mentoring. 
 
-JKSON5 is the author of the jkson fcc mod which I have barrowed and intregrated into Super-Patcher 1.3
+Thanks to DigDat0 for helping with the 1.3 upgrades which were influenced by his fcchooser project https://github.com/digdat0/fcchooser and for teaching me various programming techniques. 
 
-<<<<<<< HEAD
-Thanks to the OGs who, by making their work open and open source, not only powers this poject but have enabled me to liberate myself from the limits imposed on my property by DJI and inspired me to help others liberate themselves.
+Thanks to jkson5 who is the author of the jkson fcc mod which I have barrowed and intregrated into Super-Patcher 1.3 and above 
+
+Thanks to the other OGs who have contributed to the dependencies required for Super-Patche and who have, by making their work open, helped me liberate my drone from the limits imposed on it by DJI and inspired me to help others liberate theirs. 
 
 Thanks to the NoLimitDronez team https://nolimitdronez.com/ for letting me embed their free desktop app into Super-Patcher 
 =======
->>>>>>> 8c5ad3fd5bbb19536d44c75504a5c7ff0a90469a
 
 There are many whos names I do not know that contributed to the dependencies required for this project. I apologise for not having all of their names acknowleged but I will update this list as I discover them.
