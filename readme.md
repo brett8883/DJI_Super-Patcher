@@ -8,7 +8,9 @@
 
 - Added Phantom 4 Advanced support 
 
-- Fixed some GUI bugs (will no longer ask if you want jkson if its not avilible for your aircraft) 
+- Fixed some GUI bugs (will no longer ask if you want jkson if its not avilible for your aircraft)
+
+- Fixed an issue where adb.exe would remain running in the backgroud. This has been patched remotely to all copies of v1.7
 
 -------------------------------------------------------------------------------------------------------------------------
 
