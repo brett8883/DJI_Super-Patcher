@@ -5,6 +5,7 @@
 ***1.8 UPDATES***
 
 - Added world's first Phantom 4 Pro V2 Support on Firmware version V01.00.2200
+
 - Added Jkson support for Phantom 4 V2
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -20,7 +21,7 @@ Super-Patcher now supports the following aircraft and firmwares:
  
 - Phantom 4 advanced v1.00.0128
 
--Phantom 4 Pro V2 V01.00.2200
+- Phantom 4 Pro V2 V01.00.2200
 
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
@@ -37,7 +38,9 @@ This package is for installing a custom 306 flight controller for:
 
 - ***Phantom 4 advanced*** running a 100% sotock version of the v1.00.0128 firmware.
 
-- ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700. 
+- ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700 Firmware
+
+- ***Phantom 4 Pro V2*** running a 100% stock version of the V01.00.2200 firmware
 
 
 
