@@ -1,6 +1,7 @@
 # ***DJI Super-Patcher 1.8 Beta***
+***World's first Phantom 4 Pro V2 Support on the latest firmware version V01.00.2200***
 
-*For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
+**For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft.**
 ***************************************************************************************************************************
 ***1.8 UPDATES***
 
