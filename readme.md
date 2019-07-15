@@ -6,7 +6,7 @@
 
 - Added world's first Phantom 4 Pro V2 Support on Firmware version V01.00.2200
 
-- Added Jkson support for Phantom 4 V2
+- Added Jkson support for Phantom 4 Pro V2
 -------------------------------------------------------------------------------------------------------------------------
 
 Super-Patcher now supports the following aircraft and firmwares:
