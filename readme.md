@@ -1,30 +1,26 @@
-# ***DJI Super-Patcher 1.7***
+# ***DJI Super-Patcher 1.8 Beta***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
 ***************************************************************************************************************************
-***1.7 UPDATES***
+***1.8 UPDATES***
 
-- Added Phantom 4 Standard support
-
-- Added Phantom 4 Advanced support 
-
-- Fixed some GUI bugs (will no longer ask if you want jkson if its not avilible for your aircraft)
-
-- Fixed an issue where adb.exe would remain running in the backgroud. This has been patched remotely to all copies of v1.7
-
+- Added world's first Phantom 4 Pro V2 Support on Firmware version V01.00.2200
+- Added Jkson support for Phantom 4 V2
 -------------------------------------------------------------------------------------------------------------------------
 
 Super-Patcher now supports the following aircraft and firmwares:
 
-- Mavic Pro 1.04.0300
+- Mavic Pro V1.04.0300
 
-- Spark 1.00.0900 
+- Spark V1.00.0900 
 
-- Phantom 4 Pro 1.05.0600
+- Phantom 4 Pro V1.05.0600
  
-- Phantom 4 standard 2.00.0700
+- Phantom 4 standard V2.00.0700
  
-- Phantom 4 advanced 1.00.0128
+- Phantom 4 advanced v1.00.0128
+
+-Phantom 4 Pro V2 V01.00.2200
 
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
