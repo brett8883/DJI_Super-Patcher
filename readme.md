@@ -1,28 +1,30 @@
-# ***DJI Super-Patcher 1.8 Beta***
-***World's first Phantom 4 Pro V2 Support on the latest firmware version V01.00.2200***
+# ***DJI Super-Patcher 1.7***
 
-**For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft.**
+*For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
 ***************************************************************************************************************************
-***1.8 UPDATES***
+***1.7 UPDATES***
 
-- Added world's first Phantom 4 Pro V2 Support on Firmware version V01.00.2200
+- Added Phantom 4 Standard support
 
-- Added Jkson support for Phantom 4 Pro V2
+- Added Phantom 4 Advanced support 
+
+- Fixed some GUI bugs (will no longer ask if you want jkson if its not avilible for your aircraft)
+
+- Fixed an issue where adb.exe would remain running in the backgroud. This has been patched remotely to all copies of v1.7
+
 -------------------------------------------------------------------------------------------------------------------------
 
 Super-Patcher now supports the following aircraft and firmwares:
 
-- Mavic Pro V1.04.0300
+- Mavic Pro 1.04.0300
 
-- Spark V1.00.0900 
+- Spark 1.00.0900 
 
-- Phantom 4 Pro V1.05.0600
+- Phantom 4 Pro 1.05.0600
  
-- Phantom 4 standard V2.00.0700
+- Phantom 4 standard 2.00.0700
  
-- Phantom 4 advanced v1.00.0128
-
-- Phantom 4 Pro V2 V01.00.2200
+- Phantom 4 advanced 1.00.0128
 
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
@@ -39,9 +41,7 @@ This package is for installing a custom 306 flight controller for:
 
 - ***Phantom 4 advanced*** running a 100% sotock version of the v1.00.0128 firmware.
 
-- ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700 Firmware
-
-- ***Phantom 4 Pro V2*** running a 100% stock version of the V01.00.2200 firmware
+- ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700. 
 
 
 

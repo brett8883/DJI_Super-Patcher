@@ -1,5 +1,4 @@
 @echo off
-cls
-cd Super-Tools-master 
-call whichac.bat
+cd Super-Tools-master
+call startup.bat 
 
