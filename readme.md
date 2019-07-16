@@ -1,4 +1,6 @@
-# ***DJI Super-Patcher 1.7***
+# ***DJI Super-Patcher 1.7 OFFLINE***
+
+***This is a completely offline version of Super-Patcher 1.7 it is for users that have issues with the original 1.7 version due to firewall or limited internet issues. Most users will perfer the original 1.7 version due to it having better error handling continued updates***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
 ***************************************************************************************************************************
