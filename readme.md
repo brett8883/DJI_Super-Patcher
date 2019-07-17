@@ -275,6 +275,10 @@ Done!
 
 **A. No, Super-Patcher doesn’t do anything with the controller and it makes no difference which controller firmware you are using.**
 
+**Q. Is it worth trying this in my Mavic 2? Any idea when Mavic 2 will be available? 
+
+**A. Super-Patcher has zero chance of working on the Mavic 2 at this time. We need a decryption key for Mavic 2’s firmware and a way to gain adb access. Both of those things are above my pay grade 
+
 ***************************************************************************************************************************
 ***************************************************************************************************************************
 
