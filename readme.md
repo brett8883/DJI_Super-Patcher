@@ -1,30 +1,28 @@
-# ***DJI Super-Patcher 1.7***
+# ***DJI Super-Patcher 1.7.1***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
 ***************************************************************************************************************************
-***1.7 UPDATES***
+***1.7.1 UPDATES***
 
-- Added Phantom 4 Standard support
+- V1.7.1 has been updated remotely no need too download anything new
 
-- Added Phantom 4 Advanced support 
-
-- Fixed some GUI bugs (will no longer ask if you want jkson if its not avilible for your aircraft)
-
-- Fixed an issue where adb.exe would remain running in the backgroud. This has been patched remotely to all copies of v1.7
+- Added Phantom 4 Pro V2 support for firmware V01.00.1500 (note: v1.8 Beta has a newer FW availible for P4Pv2 but that is still in beta.)
 
 -------------------------------------------------------------------------------------------------------------------------
 
 Super-Patcher now supports the following aircraft and firmwares:
 
-- Mavic Pro 1.04.0300
+- Mavic Pro V01.04.0300
 
-- Spark 1.00.0900 
+- Spark V01.00.0900 
 
-- Phantom 4 Pro 1.05.0600
+- Phantom 4 Pro V01.05.0600
  
-- Phantom 4 standard 2.00.0700
+- Phantom 4 standard V2.00.0700
  
-- Phantom 4 advanced 1.00.0128
+- Phantom 4 advanced V1.00.0128
+
+- Phantom 4 ProV2 V01.00.1500
 
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
@@ -41,9 +39,9 @@ This package is for installing a custom 306 flight controller for:
 
 - ***Phantom 4 advanced*** running a 100% sotock version of the v1.00.0128 firmware.
 
-- ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700. 
+- ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700 firmware. 
 
-
+- ***Phantom 4 ProV2*** running a 100% stock version of the V01.00.1500 firmware.
 
 The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
 
