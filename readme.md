@@ -292,7 +292,7 @@ A special thanks to Matioupi and the OG’s /o-gs/DJI_FC_Patcher https://github.
 
 A special thanks to jezzab and the jezzab/DUMLdore application https://github.com/jezzab/DUMLdore a full copy of which is included in Super-Patcher and without it Super-Patcher would not be possible. 
 
-Thanks to mefisto for his https://github.com/o-gs/dji-firmware-tools and tutoring me on how to use them. 
+Thanks to Mefistotelis for his https://github.com/o-gs/dji-firmware-tools and tutoring me on how to use them. 
 
 Thanks to cs2000 and his DankDroneDownloader https://github.com/cs2000/DankDroneDownloader without which this project would have been much more difficult or impossible. Also thanks to cs2000 for hosting the custom flight controller files and providing continued mentoring. 
 
