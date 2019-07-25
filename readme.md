@@ -279,7 +279,7 @@ Done!
 
 *Q. There is a parameter called g_config_fw_cfg_max_speed=10 that increased the max flight speed and I was told to increase this to 20 so I can fly faster but when I try to adjust this parameter in Assistant 2 it reverts back to 10 when I reboot the aircraft. How to I change this parameter so I can increase flight speed? 
 
-**A. The parameter g_config_fw_cfg_max_speed=10 does not affect flight speed. The parameters that control max flight speed are end with** "_cfg_tilt_atti_range" **and** "_cfg_rc_scale"***each mode has a parameter like this that will adjust the max speed in each mode. g_config_fw_cfg_max_speed=10 was misidentified and somepoint in the past as a max flight speed parameter but it is not. I do not know what it does but it does not affect mmax flight speed. On the newer firmwares this parameter is hardcoded but still visable in Assistant 2 1.1.2 so it will not let you change it. As far as I am concerned nobody knows what this parameters does.   
+**A. The parameter g_config_fw_cfg_max_speed=10 does not affect flight speed. The parameters that control max flight speed are end with** "_cfg_tilt_atti_range" **and** "_cfg_rc_scale"**each mode has a parameter like this that will adjust the max speed in each mode. g_config_fw_cfg_max_speed=10 was misidentified and somepoint in the past as a max flight speed parameter but it is not. I do not know what it does but it does not affect mmax flight speed. On the newer firmwares this parameter is hardcoded but still visable in Assistant 2 1.1.2 so it will not let you change it. As far as I am concerned nobody knows what this parameters does.**   
 
 *Q. Is it worth trying this in my Mavic 2? Any idea when Mavic 2 will be available? 
 
