@@ -191,23 +191,27 @@ These are optional
       
 **PREREQUSITES**
 
-- Mavic Pro or Mavic Pro Platinum has to be STOCK v01.04.0300 fw for all modules
+- ***Mavic Pro***; ***Mavic Pro Platinum***; or ***Mavic Pro Alpine White*** has to be running STOCK ***V01.04.0300*** fw for all modules
 
 or
 
-- Spark has to be STOCK V01.00.0900 fw for all modules 
+- ***Spark*** has to be running STOCK ***V01.00.0900*** fw for all modules 
 
 or
 
-- Phantom 4 Professional has to be on STOCK v1.05.0600 fw for all modules
+- ***Phantom 4 Professional*** has to be running on STOCK ***V1.05.0600*** fw for all modules
 
 or
 
-- Phantom 4 standard has to be on 2.00.0700  fw for all modules
+- ***Phantom 4 Standard*** has to be running on ***V02.00.0700***  fw for all modules
 
 or
 
-- Phantom 4 advanced has to be on 1.00.0128 fw for all modules
+- ***Phantom 4 Advanced*** has to be running on ***V01.00.0128*** fw for all modules
+
+or 
+
+***Phantom 4 ProV2*** running a 100% stock version of the ***V01.00.1500*** firmware for all modules 
 
 
   - *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.* 
@@ -273,7 +277,11 @@ Done!
 
 **A. No, Super-Patcher doesn’t do anything with the controller and it makes no difference which controller firmware you are using.**
 
-**Q. Is it worth trying this in my Mavic 2? Any idea when Mavic 2 will be available? 
+*Q. There is a parameter called g_config_fw_cfg_max_speed=10 that increased the max flight speed and I was told to increase this to 20 so I can fly faster but when I try to adjust this parameter in Assistant 2 it reverts back to 10 when I reboot the aircraft. How to I change this parameter so I can increase flight speed? 
+
+**A. The parameter g_config_fw_cfg_max_speed=10 does not affect flight speed. The parameters that control max flight speed are end with** "_cfg_tilt_atti_range" **and** "_cfg_rc_scale"***each mode has a parameter like this that will adjust the max speed in each mode. g_config_fw_cfg_max_speed=10 was misidentified and somepoint in the past as a max flight speed parameter but it is not. I do not know what it does but it does not affect mmax flight speed. On the newer firmwares this parameter is hardcoded but still visable in Assistant 2 1.1.2 so it will not let you change it. As far as I am concerned nobody knows what this parameters does.   
+
+*Q. Is it worth trying this in my Mavic 2? Any idea when Mavic 2 will be available? 
 
 **A. Super-Patcher has zero chance of working on the Mavic 2 at this time. We need a decryption key for Mavic 2’s firmware and a way to gain adb access. Both of those things are above my pay grade 
 
