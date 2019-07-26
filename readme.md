@@ -287,7 +287,7 @@ Done!
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
-
+Donations are welcome and very much appreciated via paypal but not required at paypal.me/brett8883
 **Acknowledgments**
 
 While I brought everything together into a single easy to use project and maintain this repo, Super-Patcher is the culmination of work of many various other projects, contributors, and beta testers. 
