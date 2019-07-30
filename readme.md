@@ -99,8 +99,6 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
     **It is always the responsibility of the pilot to fly safely and to know local regulations.**
 ***************************************************************************************************************************
-   -*For more highly detailed information about hard-coded parameters and other parameters please see the readme.md located in the FirmwareInfo folder or at https://github.com/brett8883/DJI_Super-Patcher/tree/master/FirmwareInfo*
-***************************************************************************************************************************
 
    **Enable Galileo satellite reception by default**
 
