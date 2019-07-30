@@ -6,7 +6,7 @@
 
 - V1.7.1 has been updated remotely no need too download anything new
 
-- Added Phantom 4 Pro V2 support for firmware V01.00.1500 (note: v1.8 Beta has a newer FW availible for P4Pv2 but that is still in beta.)
+- Added Phantom 4 Pro V2 support for firmware V01.00.1500 
 
 -------------------------------------------------------------------------------------------------------------------------
 
