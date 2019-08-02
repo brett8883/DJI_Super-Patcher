@@ -15,6 +15,5 @@ wget https://github.com/brett8883/Super-Tools/archive/master.zip
 unzip -o master.zip
 del master.zip
 cd Super-Tools-master
-pause
 call startup.bat
 
