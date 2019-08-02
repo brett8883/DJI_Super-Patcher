@@ -1,5 +1,5 @@
 <a href="https://github.com/brett8883/DJI_Super-Patcher
-" target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/1.7.3/readmephotos/super-Patcher.png" 
+" target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png" 
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
 # ***DJI Super-Patcher 1.7.3***
@@ -93,7 +93,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 SEE VIDEO BELOW FOR INFORMATION REGARDING SETTINGS FOR HIGH ALTITUDE FLIGHTS AND HOW TO CONFIGURE THE BATTERY FOR THEN USSING ASSISTANT 2 1.1.2 in Debug mode https://dji.retroroms.info/howto/assistanddebug
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=BnNo3lWoXkQ 
-" target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/1.7.3/readmephotos/batteryvideo.PNG" 
+" target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/batteryvideo.PNG" 
 alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
 
 *(Credits to digdat0 for the video)*
