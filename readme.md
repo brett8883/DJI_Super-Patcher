@@ -1,12 +1,13 @@
-# ***DJI Super-Patcher 1.7.1***
+# ***DJI Super-Patcher 1.7.3***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
 ***************************************************************************************************************************
-***1.7.1 UPDATES***
+***1.7.3 UPDATES***
 
-- V1.7.1 has been updated remotely no need too download anything new
-
-- Added Phantom 4 Pro V2 support for firmware V01.00.1500 
+- Minor fixes
+   - Downgraded version of adb hoping for better universal support
+   - Fixed visual issue where cmd window would not size large enough to view entire line
+   - Fixed issue where Super Tools folder would not delete at runtime
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -29,7 +30,7 @@ Super-Patcher now supports the following aircraft and firmwares:
 
 **OBJECTIVE SUMMARY**
 
-This package is for installing a custom 306 flight controller for:
+This package is for installing a custom flight controller for:
 
 - ***Mavic Pro or Mavic Pro Platinum*** running a 100% stock version of the v01.04.0300 firmware.
 
@@ -46,6 +47,20 @@ This package is for installing a custom 306 flight controller for:
 The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
 
 Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module already installed on your aircraft. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
+***************************************************************************************************************************
+
+**BENEFITS SUMMARY**
+
+*(PLEASE READ THE DETAILED LIST THAT FOLLOWS AS WELL)
+
+- Remove height limitations
+- Remove NFZ and GeoZone limits
+- Enable Galileo satellite reception
+- No motors errors on Mavic Pro Platinum
+- Does NOT require an internal SD card be installed
+- Precision RTH and Precision Landing will work normally
+- Optionally enable slower more cinematic panning (yaw) speed
+- Optionally enable full time FCC or boost mode with jkson_fcc_mod by jkson5 built in (Mavic and P4PV2 Only)
 
 ***************************************************************************************************************************
 **Please carefully read through the through explanation of the benefits below. Directions to get started will follow**
@@ -179,9 +194,19 @@ These are optional
     
 ***************************************************************************************************************************
                                                                
-   **Optional ability to enable full time FCC or FCC boost mode with jkson_fcc_mod by jkson5** https://github.com/jkson5/jkson_fcc_mod
+   **Optionally enable full time FCC or FCC boost mode with jkson_fcc_mod by jkson5**
 
-- This is now integrated with Super-Patcher. You will be asked if you'd like to enable jkson_fcc_mod. Jkson_fcc_mod is only availible for Mavic Pro, Mavic Pro Platinum, and Mavic Pro Artic White on Super-Patcher at this time. P4PV2 coming soon!
+- You will be asked if you'd like to enable jkson_fcc_mod if your aircraft supports it. Jkson_fcc_mod is only availible for Mavic Pro, Mavic Pro Platinum, Mavic Pro Artic White, and P4Pv2
+
+- Jkson mod also allows you to choose between "Auto frequency" (2.4 GHz), fixed 2.3 GHz, and fixed 2.5 GHz.
+	- I highly recommend choosing "Auto-frequency"
+		- 2.3 GHz and 2.5 GHz might be better in 1% of cases but it is very rare and even if they do work better they are more likly to cut video feed without warning because they are fixed to a single channel.
+
+- You can learn more about jkson fcc mod by jkson5 at https://github.com/jkson5/jkson_fcc_mod
+
+- I am not the developer of this mod so questions about it are better directed to jkson5 
+
+- It is included in Super-Patcher because it is a widely used mod and it shares dependancies with Super-Patcher so it made sense to include it for convenience 	
 
     **This is optional**
 ***************************************************************************************************************************
@@ -286,7 +311,7 @@ Done!
 ***************************************************************************************************************************
 ***************************************************************************************************************************
 
-**Donations are welcome and very much appreciated via paypal but not required at** https://www.paypal.com/paypalme2/brett8883
+# Donations are very welcome and very much appreciated via paypal at https://www.paypal.com/paypalme2/brett8883
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
