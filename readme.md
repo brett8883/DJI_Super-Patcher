@@ -51,7 +51,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
 **BENEFITS SUMMARY**
 
-*(PLEASE READ THE DETAILED LIST THAT FOLLOWS AS WELL)
+*(PLEASE READ THE DETAILED LIST THAT FOLLOWS AS WELL)*
 
 - Remove height limitations
 - Remove NFZ and GeoZone limits
