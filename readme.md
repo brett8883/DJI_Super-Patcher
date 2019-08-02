@@ -1,3 +1,7 @@
+
+![alt text](https://github.https://github.com/brett8883/DJI_Super-Patcher/blob/1.7.3/readmephotos/super-Patcher.png"Logo Title Text 1")
+https://github.com/brett8883/DJI_Super-Patcher/blob/1.7.3/readmephotos/super-Patcher.png
+
 # ***DJI Super-Patcher 1.7.3***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
