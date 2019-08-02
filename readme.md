@@ -13,6 +13,8 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
    - Fixed visual issue where cmd window would not size large enough to view entire line
    - Fixed issue where Super Tools folder would not delete at runtime
 
+-Added error logging for adb commands. If user indicates super-Patcher wasnt sucessfull the errorlog file will be generated and deposited in the main Super-Patcher folder
+
 -------------------------------------------------------------------------------------------------------------------------
 
 Super-Patcher now supports the following aircraft and firmwares:
