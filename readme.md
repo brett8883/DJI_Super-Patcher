@@ -88,9 +88,9 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
 SEE VIDEO BELOW FOR INFORMATION REGARDING SETTINGS FOR HIGH ALTITUDE FLIGHTS AND HOW TO CONFIGURE THE BATTERY FOR THEN USSING ASSISTANT 2 1.1.2 in Debug mode https://dji.retroroms.info/howto/assistanddebug
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=BnNo3lWoXkQ 
-" target="_blank"><img src="http://img.youtube.com/vi/BnNo3lWoXkQ/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+		<a href="http://www.youtube.com/watch?feature=player_embedded&v=BnNo3lWoXkQ 
+		" target="_blank"><img src="http://img.youtube.com/vi/BnNo3lWoXkQ/0.jpg" 
+		alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
       
