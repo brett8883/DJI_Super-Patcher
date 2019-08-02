@@ -1,6 +1,6 @@
-
-![alt text](https://github.https://github.com/brett8883/DJI_Super-Patcher/blob/1.7.3/readmephotos/super-Patcher.png"Logo Title Text 1")
-https://github.com/brett8883/DJI_Super-Patcher/blob/1.7.3/readmephotos/super-Patcher.png
+<a href="https://github.com/brett8883/DJI_Super-Patcher
+" target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/1.7.3/readmephotos/super-Patcher.png" 
+alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
 # ***DJI Super-Patcher 1.7.3***
 
