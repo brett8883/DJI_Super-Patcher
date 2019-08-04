@@ -6,11 +6,11 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
 ***************************************************************************************************************************
-***1.7.4 UPDATES***
+**1.7.4 UPDATES**
 - Fixed an issue with the P4P flight controller that did not have all NFZ zones disabled. Whoops...
 - All online versions of 1.7 will update automatically at runtime 
 
-Other recent updates
+**Other recent updates**
 - Minor fixes
    - Downgraded version of adb hoping for better universal support
    - Fixed visual issue where cmd window would not size large enough to view entire line
