@@ -2,15 +2,19 @@
 " target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png" 
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
-# ***DJI Super-Patcher 1.7.4***
+# ***DJI Super-Patcher 1.7.5***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
 ***************************************************************************************************************************
-**1.7.4 UPDATES**
-- Fixed an issue with the P4P flight controller that did not have all NFZ zones disabled. Whoops...
-- All online versions of 1.7 will update automatically at runtime 
+**1.7.5 UPDATES**
+
+- Added Inspire 2 support for the V01.02.0200 firmware that has been verified working
+- All online versions of 1.7 will update automatically at runtime
+ - Minor fixes
 
 **Other recent updates**
+
+- Fixed an issue with the P4P flight controller that did not have all NFZ zones disabled. Whoops...
 - Minor fixes
    - Downgraded version of adb hoping for better universal support
    - Fixed visual issue where cmd window would not size large enough to view entire line
@@ -34,6 +38,8 @@ Super-Patcher now supports the following aircraft and firmwares:
 
 - Phantom 4 ProV2 V01.00.1500
 
+- Inspire 2 V01.02.0200
+
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
 
@@ -52,6 +58,8 @@ This package is for installing a custom flight controller for:
 - ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700 firmware. 
 
 - ***Phantom 4 ProV2*** running a 100% stock version of the V01.00.1500 firmware.
+
+- ***Inspire 2*** running a 100% stock version of the ***V01.02.0200***
 
 The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
 
@@ -143,6 +151,11 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
 - Typically you can expect to see your sat count at between 20-30 sats once they have all connected
 
 ***************************************************************************************************************************
+  **Motors will restart when aircraft is inverted**
+
+- By default the aircraft will allow the motors to be restarted even if the aircraft is inverted. This parameter is hardcoded and will not be visable in Assistant 2. One can remove the props and hold the aircraft upside down and then arm the motors with a CSC to verify this parameter is working.
+
+- Note: This also means the motors cannot be turned off by turning it upside down. When hand catching use the free hand to push down on the throttle stick (left stick in RC type 2) to turn off the motors when hand catching.
 
    **Does NOT require an internal SD card be installed**
 
@@ -253,12 +266,15 @@ or
 
 or 
 
-***Phantom 4 ProV2*** running a 100% stock version of the ***V01.00.1500*** firmware for all modules 
+- ***Phantom 4 ProV2*** running a 100% stock version of the ***V01.00.1500*** firmware for all modules
 
+or 
+
+- ***Inspire 2*** running a 100% stock version of the **V01.02.0200** firmware for all modules
 
   - *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.* 
           
-    - When in doubt flash the correct stock firmware **TWICE** with DUMLdore 
+    - When in doubt flash the correct stock firmware **TWICE** with [DUMLdore](https://github.com/jezzab/DUMLdore/releases/tag/v3.20)
         
 - Get correct stock firmware versions with [DankDroneDownloader Tool](https://github.com/cs2000/DankDroneDownloader) :
 
@@ -339,6 +355,8 @@ Done!
 While I brought everything together into a single easy to use project and maintain this repo, Super-Patcher is the culmination of work of many various other projects, contributors, and beta testers. 
 
 A special thanks to Henfri and lukasx for taking the plunge to test this with their birds before knowing what would happen and their continued contributions throughout development.
+
+A special thanks to mstoozler for providing the 0306.unsig for Inspire 2 flight controller and testing the Inspire 2 patch.
 
 Thanks to D95GAS, frank2006, and Kilrah for consulting during initial conceptual development. 
 
