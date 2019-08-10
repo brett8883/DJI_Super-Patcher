@@ -157,6 +157,8 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
 
 - Note: This also means the motors cannot be turned off by turning it upside down. When hand catching use the free hand to push down on the throttle stick (left stick in RC type 2) to turn off the motors when hand catching.
 
+***
+
    **Does NOT require an internal SD card be installed**
 
 - With older methods for unlocking, namely mixed firmware mods, the Mavic Pro Platinum and some more recently manufactured Mavic Pros required that the Mavic be opened and an internal SD card installed for other mods to work. 
