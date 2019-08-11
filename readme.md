@@ -353,7 +353,7 @@ I have put a lot of work into making Super-Patcher as easy as possible and have 
 I can be reached at brett8883.dev@gmail.com to discuss *paid* 1 on 1 installations or other custom work. 
 ***************************************************************************************************************************
 
-# Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883
+# Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883)
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
