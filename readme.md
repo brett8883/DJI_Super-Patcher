@@ -346,9 +346,14 @@ Done!
 **A. Super-Patcher has zero chance of working on the Mavic 2 at this time. We need a decryption key for Mavic 2’s firmware and a way to gain adb access. Both of those things are above my pay grade**
 
 ***************************************************************************************************************************
+**Custom work or 1 on 1 help.**
+
+I have put a lot of work into making Super-Patcher as easy as possible and have built many features into Super-Patcher but I understand even so there are people that would rather have it done by a professional. I have been getting an increasing number of requests to do Super-Patcher for clients as a service or to build custom flight controllers with specific features not already in Super-Patcher. I am happy to do 1 on 1 sessions and can do the Super-Patcher process remotely via Team View. My rate for setting up Super-Patcher on one of the drones supported is $30 USD. I would ask that you have a Windows 10 PC and reliable internet access to make the process.
+
+I can be reached at brett8883.dev@gmail.com to discuss *paid* 1 on 1 installations or other custom work. 
 ***************************************************************************************************************************
 
-# Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883)
+# Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
