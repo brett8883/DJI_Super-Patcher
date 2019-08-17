@@ -7,7 +7,7 @@ set basever=2
 set branch=2.0
 set sppath=%cd%
 set autoheader=%cd%\autoheader.bat
-call %autoheader%
+call %autoHeader%
 ::delete old log files and/or create new log folder. This will be hidden to unclutter folder but will be unhidden if SP is unsuccessful
 rmdir /Q /S nonemptydir logs 2>nul
 del logs 2>nul
@@ -37,8 +37,9 @@ if "%winver%"=="10" (goto windows10) ELSE (goto windowsver)
 
 :windows10
 ::Windows version is 10 notice
+echo Please Wait
 Echo Windows 10 is detected
-PING -n 2 127.0.0.1>nul
+PING -n 3 127.0.0.1>nul
 goto main
 
 :windowsver
@@ -54,10 +55,8 @@ echo
 pause
 
 :main
-cls
-call %autoheader%
 :: detect if internet is availible and can connect to github otherwise check if Super-Tools-%branch% is already availble 
-echo Checking connection to GitHub.com to download tools
+echo PLEASE WAIT..
 title DJI Super-Patcher 2.0
 PING -n 1 140.82.113.4 |find "TTL=" && goto downloadtools
 :nointernet
@@ -76,19 +75,14 @@ pause
 goto main
 
 :downloadtools
+echo I have verified internet access to GitHub >> %log%
+echo %time% >> %log%
 cls
 call %autoheader%
 echo Success! I have verified internet access to GitHub.
-PING -n 2 127.0.0.1>nul
-echo I have verified internet access to GitHub >> %log%
-echo %time% >> %log%
 echo Please wait while I set things up. This wont take long...
 echo.
 %busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success!
-title DJI Super-Patcher 2.0
-cls
-call %autoheader%
-echo Please wait while I set things up. This wont take long...
 %busybox% unzip -q %branch%.zip -o
 del /f /s %branch%.zip
 ATTRIB +H Super-Tools-%branch%
