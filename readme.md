@@ -37,7 +37,7 @@ Super-Patcher now supports the following aircraft and firmwares:
 - Phantom 4 advanced V1.00.0128
 
 - Phantom 4 ProV2 V01.00.1500
- - NOTE: NFZ removal on P4Pv2 requires a modified DJI Go 4 app without a NFZ database to completely disable NFZs. 
+  - *NOTE: NFZ removal on P4Pv2 requires a modified DJI Go 4 app without a NFZ database to completely disable NFZs.* 
 
 - Inspire 2 V01.02.0200
 
