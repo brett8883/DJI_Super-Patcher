@@ -1,3 +1,39 @@
+::[Bat To Exe Converter]
+::
+::fBE1pAF6MU+EWHreyHcjLQlHcCaQOX+uOpET6/326uSTsXE6XfYXbY3n/p6nH9MG+kD2OKYswnlSndkwCQNdQhC+fRY2pnYMs3yAVw==
+::fBE1pAF6MU+EWHreyHcjLQlHcCaQOX+uOpET6/326uSTsXE6XfYXbY3n/p6nH9MG+kD2OKYswnlSndkwCQNdQhO+egA8rG9Gs3bLNcaI0w==
+::fBE1pAF6MU+EWHreyHcjLQlHcCaQOX+uOpET6/326uSTsXE6XfYXbY3n/p6nH9MG+kD2OKYswnlSndkwCQNdQhuoYQFU
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCyDJGyX8VAjFDlGSRCWAE+1BaAR7ebv/Nagq1k1QeADXKXy5YebMOUBp3XlYZUl02hmndMJMBJbcRyXO19n+TsU5Te6EMGujAbiRUbH70g/ew==
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSjk=
+::cBs/ulQjdF+5
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpSI=
+::egkzugNsPRvcWATEpSI=
+::dAsiuh18IRvcCxnZtBNQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+IeA==
+::cxY6rQJ7JhzQF1fEqQJiZksaHErSXA==
+::ZQ05rAF9IBncCkqN+0xwdVs0
+::ZQ05rAF9IAHYFVzEqQIUAjJrfxGSOXn3NrQI6+D+/dzV7B19
+::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
+::cRolqwZ3JBvQF1fEqQIcIRlRXgWWOSueLJxczPr04e+Uwg==
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATE1lA1PA8MFFzRfCO5T/VOuLmijw==
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::Zh4grVQjdCyDJGyX8VAjFDlGSRCWAE+1BaAR7ebv/Nagq1k1QeADXKXy5YebMOUBp3XlYZUl02hmndMJMD9yVy2Yex8xuyNyt3CGP8KOhV2vGgaM/k5Q
+::YB416Ek+ZW8=
+::
+::
+::978f952a14a936cc963da21a135fa983
 @echo off
 :: set basic envirnment variables
 title DJI Super-Patcher 2.0
@@ -37,7 +73,6 @@ if "%winver%"=="10" (goto windows10) ELSE (goto windowsver)
 
 :windows10
 ::Windows version is 10 notice
-echo Please Wait
 Echo Windows 10 is detected
 PING -n 3 127.0.0.1>nul
 goto main
