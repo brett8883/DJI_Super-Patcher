@@ -6,7 +6,7 @@ mode con: cols=160 lines=45
 set basever=2
 set branch=2.0
 set sppath=%cd%
-set startheader=%cd%\autoheader.bat
+set autoheader=%cd%\autoheader.bat
 ::delete old log files and/or create new log folder. This will be hidden to unclutter folder but will be unhidden if SP is unsuccessful
 rmdir /Q /S nonemptydir logs 2>nul
 del logs 2>nul
