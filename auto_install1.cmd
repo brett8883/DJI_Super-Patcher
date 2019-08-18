@@ -7,6 +7,7 @@ set basever=2
 set branch=2.0
 set sppath=%cd%
 set autoheader=%cd%\autoheader.bat
+call %autoheader%
 ::delete old log files and/or create new log folder. This will be hidden to unclutter folder but will be unhidden if SP is unsuccessful
 rmdir /Q /S nonemptydir logs 2>nul
 del logs 2>nul
@@ -36,10 +37,9 @@ if "%winver%"=="10" (goto windows10) ELSE (goto windowsver)
 
 :windows10
 ::Windows version is 10 notice
-echo Please Wait
 Echo Windows 10 is detected
 echo Start download process...
-PING -n 5 127.0.0.1>nul
+PING -n 3 127.0.0.1>nul
 goto main
 
 :windowsver
