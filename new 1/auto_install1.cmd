@@ -19,7 +19,7 @@ echo START SUPER_PATCHER > %logpath%\log.txt
 set log="%cd%\logs\log.txt"
 echo %date%_%time% >> %log%
 ATTRIB +H %logpath%
-set busybox="%cd%\busybox.exe"
+set busybox=%sppath%\busybox.exe
 echo Please Wait
 taskkill /im adb.exe 2>>nul
 adb kill-server 2>>nul
