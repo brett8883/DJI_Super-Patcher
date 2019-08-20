@@ -78,7 +78,7 @@ The purpose of this project is to enable even the most technically challenged am
 Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module already installed on your aircraft. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
 ***************************************************************************************************************************
 
-##**BENEFITS SUMMARY**
+## **BENEFITS SUMMARY**
 
 *(PLEASE READ THE DETAILED LIST THAT FOLLOWS AS WELL)
 
