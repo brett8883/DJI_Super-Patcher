@@ -91,7 +91,7 @@ title DJI Super-Patcher 2.0
 cls
 call %autoheader%
 echo Please wait while I set things up. This wont take long...
-%busybox% unzip -q %branch%.zip -o
+%busybox% unzip -q -o %branch%.zip 
 del /f /s %branch%.zip
 ATTRIB +H Super-Tools-%branch%
 :end
