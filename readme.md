@@ -2,11 +2,10 @@
 " target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png" 
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
-# ***DJI Super-Patcher 1.9***
-
-*For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
+## ***DJI Super-Patcher 1.9***
+*For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft.* 
 ***************************************************************************************************************************
-**1.9 UPDATES**
+### **1.9 UPDATES**
 -Increased verbose output from adb commands.
 - Swapped out unzip.exe and wget.exe for BusyBox.exe (2 for 1 yey!) 
 -Checks environment and will give messages if something about the environment could affect Super-Patcher and gives suggestions to fix
@@ -20,7 +19,7 @@ STATUS UPDATE
 
 Super-Patcher 2.0 is finished and is under going beta testing right now. It is a complete re-write with new features and mods. I am excited to share it with you but will not release it until it has been rigoriously tested. I understand the trust you have in me with your bird. 
 
-**Other recent updates**
+*OTHER RECENT UPDATES*
 
 - Added Inspire 2 support for the V01.02.0200 firmware that has been verified working
 
@@ -34,6 +33,7 @@ Super-Patcher 2.0 is finished and is under going beta testing right now. It is a
 -Added error logging for adb commands. If user indicates super-Patcher wasnt sucessfull the errorlog file will be generated and deposited in the main Super-Patcher folder
 
 -------------------------------------------------------------------------------------------------------------------------
+# **DJI Super-Patcher**
 
 Super-Patcher now supports the following aircraft and firmwares:
 
