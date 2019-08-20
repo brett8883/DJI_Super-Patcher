@@ -78,7 +78,7 @@ The purpose of this project is to enable even the most technically challenged am
 Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module already installed on your aircraft. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
 ***************************************************************************************************************************
 
-**BENEFITS SUMMARY**
+##**BENEFITS SUMMARY**
 
 *(PLEASE READ THE DETAILED LIST THAT FOLLOWS AS WELL)
 
@@ -95,9 +95,9 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 **Please carefully read through the through explanation of the benefits below. Directions to get started will follow**
 ***************************************************************************************************************************
 
-# ***Features of Super-Patcher***
+# **Features of Super-Patcher**
 
-   **Remove height limitations by default**
+  ## **Remove height limitations by default**
 
 - There is nothing additional the user needs to do to enable this feature and it is always enabled.
   
@@ -113,7 +113,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
 - Please note that the height limit parameters in Assistant 2 1.1.2 in debug mode will NOT be visable beacuse they are hard-coded to the firmware. These parameters have been modified to disable height limit altogether even though they are not visable.  
 
-     **It is always the responsibility of the pilot to fly safely and to know local regulations. **
+  **It is always the responsibility of the pilot to fly safely and to know local regulations. **
 
 SEE VIDEO BELOW FOR INFORMATION REGARDING SETTINGS FOR HIGH ALTITUDE FLIGHTS AND HOW TO CONFIGURE THE BATTERY USING ASSISTANT 2 1.1.2 in Debug mode https://dji.retroroms.info/howto/assistanddebug
 
@@ -127,7 +127,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
       
 ***************************************************************************************************************************
 
-   **Remove NFZ and GeoZone limits by default**
+ ## **Remove NFZ and GeoZone limits by default**
 
   There is nothing additional the user needs to do to enable this feature and it is always enabled.
 
@@ -154,7 +154,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
     **It is always the responsibility of the pilot to fly safely and to know local regulations.**
 ***************************************************************************************************************************
 
-   **Enable Galileo satellite reception by default**
+## **Enable Galileo satellite reception by default**
 
 - The drone will now connect to Galileo GPS satellites in addition to the satellites already available.This means you can expect to see a greater satellite count in the app and a stronger, more reliable, and more accurate GPS signal.
       
@@ -163,7 +163,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
 - Typically you can expect to see your sat count at between 20-30 sats once they have all connected
 
 ***************************************************************************************************************************
-  **Motors will restart when aircraft is inverted**
+## **Motors will restart when aircraft is inverted**
 
 - By default the aircraft will allow the motors to be restarted even if the aircraft is inverted. This parameter is hardcoded and will not be visable in Assistant 2. One can remove the props and hold the aircraft upside down and then arm the motors with a CSC to verify this parameter is working.
 
@@ -171,14 +171,14 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
 
 ***
 
-   **Does NOT require an internal SD card be installed**
+## **Does NOT require an internal SD card be installed**
 
 - With older methods for unlocking, namely mixed firmware mods, the Mavic Pro Platinum and some more recently manufactured Mavic Pros required that the Mavic be opened and an internal SD card installed for other mods to work. 
       
   - **NOT** with Super-Patcher. Super-Patcher does NOT require an internal SD card because it is **NOT** a mixed firmware mod.
 ***************************************************************************************************************************
       
-   **No motors errors on Mavic Pro Platinum**
+## **No motors errors on Mavic Pro Platinum**
 
 - With older modification techniques, namely mixed firmware mods, the Mavic Pro Platinum will give motor errors due to not having the correct ESC modules for the upgraded MPP ESCs
       
@@ -186,7 +186,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
 
 ***************************************************************************************************************************
 
-   **Precision RTH and Precision Landing are not affected and will work normally**
+## **Precision RTH and Precision Landing are not affected and will work normally**
 
 - With older methods for removing height limits and NFZ limits, namely mixed firmware mods, the precision RTH and precision landing features did not function as expected.
       
@@ -194,9 +194,9 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
 
 ***************************************************************************************************************************
 
-**OPTIONAL FEATURES**
+## **OPTIONAL FEATURES**
 
-   **Optionally customize parameters with Assistant 2 1.1.2 in debug mode**
+### **Optionally customize parameters with Assistant 2 1.1.2 in debug mode**
 
 - Just like any other firmware you can use Assistant 2 1.1.2 in debug modeto turn up the max speed parameters, enable ATTI mode, or virtually endless parameter modifications
 
@@ -205,7 +205,7 @@ These are optional
 
 ***************************************************************************************************************************
 
-   **Optionally enable slower more cinematic panning motions for more cinematic video.**
+### **Optionally enable slower more cinematic panning motions for more cinematic video.**
 
 - Enables setting yaw speed to as low as 1 degree per second in any mode using Assistant 2 1.1.2 in debug modeor directly in DJI Go 4 for P-GPS mode to get much smoother and slower cinematic pans.
      
@@ -240,7 +240,7 @@ These are optional
     
 ***************************************************************************************************************************
                                                                
-   **Optionally enable full time FCC or FCC boost mode with jkson_fcc_mod by jkson5**
+### **Optionally enable full time FCC or FCC boost mode with jkson_fcc_mod by jkson5**
 
 - You will be asked if you'd like to enable jkson_fcc_mod if your aircraft supports it. Jkson_fcc_mod is only availible for Mavic Pro, Mavic Pro Platinum, Mavic Pro Artic White, and P4Pv2
 
@@ -258,7 +258,7 @@ These are optional
 ***************************************************************************************************************************
 ***************************************************************************************************************************
       
-**PREREQUSITES**
+# **PREREQUSITES**
 
 - ***Mavic Pro***; ***Mavic Pro Platinum***; or ***Mavic Pro Alpine White*** has to be running STOCK ***V01.04.0300*** fw for all modules
 
@@ -302,7 +302,7 @@ or
 ***************************************************************************************************************************
 ***************************************************************************************************************************
 
-**DIRECTIONS**
+# **DIRECTIONS**
 
 1. Ensure the prerequisites above are met
 
@@ -340,7 +340,7 @@ Done!
 ***************************************************************************************************************************
 ***************************************************************************************************************************
 
-**FAQ**
+# **FAQ**
 
 *Q. Do I need a specific version of the DJI Go 4 app to get the benefits of this mod?*
 
@@ -359,7 +359,7 @@ Done!
 **A. Super-Patcher has zero chance of working on the Mavic 2 at this time. We need a decryption key for Mavic 2’s firmware and a way to gain adb access. Both of those things are above my pay grade**
 
 ***************************************************************************************************************************
-**Custom work or 1 on 1 help.**
+## **Custom work or 1 on 1 help.**
 
 I have put a lot of work into making Super-Patcher as easy as possible and have built many features into Super-Patcher but I understand even so there are people that would rather have it done by a professional. I have been getting an increasing number of requests to do Super-Patcher for clients as a service or to build custom flight controllers with specific features not already in Super-Patcher. I am happy to do 1 on 1 sessions and can do the Super-Patcher process remotely via Team View. My rate for setting up Super-Patcher on one of the drones supported is $30 USD. I would ask that you have a Windows 10 PC and reliable internet access to make the process.
 
@@ -370,7 +370,7 @@ I can be reached at brett8883.dev@gmail.com to discuss *paid* 1 on 1 installatio
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
-**Acknowledgments**
+### **Acknowledgments**
 
 While I brought everything together into a single easy to use project and maintain this repo, Super-Patcher is the culmination of work of many various other projects, contributors, and beta testers. 
 
