@@ -1,7 +1,8 @@
 @echo off
-rmdir /Q /S nonemptydir
 mode con: cols=95 lines=40
 set branch=1.7.6
+rmdir /Q /S nonemptydir Super-Tools-%branch% 2>>nul
+del /f /s errorlog.txt
 Title DJI Super-Patcher
 cls
 adb kill-server
