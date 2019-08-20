@@ -1,6 +1,8 @@
 @echo off
+rmdir /Q /S nonemptydir
 mode con: cols=95 lines=40
 set branch=1.7.6
+Title DJI Super-Patcher
 cls
 adb kill-server
 taskkill /im adb.exe
@@ -13,8 +15,9 @@ ECHO ---------------------------------------------------------------------------
 ECHO -------------------------------------------------------------------------------------------
 Echo Please wait while I set things up. This wont take long...
 echo.
-Timeout 2
+PING -n 2 127.0.0.1>nul
 echo.
+Title DJI Super-Patcher
 :check
 busybox wget -q --spider https://github.com/brett8883/Super-Tools/archive/%branch%.zip && goto download
 echo.
@@ -37,5 +40,6 @@ busybox wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip
 busybox unzip -o -q %branch%.zip
 del %branch%.zip
 cd Super-Tools-%branch%
+Title DJI Super-Patcher
 call startup.bat
 
