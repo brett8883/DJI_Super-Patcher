@@ -7,17 +7,18 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
 ***************************************************************************************************************************
 **1.9 UPDATES**
--increased verbose output from adb commands.
+-Increased verbose output from adb commands.
 - Swapped out unzip.exe and wget.exe for BusyBox.exe (2 for 1 yey!) 
 -Checks environment and will give messages if something about the environment could affect Super-Patcher and gives suggestions to fix
   - Will still try to run anyway if users dismisses message
+  
 -Increased clarity in errorlog.
 
 - Users are encouraged to update to 1.8, though, all versions of 1.7 still work and will get most of the updates
 
 STATUS UPDATE
 
-Super-Patcher 2.0 is finished and is under going beta testing right now. It is a complete re-write will new features and mods. I am excited to share it with you but will not release it until it has been rigoriously tested. I understand the trust you have in me with your bird. 
+Super-Patcher 2.0 is finished and is under going beta testing right now. It is a complete re-write with new features and mods. I am excited to share it with you but will not release it until it has been rigoriously tested. I understand the trust you have in me with your bird. 
 
 **Other recent updates**
 
