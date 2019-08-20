@@ -2,11 +2,11 @@
 " target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png" 
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
-# ***DJI Super-Patcher 1.8***
+# ***DJI Super-Patcher 1.9***
 
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft. 
 ***************************************************************************************************************************
-**1.8 UPDATES**
+**1.9 UPDATES**
 -increased verbose output from adb commands.
 - Swapped out unzip.exe and wget.exe for BusyBox.exe (2 for 1 yey!) 
 -Checks environment and will give messages if something about the environment could affect Super-Patcher and gives suggestions to fix
