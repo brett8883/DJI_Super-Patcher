@@ -1,6 +1,6 @@
 @echo off
 mode con: cols=95 lines=40
-set branch=1.7.6
+set branch=master
 rmdir /Q /S nonemptydir Super-Tools-%branch% 2>>nul
 del /f /s errorlog.txt
 Title DJI Super-Patcher
