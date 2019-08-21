@@ -121,7 +121,7 @@ cls
 call %autoheader%
 echo Please wait while I set things up. This wont take long...
 echo.
-cd %Programfiles%
+cd %programdata%
 mkdir DJI_Super-Patcher 2>>nul
 cd DJI_Super-Patcher
 set SUPERPATCHER=%cd%
