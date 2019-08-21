@@ -18,7 +18,6 @@ set logpath="%cd%\logs"
 echo START SUPER_PATCHER > %logpath%\log.txt
 set log="%cd%\logs\log.txt"
 echo %date%_%time% >> %log%
-ATTRIB +H %logpath%
 set busybox=%sppath%\busybox.exe
 echo Please Wait
 taskkill /im adb.exe 2>>nul
@@ -86,14 +85,11 @@ cls
 call %autoheader%
 echo Please wait while I set things up. This wont take long...
 echo.
+cd %temp%
 %busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success!
 title DJI Super-Patcher 2.0
-cls
-call %autoheader%
-echo Please wait while I set things up. This wont take long...
-%busybox% unzip -q -o %branch%.zip 
+%busybox% unzip -q -o %branch%.zip
 del /f /s %branch%.zip
-ATTRIB +H Super-Tools-%branch%
-:end
+set PATH=%path%;%temp%\Super-Tools-%branch%
 cd Super-Tools-%branch%
 call startup.cmd
