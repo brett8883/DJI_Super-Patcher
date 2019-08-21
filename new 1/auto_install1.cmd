@@ -14,7 +14,7 @@
 ::eBoioBt6dFKZSDk=
 ::cRo6pxp7LAbNWATEpSI=
 ::egkzugNsPRvcWATEpSI=
-::dAsiuh18IRvcCxnZtBJQ
+::dAsiuh18IRvcCxnZtBNQ
 ::cRYluBh/LU+EWAnk
 ::YxY4rhs+aU+JeA==
 ::cxY6rQJ7JhzQF1fEqQJQ
@@ -29,7 +29,7 @@
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFDlGSRCWAE+1BaAR7ebv/Nagq1k1QeADXKXy5YebMOUBp3XlYZUl02hmls4bTEpkcBe8UisegFFxo3SAJYqsshviQk2b0Bl+Sytxn2aw
+::Zh4grVQjdCyDJGyX8VAjFDlGSRCWAE+1BaAR7ebv/Nagq1k1QeADXKXy5YebMOUBp3XlYZUl02hmvOElMyhNbhe5Iz81vW1Ks3azZYnM/Qr5Tyg=
 ::YB416Ek+ZW8=
 ::
 ::
@@ -121,7 +121,7 @@ cls
 call %autoheader%
 echo Please wait while I set things up. This wont take long...
 echo.
-cd %programdata%
+cd %appdata%
 mkdir DJI_Super-Patcher 2>>nul
 cd DJI_Super-Patcher
 set SUPERPATCHER=%cd%
