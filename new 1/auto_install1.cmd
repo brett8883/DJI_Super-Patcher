@@ -1,3 +1,39 @@
+::[Bat To Exe Converter]
+::
+::fBE1pAF6MU+EWHreyHcjLQlHcCaQOX+uOpET6/326uSTsXE6XfYXbY3n/p6nH9MG+kD2OKYswnlSndkwAh5PPkOXbxogpmZHt2CAJYmeshuB
+::fBE1pAF6MU+EWHreyHcjLQlHcCaQOX+uOpET6/326uSTsXE6XfYXbY3n/p6nH9MG+kD2OKYswnlSndkwAh5PPkOXbBonsGxNriqAL8L8
+::fBE1pAF6MU+EWHreyHcjLQlHcCaQOX+uOpET6/326uSTsXE6XfYXbY3n/p6nH9MG+kD2OKYswnlSndkwAh5PPkOXZww7pw4=
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCyDJGyX8VAjFDlGSRCWAE+1BaAR7ebv/Nagq1k1QeADXKXy5YebMOUBp3XlYZUl02hmls4bTEpkdxGkYDNh+T0S4zLWZPi7tT3eQ0uG6AU5GGoU
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSjk=
+::cBs/ulQjdF+5
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpSI=
+::egkzugNsPRvcWATEpSI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+JeA==
+::cxY6rQJ7JhzQF1fEqQJQ
+::ZQ05rAF9IBncCkqN+0xwdVs0
+::ZQ05rAF9IAHYFVzEqQJQ
+::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
+::cRolqwZ3JBvQF1fEqQJQ
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATElA==
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::Zh4grVQjdCyDJGyX8VAjFDlGSRCWAE+1BaAR7ebv/Nagq1k1QeADXKXy5YebMOUBp3XlYZUl02hmls4bTEpkcBe8UisegFFxo3SAJYqsshviQk2b0Bl+Sytxn2aw
+::YB416Ek+ZW8=
+::
+::
+::978f952a14a936cc963da21a135fa983
 @echo off
 :: set basic envirnment variables
 title DJI Super-Patcher 2.0
@@ -6,13 +42,13 @@ mode con: cols=160 lines=45
 set basever=2
 set branch=2.0
 set sppath="%cd%"
+set PATH=%path%;%sppath%
 set autoheader="%cd%\autoheader.bat"
 call %autoheader%
 ::delete old log files and/or create new log folder. This will be hidden to unclutter folder but will be unhidden if SP is unsuccessful
 rmdir /Q /S nonemptydir logs 2>nul
 del logs 2>nul
 md logs
-ATTRIB +H busybox.exe
 ::set absolute path to busybox and logs folder
 set logpath="%cd%\logs"
 echo START SUPER_PATCHER > %logpath%\log.txt
@@ -85,11 +121,12 @@ cls
 call %autoheader%
 echo Please wait while I set things up. This wont take long...
 echo.
-cd %temp%
+cd %Programfiles%
+mkdir DJI_Super-Patcher 2>>nul
+cd DJI_Super-Patcher
+set SUPERPATCHER=%cd%
 %busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success!
-title DJI Super-Patcher 2.0
-%busybox% unzip -q -o %branch%.zip
+%busybox% unzip -o -q %branch%.zip
 del /f /s %branch%.zip
-set PATH=%path%;%temp%\Super-Tools-%branch%
 cd Super-Tools-%branch%
 call startup.cmd
