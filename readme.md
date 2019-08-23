@@ -5,7 +5,7 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 # **DJI Super-Patcher**
 *For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI drones.* 
 ***
-## ***DJI Super-Patcher 1.9***
+## **DJI Super-Patcher 1.9**
 ****
 ### **1.9 UPDATES**
 -Increased verbose output from adb commands.
@@ -17,23 +17,21 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
 - Users are encouraged to update to 1.8, though, all versions of 1.7 still work and will get most of the updates
 
-STATUS UPDATE
+### STATUS UPDATE
 
 Super-Patcher 2.0 is finished and is under going beta testing right now. It is a complete re-write with new features and mods. I am excited to share it with you but will not release it until it has been rigoriously tested. I understand the trust you have in me with your bird. 
 
-*OTHER RECENT UPDATES*
+### *OTHER RECENT UPDATES*
 
 - Added Inspire 2 support for the V01.02.0200 firmware that has been verified working
 
  - Minor fixes
 - Fixed an issue with the P4P flight controller that did not have all NFZ zones disabled. Whoops...
+- Added error logging for adb commands. If user indicates super-Patcher wasnt sucessfull the errorlog file will be generated and deposited in the main Super-Patcher folder
 - Minor fixes
    - Downgraded version of adb hoping for better universal support
    - Fixed visual issue where cmd window would not size large enough to view entire line
    - Fixed issue where Super Tools folder would not delete at runtime
-
--Added error logging for adb commands. If user indicates super-Patcher wasnt sucessfull the errorlog file will be generated and deposited in the main Super-Patcher folder
-
 -------------------------------------------------------------------------------------------------------------------------
 ## SUPPORTED MODELS AND REQUIRED FIRMWARE VERSIONS
 
