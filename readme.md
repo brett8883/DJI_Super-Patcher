@@ -2,9 +2,11 @@
 " target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png" 
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
+# **DJI Super-Patcher**
+*For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI drones.* 
+***
 ## ***DJI Super-Patcher 1.9***
-*For unlocking height limits, NFZ limits, Galileo Satellites, fixed fcc and boost + more for DJI Aircraft.* 
-***************************************************************************************************************************
+****
 ### **1.9 UPDATES**
 -Increased verbose output from adb commands.
 - Swapped out unzip.exe and wget.exe for BusyBox.exe (2 for 1 yey!) 
@@ -33,9 +35,9 @@ Super-Patcher 2.0 is finished and is under going beta testing right now. It is a
 -Added error logging for adb commands. If user indicates super-Patcher wasnt sucessfull the errorlog file will be generated and deposited in the main Super-Patcher folder
 
 -------------------------------------------------------------------------------------------------------------------------
-# **DJI Super-Patcher**
+## SUPPORTED MODELS AND REQUIRED FIRMWARE VERSIONS
 
-Super-Patcher now supports the following aircraft and firmwares:
+**Super-Patcher now supports the following aircraft and firmwares:**
 
 - Mavic Pro V01.04.0300
 
@@ -55,7 +57,7 @@ Super-Patcher now supports the following aircraft and firmwares:
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
 
-**OBJECTIVE SUMMARY**
+## OBJECTIVE SUMMARY
 
 This package is for installing a custom flight controller for:
 
@@ -73,7 +75,7 @@ This package is for installing a custom flight controller for:
 
 - ***Inspire 2*** running a 100% stock version of the ***V01.02.0200***
 
-The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
+The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the [FC_Patcher project](https://github.com/o-gs/DJI_FC_Patcher) by Matioupi.
 
 Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module already installed on your aircraft. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
 ***************************************************************************************************************************
@@ -111,7 +113,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
     
 - To enable height limits again would require uninstalling Super-Patcher which can be done simply by flashing to a stock firmware version
 
-- Please note that the height limit parameters in Assistant 2 1.1.2 in debug mode will NOT be visable beacuse they are hard-coded to the firmware. These parameters have been modified to disable height limit altogether even though they are not visable.  
+- ***NOTE:*** that the height limit parameters in Assistant 2 1.1.2 in debug mode will NOT be visable beacuse they are hard-coded to the firmware. These parameters have been modified to disable height limit altogether even though they are not visable.  
 
   **It is always the responsibility of the pilot to fly safely and to know local regulations. **
 
@@ -149,7 +151,9 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
     
       - **Please fly with caution!**
       
-- The airport limit parameters are hard-coded and will not be visable in Assistant 2. Airport limits have already been disabled. These parameters have been modified to disable airport limits altogether even though they are not visable. 
+- ***NOTE:*** The airport limit parameters are hard-coded and will not be visable in Assistant 2. Airport limits have already been disabled. These parameters have been modified to disable airport limits altogether even though they are not visable. 
+
+- ***NOTE:*** The Phantom 4 Pro V2 not only requires an aircraft modification, like Super-Patcher, to disable NFZ and GeoZone limits but also requires a modified DJI Go 4 app that has had the NFZ database removed. Please see [/dji.retroroms.info/howto/Deejayeye-modder](https://dji.retroroms.info/howto/deejayeye-modder) and [deejayeye-modder by Bin4ry](https://github.com/Bin4ry/deejayeye-modder) for details on how to do this. No other aircraft relies on the app for NFZ information and Super-Patcher alone is enought to disable the NFZ fuction. No other features, including alititude limit require a moddified app for P4Pv2. 
 
     **It is always the responsibility of the pilot to fly safely and to know local regulations.**
 ***************************************************************************************************************************
@@ -194,7 +198,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
 
 ***************************************************************************************************************************
 
-## **OPTIONAL FEATURES**
+# **OPTIONAL FEATURES**
 
 ### **Optionally customize parameters with Assistant 2 1.1.2 in debug mode**
 
@@ -240,7 +244,8 @@ These are optional
     
 ***************************************************************************************************************************
                                                                
-### **Optionally enable full time FCC or FCC boost mode with jkson_fcc_mod by jkson5**
+### **Optionally enable full time FCC or FCC boost mode with jkson_fcc_mod by jkson5** 
+*(MavicPro and P4Pv2 only)*
 
 - You will be asked if you'd like to enable jkson_fcc_mod if your aircraft supports it. Jkson_fcc_mod is only availible for Mavic Pro, Mavic Pro Platinum, Mavic Pro Artic White, and P4Pv2
 
@@ -288,16 +293,16 @@ or
 
   - *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.* 
           
-    - When in doubt flash the correct stock firmware **TWICE** with [DUMLdore](https://github.com/jezzab/DUMLdore/releases/tag/v3.20)
+    - When in doubt flash the correct stock firmware **TWICE** with [DUMLdore](https://github.com/jezzab/DUMLdore)
         
 - Get correct stock firmware versions with [DankDroneDownloader Tool](https://github.com/cs2000/DankDroneDownloader) :
 
-- Get DUMLdore from here:
+- Get the latest DUMLdore from here:
 
-    https://github.com/jezzab/DUMLdore/releases/tag/v3.20
+    [DUMLdore Releases](https://github.com/jezzab/DUMLdore/releases)
       
 - **Super-Patcher only runs on Windows**
-  - Works best on Windows 10 due to older versions of Windows not recognizing the certificate for the ADB drivers for DJI Drones. Not everyone using earlier version of Windows has had this issue but it’s common enough that would say to use a Windows 10 machine. 
+  - Works best on **Windows 10** due to older versions of Windows not recognizing the certificate for the ADB drivers for DJI Drones. Not everyone using earlier version of Windows has had this issue but it’s common enough that would say to use a Windows 10 machine. 
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
@@ -366,11 +371,11 @@ I have put a lot of work into making Super-Patcher as easy as possible and have 
 I can be reached at brett8883.dev@gmail.com to discuss *paid* 1 on 1 installations or other custom work. 
 ***************************************************************************************************************************
 
-# Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883)
+## Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883)
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
-### **Acknowledgments**
+## **Acknowledgments**
 
 While I brought everything together into a single easy to use project and maintain this repo, Super-Patcher is the culmination of work of many various other projects, contributors, and beta testers. 
 
