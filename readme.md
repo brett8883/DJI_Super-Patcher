@@ -362,8 +362,13 @@ Done!
 *Q. Is it worth trying this in my Mavic 2? Any idea when Mavic 2 will be available? 
 
 **A. Super-Patcher has zero chance of working on the Mavic 2 at this time. We need a decryption key for Mavic 2’s firmware and a way to gain adb access. Both of those things are above my pay grade**
+***
 
-***************************************************************************************************************************
+# Troubleshooting
+
+- Almost all issues related to Super-Patcher have to do with the ADB driver installed on the PC. Using Windows 10 either on an actual PC or Mac running in Bootcamp mode seems to be the cure all and is highly recommended to just use Windows 10.
+  - If using Windows 10 is not possible it may help to install this UniversalADBdriver by Koush](https://github.com/koush/UniversalAdbDriver?fbclid=IwAR0frDcNC1xXMHtwXUpDnE0EV4hL-TVZR82tkgHpEGQZXD1UCAf8s2VAAvA) though it hasn’t worked in every instance on Windows 7 or 
+***
 ## **Custom work or 1 on 1 help.**
 
 I have put a lot of work into making Super-Patcher as easy as possible and have built many features into Super-Patcher but I understand even so there are people that would rather have it done by a professional. I have been getting an increasing number of requests to do Super-Patcher for clients as a service or to build custom flight controllers with specific features not already in Super-Patcher. I am happy to do 1 on 1 sessions and can do the Super-Patcher process remotely via Team View. My rate for setting up Super-Patcher on one of the drones supported is $30 USD. I would ask that you have a Windows 10 PC and reliable internet access to make the process.
