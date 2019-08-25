@@ -302,6 +302,8 @@ or
 - **Super-Patcher only runs on Windows**
   - Works best on **Windows 10** due to older versions of Windows not recognizing the certificate for the ADB drivers for DJI Drones. Not everyone using earlier version of Windows has had this issue but it’s common enough that would say to use a Windows 10 machine. 
 
+  -Mac users can run Windows 10 in bootcamp mode. Mac VMs running Windows 10 may not work as expected.
+
 ***************************************************************************************************************************
 ***************************************************************************************************************************
 
