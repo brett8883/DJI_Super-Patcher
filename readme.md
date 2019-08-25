@@ -8,27 +8,27 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 ## **DJI Super-Patcher 1.9**
 ****
 ### **1.9 UPDATES**
--Increased verbose output from adb commands.
+- Increased verbose output from adb commands.
 - Swapped out unzip.exe and wget.exe for BusyBox.exe (2 for 1 yey!) 
--Checks environment and will give messages if something about the environment could affect Super-Patcher and gives suggestions to fix
+- Checks environment and will give messages if something about the environment could affect Super-Patcher and gives suggestions to fix
   - Will still try to run anyway if users dismisses message
   
--Increased clarity in errorlog.
+- Increased clarity in errorlog.
 
-- Users are encouraged to update to 1.8, though, all versions of 1.7 still work and will get most of the updates
-
+- *NOTE:* The flight controllers for Super-Patcher did not change in V1.9, only the program that installs the flight controller. If already patched there is no reason to repatch with 1.9
+***
 ### STATUS UPDATE
 
 Super-Patcher 2.0 is finished and is under going beta testing right now. It is a complete re-write with new features and mods. I am excited to share it with you but will not release it until it has been rigoriously tested. I understand the trust you have in me with your bird. 
 
-### *OTHER RECENT UPDATES*
+### OTHER RECENT UPDATES
 
 - Added Inspire 2 support for the V01.02.0200 firmware that has been verified working
 
  - Minor fixes
-- Fixed an issue with the P4P flight controller that did not have all NFZ zones disabled. Whoops...
-- Added error logging for adb commands. If user indicates super-Patcher wasnt sucessfull the errorlog file will be generated and deposited in the main Super-Patcher folder
-- Minor fixes
+-   Fixed an issue with the P4P flight controller that did not have all NFZ zones disabled. Whoops...
+-   Added error logging for adb commands. If user indicates super-Patcher wasnt sucessfull the errorlog file will be generated and deposited in the main Super-Patcher folder
+-   Minor fixes
    - Downgraded version of adb hoping for better universal support
    - Fixed visual issue where cmd window would not size large enough to view entire line
    - Fixed issue where Super Tools folder would not delete at runtime
@@ -80,7 +80,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
 ## **BENEFITS SUMMARY**
 
-*(PLEASE READ THE DETAILED LIST THAT FOLLOWS AS WELL)
+***(PLEASE READ THE DETAILED LIST THAT FOLLOWS AS WELL)***
 
 - Remove height limitations
 - Remove NFZ and GeoZone limits
@@ -111,7 +111,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
     
 - To enable height limits again would require uninstalling Super-Patcher which can be done simply by flashing to a stock firmware version
 
-- ***NOTE:*** that the height limit parameters in Assistant 2 1.1.2 in debug mode will NOT be visable beacuse they are hard-coded to the firmware. These parameters have been modified to disable height limit altogether even though they are not visable.  
+- **NOTE:** that the height limit parameters in Assistant 2 1.1.2 in debug mode will NOT be visable beacuse they are hard-coded to the firmware. These parameters have been modified to disable height limit altogether even though they are not visable.  
 
   **It is always the responsibility of the pilot to fly safely and to know local regulations. **
 
@@ -149,9 +149,9 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
     
       - **Please fly with caution!**
       
-- ***NOTE:*** The airport limit parameters are hard-coded and will not be visable in Assistant 2. Airport limits have already been disabled. These parameters have been modified to disable airport limits altogether even though they are not visable. 
+- **NOTE:** The airport limit parameters are hard-coded and will not be visable in Assistant 2. Airport limits have already been disabled. These parameters have been modified to disable airport limits altogether even though they are not visable. 
 
-- ***NOTE:*** The Phantom 4 Pro V2 not only requires an aircraft modification, like Super-Patcher, to disable NFZ and GeoZone limits but also requires a modified DJI Go 4 app that has had the NFZ database removed. Please see [/dji.retroroms.info/howto/Deejayeye-modder](https://dji.retroroms.info/howto/deejayeye-modder) and [deejayeye-modder by Bin4ry](https://github.com/Bin4ry/deejayeye-modder) for details on how to do this. No other aircraft relies on the app for NFZ information and Super-Patcher alone is enought to disable the NFZ fuction. No other features, including alititude limit require a moddified app for P4Pv2. 
+- **NOTE:** The Phantom 4 Pro V2 not only requires an aircraft modification, like Super-Patcher, to disable NFZ and GeoZone limits but also requires a modified DJI Go 4 app that has had the NFZ database removed. Please see [/dji.retroroms.info/howto/Deejayeye-modder](https://dji.retroroms.info/howto/deejayeye-modder) and [deejayeye-modder by Bin4ry](https://github.com/Bin4ry/deejayeye-modder) for details on how to do this. No other aircraft relies on the app for NFZ information and Super-Patcher alone is enought to disable the NFZ fuction. No other features, including alititude limit require a moddified app for P4Pv2. 
 
     **It is always the responsibility of the pilot to fly safely and to know local regulations.**
 ***************************************************************************************************************************
@@ -169,7 +169,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="300" border="10" /></a>
 
 - By default the aircraft will allow the motors to be restarted even if the aircraft is inverted. This parameter is hardcoded and will not be visable in Assistant 2. One can remove the props and hold the aircraft upside down and then arm the motors with a CSC to verify this parameter is working.
 
-- Note: This also means the motors cannot be turned off by turning it upside down. When hand catching use the free hand to push down on the throttle stick (left stick in RC type 2) to turn off the motors when hand catching.
+- **IMPORTANT NOTE**: This also means the motors cannot be turned off by turning it upside down. When hand catching use the free hand to push down on the throttle stick (left stick in RC type 2) to turn off the motors when hand catching.
 
 ***
 
@@ -367,7 +367,7 @@ Done!
 # Troubleshooting
 
 - Almost all issues related to Super-Patcher have to do with the ADB driver installed on the PC. Using Windows 10 either on an actual PC or Mac running in Bootcamp mode seems to be the cure all and is highly recommended to just use Windows 10.
-  - If using Windows 10 is not possible it may help to install this UniversalADBdriver by Koush](https://github.com/koush/UniversalAdbDriver?fbclid=IwAR0frDcNC1xXMHtwXUpDnE0EV4hL-TVZR82tkgHpEGQZXD1UCAf8s2VAAvA) though it hasn’t worked in every instance on Windows 7 or 
+  - If using Windows 10 is not possible it may help to install this [UniversalADBdriver by Koush](https://github.com/koush/UniversalAdbDriver?fbclid=IwAR0frDcNC1xXMHtwXUpDnE0EV4hL-TVZR82tkgHpEGQZXD1UCAf8s2VAAvA) though it hasn’t worked in every instance on Windows 7 or 
 ***
 ## **Custom work or 1 on 1 help.**
 
