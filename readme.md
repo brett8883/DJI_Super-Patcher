@@ -390,6 +390,10 @@ A special thanks to Henfri and lukasx for taking the plunge to test this with th
 
 Thanks to D95GAS, frank2006, and Kilrah for consulting during initial conceptual development.
 
+A Special thanks to BorisPlintovic for the FCC + Boost mod for Spark.
+
+A special thanks to mstoozler for providing the 0306.unsig for Inspire 2 flight controller and testing the Inspire 2 patch.
+
 A special thanks to Matioupi and the OG’s [/o-gs/DJI_FC_Patcher](https://github.com/o-gs/DJI_FC_Patcher) project and all its contributors of which Super-Patcher can be considered as a branch of and very much dependent on. DJI_FC_Patcher is the engine that drives this project. Super-Patcher serves as an easy to use deployment of the DJI_FC_Patcher that anyone can use with almost no technical ability.
 
 A special thanks to jezzab and the [jezzab/DUMLdore](https://github.com/jezzab/DUMLdore) application  a full copy of which is included in Super-Patcher and without it Super-Patcher would not be possible.
