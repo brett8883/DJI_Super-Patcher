@@ -103,7 +103,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
 # ***Features of Super-Patcher***
 
-### Remove height limitations by default**
+### Remove height limitations by default
 
 - There is nothing additional the user needs to do to enable this feature and it is always enabled.
 
@@ -123,7 +123,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
 ***************************************************************************************************************************
 
-### Remove NFZ and GeoZone limits by default**
+### Remove NFZ and GeoZone limits by default
 
   There is nothing additional the user needs to do to enable this feature and it is always enabled.
 
@@ -160,14 +160,14 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
 ***************************************************************************************************************************
 
-   **Does NOT require an internal SD card be installed**
+### Does NOT require an internal SD card be installed
 
 - With older methods for unlocking, namely mixed firmware mods, the Mavic Pro Platinum and some more recently manufactured Mavic Pros required that the Mavic be opened and an internal SD card installed for other mods to work.
 
   - **NOT** with Super-Patcher. Super-Patcher does NOT require an internal SD card because it is **NOT** a mixed firmware mod.
 ***************************************************************************************************************************
 
-### No motors errors on Mavic Pro Platinum**
+### No motors errors on Mavic Pro Platinum
 
 - With older modification techniques, namely mixed firmware mods, the Mavic Pro Platinum will give motor errors due to not having the correct ESC modules for the upgraded MPP ESCs
 
