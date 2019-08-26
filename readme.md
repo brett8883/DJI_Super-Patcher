@@ -4,7 +4,7 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
 # DJI Super-Patcher 2.0
 
-Super-Patcher brings a host of new changes and new mods for all aircraft. Super-Patcher 2.0 also acts as a central location to store the common applications used by the DJI modding community that automatically keeps these tools up to date and keeps them organized.
+Super-Patcher 2.0 brings a host of new changes and new mods for all aircraft. Super-Patcher 2.0 also acts as a central location to store the common applications used by the DJI modding community that automatically keeps these tools up to date and keeps them organized.
 
 ## MAJOR UPDATES
 
