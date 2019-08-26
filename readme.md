@@ -42,7 +42,8 @@ Super-Patcher brings a host of new changes and new mods for all aircraft. Super-
 
  PREVIOUS VERSIONS OF SUPER-PATCHER WILL NOT AUTOMATICALLY UPDATE
 
- ***
+***
+***
  # DJI Super-Patcher
 
 Super-Patcher now supports the following aircraft and firmwares:
