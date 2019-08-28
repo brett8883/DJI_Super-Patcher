@@ -60,6 +60,8 @@ Super-Patcher now supports the following aircraft and firmwares:
 
 - Phantom 4 ProV2 V01.00.1500
 
+- Inspire 2 V01.02.0200
+
 -------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------
 
@@ -79,6 +81,8 @@ This package is for installing a custom flight controller for:
 
 - ***Phantom 4 ProV2*** running a 100% stock version of the V01.00.1500 firmware.
 
+- ***Inspire 2*** running a 100% stock version of the V01.02.0200 firmware. 
+
 The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
 
 Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module already installed on your aircraft. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
@@ -95,7 +99,7 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 - Does NOT require an internal SD card be installed
 - Precision RTH and Precision Landing will work normally
 - Optionally enable slower more cinematic panning (yaw) speed
-- Optionally enable full time FCC or boost mode with jkson_fcc_mod by jkson5 built in (Mavic and P4PV2 Only)
+- Optionally enable full time FCC or boost mode with jkson_fcc_mod by jkson5 built in (Mavic, Spark***(NEW!)***, and P4PV2 Only)
 
 ***************************************************************************************************************************
 **Please carefully read through the through explanation of the benefits below. Directions to get started will follow**
@@ -182,7 +186,12 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 - Because Super-Patcher is not a mixed firmware mod it does **NOT** affect these functions and so they will work as expected.
 
 ***************************************************************************************************************************
+  **Motors will restart when aircraft is inverted**
 
+- By default the aircraft will allow the motors to be restarted even if the aircraft is inverted. This parameter is hardcoded and will not be visable in Assistant 2. One can remove the props and hold the aircraft upside down and then arm the motors with a CSC to verify this parameter is working.
+
+- Note: This also means the motors cannot be turned off by turning it upside down. When hand catching use the free hand to push down on the throttle stick (left stick in RC type 2) to turn off the motors when hand catching.
+***************************************************************************************************************************
 # **OPTIONAL FEATURES**
 
 ## Super-Patcher 2.0 Mods
@@ -210,6 +219,10 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 These options can be enabled in Assistant 2 1.1.2 ***OR*** they can be enabled by AUTOMATICALLY by indicating "YES" below.
 
 ***NOTE: The Smart Battery modifications can also be disabled or tweaked to user preference in Assistant 2 1.1.2 in debug mode***
+
+***FWIW: The Smart Battery Mod is a modification to how the aircraft responds to input from the Smart Battery. It is not a modification TO the Smart Battery***
+
+***FURTHER DOCUMENTATION FOR SMART BATTERY MOD COMING SOON***
 
 ### STEALTH MOD
 The new Stealth modification will disable the rear LED lights on the aircraft which will remain OFF during flight for Super Stealthy flight.
@@ -279,7 +292,7 @@ These are optional
 ***************************************************************************************************************************
 ***************************************************************************************************************************
 
-**PREREQUSITES**
+# PREREQUSITES
 
 - ***Mavic Pro***; ***Mavic Pro Platinum***; or ***Mavic Pro Alpine White*** has to be running STOCK ***V01.04.0300*** fw for all modules
 
@@ -303,16 +316,24 @@ or
 
 ***Phantom 4 ProV2*** running a 100% stock version of the ***V01.00.1500*** firmware for all modules
 
+or
+
+***Inspire 2*** running a 100% stock version of the ***V01.02.0200*** firmware for all modules
 
   - *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.*
 
     - When in doubt flash the correct stock firmware **TWICE** with DUMLdore
+	
+**Super Patcher and above include a utility to automatically download and install the correct stock firmware. Use this for best results**
+
+or
 
 - Get correct stock firmware versions with [DankDroneDownloader Tool](https://github.com/cs2000/DankDroneDownloader) :
 
 - Get DUMLdore from here:
 
     https://github.com/jezzab/DUMLdore/releases/tag/v3.20
+***
 
 - **Super-Patcher only runs on Windows**
   - *Works best on Windows 10*
@@ -322,14 +343,14 @@ or
 ***************************************************************************************************************************
 ***************************************************************************************************************************
 
-**DIRECTIONS**
+## DIRECTIONS
 
 1. Ensure the prerequisites above are met
 
 2. Download or clone the entire repository
   - Be sure to keep all files in original folders
 
-3. Double click the .exe file to start the program
+3. Double click the Super-Patcher.exe file to start the program
 
 4. Super-Patcher will check internet connection to GitHub which is required and the Windows version of the PC and then download the files it needs to run.
 
@@ -369,7 +390,7 @@ Done!
 ***************************************************************************************************************************
 ***************************************************************************************************************************
 
-**FAQ**
+## **FAQ**
 
 *Q. Do I need a specific version of the DJI Go 4 app to get the benefits of this mod?*
 
@@ -394,7 +415,7 @@ Done!
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
-**Acknowledgments**
+## Acknowledgments
 
 While I brought everything together into a single easy to use project and maintain this repo, Super-Patcher is the culmination of work of many various other projects, contributors, and beta testers.
 
