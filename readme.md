@@ -86,6 +86,12 @@ This package is for installing a custom flight controller for:
 The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
 
 Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module already installed on your aircraft. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=rFrQ52m8bos
+" target="_blank"><img src="https://raw.githubusercontent.com/brett8883/DJI_Super-Patcher/photos/sp2.0DigDat0.PNG" 
+alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
+
+*(Credits to digdat0 for the video)*
 ***************************************************************************************************************************
 
 **BENEFITS SUMMARY**
