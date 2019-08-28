@@ -30,7 +30,7 @@ Super-Patcher 2.0 brings a host of new changes and new mods for all aircraft. Su
   - The Stealth modification is optional but it is hard-coded into the firmware and *CANNOT* be changed by the user in flight or with Assistant 2 1.1.2 in debug mode!
 
 ### SPARK JKSON FCC + BOOST SUPPORT
-- Spark support for Jkson FCC + boost mod. Thanks to BorisPlintovic for the Spark script.
+- Added jkson_fcc_mod FCC + boost support for **Spark**. Big thanks to BorisPlintovic for the Spark script.
 
 ### MINOR UPDATES
 - Automated stock firmware flashing process
@@ -314,7 +314,10 @@ or
 
     https://github.com/jezzab/DUMLdore/releases/tag/v3.20
 
-- *Super-Patcher only runs on Windows*
+- **Super-Patcher only runs on Windows**
+  - *Works best on Windows 10*
+
+ - Mac users can run Windows 10 in bootcamp mode on their Mac. Virtual Machines such as Virtual Box may not work as expected.
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
@@ -326,9 +329,17 @@ or
 2. Download or clone the entire repository
   - Be sure to keep all files in original folders
 
-3. Double click the file called “auto_install.bat”
+3. Double click the .exe file to start the program
 
-4. The auto_install.bat will guide you through the process step by step.
+4. Super-Patcher will check internet connection to GitHub which is required and the Windows version of the PC and then download the files it needs to run.
+
+5. At the Super-Patcher MainMenu you get several options and it allows you to use the utilities included in the program independantly of the Super-Patcher process
+
+- Choose option #1 with your keyboard if you already have the correct stock firmware installed for your aircraft. IF you do not have the correct firmware installed you can instead choose option #2 to download and install the correct firmware.
+
+6. After choosing option #1 the program will ask you the optional mods you'd like to install and then will prompt you to turn on your aircraft and connect it to the PC
+
+7. Super-Patcher will guide you through the process from here.
 
   - **Please do what it says when it says to do it**
 
@@ -338,9 +349,10 @@ or
 
       - these are the main reasons for Super-Patcher not being successful
 
-5. You will be prompted to verify flight controller version at the end to confirm Super-Patcher is successful
 
-6. You may optionally use the simulator in Assistant 2 or DJI Go 4 to verify working order before testing outside.
+8. You will be prompted to verify flight controller version at the end to confirm Super-Patcher is successful
+
+9. You may optionally use the simulator in Assistant 2 or DJI Go 4 to verify working order before testing outside.
 
 - If there are issues with flight in the simulator there will be issues with flight in real life.
 
@@ -390,7 +402,7 @@ A special thanks to Henfri and lukasx for taking the plunge to test this with th
 
 Thanks to D95GAS, frank2006, and Kilrah for consulting during initial conceptual development.
 
-A Special thanks to BorisPlintovic for the FCC + Boost mod for Spark.
+A special thanks to @BorisPlintovic for the FCC + Boost mod for Spark.
 
 A special thanks to mstoozler for providing the 0306.unsig for Inspire 2 flight controller and testing the Inspire 2 patch.
 
