@@ -48,7 +48,7 @@ Super-Patcher 2.0 brings a host of new changes and new mods for all aircraft. Su
 
 Super-Patcher now supports the following aircraft and firmwares:
 
-- Mavic Pro V01.04.0300
+- Mavic Pro/Mavic Pro Platinum/Mavic Pro Alpine White V01.04.0300
 
 - Spark V01.00.0900
 
@@ -69,7 +69,7 @@ Super-Patcher now supports the following aircraft and firmwares:
 
 This package is for installing a custom flight controller for:
 
-- ***Mavic Pro or Mavic Pro Platinum*** running a 100% stock version of the v01.04.0300 firmware.
+- ***Mavic Pro,Mavic Pro Platinum, or MP Alpine White*** running a 100% stock version of the v01.04.0300 firmware.
 
 - ***Spark*** running a 100% stock version of the v01.00.0900 firmware.
 
