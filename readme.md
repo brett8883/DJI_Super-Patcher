@@ -212,7 +212,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
    **Super-Patcher pre-configured battery mod option**
      - Disable Forced Auto-Landing due to Smart Battery low battery
-      -*NOTE:* A final "emergency auto-landing" will only occur at the emergency low voltage level which is at 3.0v per cell (well below the same voltage to fly.) This can also be disabled in Assistant 2 1.1.2 in debug mode.  
+      -*NOTE:* A final "emergency auto-landing" will only occur at the emergency low voltage level which is at 3.0v per cell (well below the safe voltage to fly.) This can also be disabled in Assistant 2 1.1.2 in debug mode.  
      - Re-calibrated Smart Battery "Only enough battery remaining to return to the home point" calculation to be more accurate
       - Can be further customized by the user in Assistant 2 1.1.2 in debug mode
 
