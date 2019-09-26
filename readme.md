@@ -282,11 +282,12 @@ These are optional
 
 ## Optionally enable full time FCC or FCC boost mode with jkson_fcc_mod by jkson5**
 
-- You will be asked if you'd like to enable jkson_fcc_mod if your aircraft supports it. Jkson_fcc_mod is only availible for Mavic Pro, Mavic Pro Platinum, Mavic Pro Artic White, and P4Pv2
+- You will be asked if you'd like to enable jkson_fcc_mod if your aircraft supports it. Jkson_fcc_mod is only availible for Mavic Pro, Mavic Pro Platinum, Mavic Pro Artic White, Spark, and P4Pv2
 
 - Jkson mod also allows you to choose between "Auto frequency" (2.4 GHz), fixed 2.3 GHz, and fixed 2.5 GHz.
 	- I highly recommend choosing "Auto-frequency"
 		- 2.3 GHz and 2.5 GHz might be better in 1% of cases but it is very rare and even if they do work better they are more likely to cut video feed without warning because they are fixed to a single channel.
+       - Not availible on Spark
 
 - You can learn more about jkson fcc mod by jkson5 at https://github.com/jkson5/jkson_fcc_mod
 
