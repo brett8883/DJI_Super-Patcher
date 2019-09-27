@@ -7,6 +7,7 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 - No major changes 
 - Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
 - Added documentation about the 5000m waypoint limit being removed with Super-Patcher
+
   *-NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented
 -------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------- 
@@ -47,9 +48,11 @@ This package is for installing a custom flight controller for:
 
 - ***Inspire 2*** running a 100% stock version of the V01.02.0200 firmware. 
 
-The purpose of this project is to liberate DJI aircraft from the limitations imposed by DJI. DJI Super-Patcher allows new features/abilities, unlock arbutrary limitations, and DJI aircraft to be customized far beyond what is allowed by the factory firmware.
+The purpose of this project is to liberate DJI aircraft from the limitations imposed by DJI. DJI Super-Patcher allows new features/abilities, unlocks arbutrary limitations, and allows DJI aircraft to be customized far beyond what is allowed by the factory firmware.
 
-Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk. While Super-Patcher removes the default altitude and GeoZone limitation it is solely the resposibility of the pilot to ensure local laws and regulations are adhered to just like anyother aircraft.
+Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. Super-Patchers patches the flight controller module that is already installed on your aircraft. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk. 
+
+While Super-Patcher removes the default altitude and GeoZone limitation it is solely the resposibility of the pilot to ensure local laws and regulations are adhered to just like anyother aircraft.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=rFrQ52m8bos
 " target="_blank"><img src="https://raw.githubusercontent.com/brett8883/DJI_Super-Patcher/photos/sp2.0DigDat0.PNG" 
