@@ -2,49 +2,16 @@
 " target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png"
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
-# DJI Super-Patcher 2.0
+# DJI Super-Patcher 2.0.1 updates
 
-Super-Patcher 2.0 brings a host of new changes and new mods for all aircraft. Super-Patcher 2.0 also acts as a central location to store the common applications used by the DJI modding community that automatically keeps these tools up to date and keeps them organized.
+- No major changes 
+- Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
+- Added documentation about the 5000m waypoint limit being removed with Super-Patcher
+  *-NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented
+-------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------- 
 
-## MAJOR UPDATES
-
-### SMART BATTERY MOD
- Added optional Smart Battery Mod
-   - Say goodbye to "non-DJI battery mode!"
-   - Fully customize the DJI Smart battery behavior and take back ownership of your aircraft
-   - Smart battery mod can be custom configured by the user in Assistant 2 1.1.2 in debug mode or be pre-configured by Super-Patcher
-   - *NOTE:* Default parameters for DJI Smart Battery remain factory default unless "YES" is selected by the user during the Super-Patcher process to have the Smart Battery pre-configured by Super-Patcher
-
-  - **Super-Patcher pre-configured battery mod option**
-     - Disable Forced Auto-Landing due to Smart Battery low battery
-      -*NOTE:* A final "emergency auto-landing" will only occur at the emergency low voltage level which is at 3.0v per cell (well below the same voltage to fly.) This can also be disabled in Assistant 2 1.1.2 in debug mode.  
-     - Re-calibrated Smart Battery "Only enough battery remaining to return to the home point" calculation to be more accurate
-      - Can be further customized by the user in Assistant 2 1.1.2 in debug mode
-    - Disable low battery warning when using DJI Smart Battery
-     - Can be reenabled in Assistant 2 or set at any battery percentage level
-    - Disabled critical low battery warning when using DJI Smart Battery
-    - Can be reenabled in Assistant 2 or set at any battery percentage level
-
-### STEALTH
- - The new Stealth modification will disable the rear LED lights on the aircraft which will remain OFF during flight for Super Stealthy flight.
-  - The Stealth modification is optional but it is hard-coded into the firmware and *CANNOT* be changed by the user in flight or with Assistant 2 1.1.2 in debug mode!
-
-### SPARK JKSON FCC + BOOST SUPPORT
-- Added jkson_fcc_mod FCC + boost support for **Spark**. Big thanks to BorisPlintovic for the Spark script.
-
-### MINOR UPDATES
-- Automated stock firmware flashing process
-- Automatic downloading of dependencies directly from original repos keeping them up to date in perpetuity  
-- Changed to use absolute paths for better performance
- - Greatly increased logging which helps debug issues
-- Log file is always visible now
- - Compiled into executable which keeps program files organized and always travel with the program.
-
- PREVIOUS VERSIONS OF SUPER-PATCHER WILL NOT AUTOMATICALLY UPDATE
-
-***
-***
- # DJI Super-Patcher
+# DJI Super-Patcher
 
 Super-Patcher now supports the following aircraft and firmwares:
 
@@ -62,10 +29,7 @@ Super-Patcher now supports the following aircraft and firmwares:
 
 - Inspire 2 V01.02.0200
 
--------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------
-
-**OBJECTIVE SUMMARY**
+## OBJECTIVE SUMMARY
 
 This package is for installing a custom flight controller for:
 
@@ -83,9 +47,9 @@ This package is for installing a custom flight controller for:
 
 - ***Inspire 2*** running a 100% stock version of the V01.02.0200 firmware. 
 
-The purpose of this project is to enable even the most technically challenged among us the ability to be liberated from the limitations imposed by DJI and reap the benefits of the other features enabled by the FC_Patcher project https://github.com/o-gs/DJI_FC_Patcher by Matioupi.
+The purpose of this project is to liberate DJI aircraft from the limitations imposed by DJI. DJI Super-Patcher allows new features/abilities, unlock arbutrary limitations, and DJI aircraft to be customized far beyond what is allowed by the factory firmware.
 
-Super-Patcher works differently than other methods for unlocking firmware. It is not a mixed firmware mod. Super-Patcher works by modifying the stock flight controller module already installed on your aircraft. This means you retain a cohesive single firmware version on your bird without the complications that occur with mixed firmware mods. This ability to change the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified you can trust that it has been proven but you still use at your own risk.
+Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk. While Super-Patcher removes the default altitude and GeoZone limitation it is solely the resposibility of the pilot to ensure local laws and regulations are adhered to just like anyother aircraft.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=rFrQ52m8bos
 " target="_blank"><img src="https://raw.githubusercontent.com/brett8883/DJI_Super-Patcher/photos/sp2.0DigDat0.PNG" 
@@ -159,6 +123,12 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
     **It is always the responsibility of the pilot to fly safely and to know local regulations.**
 ***************************************************************************************************************************
+### Unlocks the limit for waypoint missions
+
+- DJI has limited the length of waypoint missions to 5000 meters on factory firmware. Super-Patcher raises the limit to 128000 meters
+
+*NOTE: A third party app such as Litchi may be needed to upload waypoint missions longer than 5000m. The way the DJI Go 4 app is set up it may not allow a mission greater than 5000m to be uploaded to the aircraft regardless of the firmware limit being removed.*
+***************************************************************************************************************************
 
 ### Enable Galileo satellite reception by default
 
@@ -198,12 +168,10 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
 - Note: This also means the motors cannot be turned off by turning it upside down. When hand catching use the free hand to push down on the throttle stick (left stick in RC type 2) to turn off the motors when hand catching.
 ***************************************************************************************************************************
-# **OPTIONAL FEATURES**
-
-## Super-Patcher 2.0 Mods
+## **OPTIONAL FEATURES**
 
 ### SMART BATTERY MOD
-***Super-Patcher 2.0 unlocks the DJI Smart Battery to its full potential making it 100% customizable.***
+***Super-Patcher unlocks the DJI Smart Battery to its full potential making it 100% customizable.***
 
    - Say goodbye to "non-DJI battery mode!"
    - Fully customize the DJI Smart battery behavior and take back ownership of your aircraft
@@ -221,8 +189,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
     - Disabled critical low battery warning when using DJI Smart Battery
      - Can be reenabled in Assistant 2 or set at any battery percentage level
 
-
-These options can be enabled in Assistant 2 1.1.2 ***OR*** they can be enabled by AUTOMATICALLY by indicating "YES" below.
+These options can be enabled in Assistant 2 1.1.2 ***OR*** they can be enabled by AUTOMATICALLY by indicating "YES" during the Super-Patcher process.
 
 ***NOTE: The Smart Battery modifications can also be disabled or tweaked to user preference in Assistant 2 1.1.2 in debug mode***
 
@@ -330,7 +297,7 @@ or
 
     - When in doubt flash the correct stock firmware **TWICE** with DUMLdore
 	
-**Super Patcher and above include a utility to automatically download and install the correct stock firmware. Use this for best results**
+**Super Patcher 2.0 and above includes a utility to automatically download and install the correct stock firmware. Use this for best results**
 
 or
 
@@ -343,8 +310,9 @@ or
 
 - **Super-Patcher only runs on Windows**
   - *Works best on Windows 10*
+	- Mileage may vary on other versions of Windows
 
- - Mac users can run Windows 10 in bootcamp mode on their Mac. Virtual Machines such as Virtual Box may not work as expected.
+ - Mac users can run Windows 10 in bootcamp mode on their Mac for best results. With Virtual Machines such as Virtual Box, mileage may vary.
 
 ***************************************************************************************************************************
 ***************************************************************************************************************************
@@ -356,7 +324,7 @@ or
 2. Download or clone the entire repository
   - Be sure to keep all files in original folders
 
-3. Double click the Super-Patcher.exe file to start the program
+3. Double click the DJI_Super-PatcherV2.0.1.cmd file to start the program
 
 4. Super-Patcher will check internet connection to GitHub which is required and the Windows version of the PC and then download the files it needs to run.
 
