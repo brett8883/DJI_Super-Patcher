@@ -8,7 +8,7 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 - Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
 - Added documentation about the 5000m waypoint limit being removed with Super-Patcher
 
-  *-NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented
+  *- NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented*
 -------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------- 
 
@@ -145,9 +145,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
 ### Does NOT require an internal SD card be installed
 
-- With older methods for unlocking, namely mixed firmware mods, the Mavic Pro Platinum and some more recently manufactured Mavic Pros required that the Mavic be opened and an internal SD card installed for other mods to work.
-
-  - **NOT** with Super-Patcher. Super-Patcher does NOT require an internal SD card because it is **NOT** a mixed firmware mod.
+- With older methods for unlocking, namely mixed firmware mods, the Mavic Pro Platinum and some more recently manufactured Mavic Pros required that the Mavic be opened and an internal SD card installed for other mods to work. **NOT** with Super-Patcher. Super-Patcher does **NOT** require an internal SD card because it is **NOT** a mixed firmware modification.
 ***************************************************************************************************************************
 
 ### No motors errors on Mavic Pro Platinum
@@ -175,8 +173,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
 ### SMART BATTERY MOD
 ***Super-Patcher unlocks the DJI Smart Battery to its full potential making it 100% customizable.***
-
-   - Say goodbye to "non-DJI battery mode!"
+ - Say goodbye to "non-DJI battery mode!"
    - Fully customize the DJI Smart battery behavior and take back ownership of your aircraft
    - Smart battery mod can be custom configured by the user in Assistant 2 1.1.2 in debug mode or be pre-configured by Super-Patcher
     - NOTE: Default parameters for DJI Smart Battery remain factory default unless "YES" is selected by the user during the Super-Patcher process to have the Smart Battery pre-configured by Super-Patcher
