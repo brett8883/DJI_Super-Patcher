@@ -125,11 +125,11 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
     **It is always the responsibility of the pilot to fly safely and to know local regulations.**
 ***************************************************************************************************************************
-### Unlocks the limit for waypoint missions
+### Unlocks the max distance limit for waypoint missions
 
-- DJI has limited the length of waypoint missions to 5000 meters on factory firmware. Super-Patcher raises the limit to 128000 meters
+- DJI has limited the length of waypoint missions to 5000 meters on factory firmware. Super-Patcher removes this limit.
 
-*NOTE: A third party app such as Litchi may be needed to upload waypoint missions longer than 5000m. The way the DJI Go 4 app is set up it may not allow a mission greater than 5000m to be uploaded to the aircraft regardless of the firmware limit being removed.*
+*NOTE: A third party app such as Litchi may be needed to upload waypoint missions longer than 5000m. The way the DJI Go 4 app works it may not allow a mission greater than 5000m to be uploaded to the aircraft regardless of the firmware limit being removed.*
 ***************************************************************************************************************************
 
 ### Enable Galileo satellite reception by default
