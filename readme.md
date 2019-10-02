@@ -385,7 +385,7 @@ Done!
 ***************************************************************************************************************************
 
 # Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883)
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GYVCZK5PFDMRJ)
+
 ***************************************************************************************************************************
 ## Acknowledgments
 
