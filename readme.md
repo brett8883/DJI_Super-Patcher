@@ -51,13 +51,16 @@ The purpose of this project is to liberate DJI aircraft from the limitations imp
 
 Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. Super-Patchers patches the flight controller module that is already installed on your aircraft. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk. 
 
-While Super-Patcher removes the default altitude and GeoZone limitation it is solely the resposibility of the pilot to ensure local laws and regulations are adhered to just like anyother aircraft.
+While Super-Patcher removes the default altitude and GeoZone limitations that does not mean it is safe or legal to do so in your area without proper authorization. DJI Super-Patcher is meant to allow responsible pilots with the correct authorization to fly in areas and to heights that DJI does not offer a reasonable method or any method at all to unlock. It is solely the responsibility of the pilot to ensure local laws and regulations are adhered to and to fly safely just like with any other aircraft. 
 
+FLY RESPONSIBLY!
+***
+ *[CLICK] On the photo below to watch @digdat0's turtorial on DJI Super-Patcher :*
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=rFrQ52m8bos
 " target="_blank"><img src="https://raw.githubusercontent.com/brett8883/DJI_Super-Patcher/photos/sp2.0DigDat0.PNG" 
 alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
-*(Credits to digdat0 for the video)*
+*(Thanks @digdat0!)*
 ***************************************************************************************************************************
 
 **BENEFITS SUMMARY**
