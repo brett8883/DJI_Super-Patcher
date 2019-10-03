@@ -7,6 +7,7 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 - No major changes 
 - Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
 - Added [documentation](https://github.com/brett8883/DJI_Super-Patcher#unlocks-the-limit-for-waypoint-missions) about the 5000m waypoint limit being removed with Super-Patcher
+- Fixed a bug in the FCC mod script for Spark (delayed expansion ingnored the ! in the shebang. If this caused an issue before is unclear since users reported that FCC mod for Spark was working)
 
   *- NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented*
 -------------------------------------------------------------------------------------------------------------------
