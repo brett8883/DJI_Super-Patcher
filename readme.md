@@ -2,14 +2,45 @@
 " target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png"
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
-# DJI Super-Patcher 2.0.1 updates
+The purpose of this project is to liberate DJI aircraft from the limitations imposed by DJI. DJI Super-Patcher allows new features/abilities, unlocks arbutrary limitations, and allows DJI aircraft to be customized far beyond what is allowed by the factory firmware.
 
-- No major changes 
-- Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
+Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. Super-Patchers patches the flight controller module that is already installed on your aircraft. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk. 
+
+While Super-Patcher removes the default altitude and GeoZone limitations that does not mean it is safe or legal to do so in your area without proper authorization. DJI Super-Patcher is meant to allow responsible pilots with the correct authorization to fly in areas and to heights that DJI does not offer a reasonable method or any method at all to unlock. It is solely the responsibility of the pilot to ensure local laws and regulations are adhered to and to fly safely just like with any other aircraft. 
+
+FLY RESPONSIBLY!
+
+# BENEFITS SUMMARY
+
+*(PLEASE READ THE DETAILED LIST THAT FOLLOWS AS WELL)*
+
+- Remove height limitations
+- Remove NFZ and GeoZone limits
+- Enable Galileo satellite reception
+- Unlock waypoint mission parameters
+- No motors errors on Mavic Pro Platinum
+- Does NOT require an internal SD card be installed
+- Precision RTH and Precision Landing will work normally
+- Optionally enable slower more cinematic panning (yaw) speed
+- Optionally enable full time FCC or boost mode with jkson_fcc_mod by jkson5 built in (Mavic, Spark***(NEW!)***, and P4PV2 Only)
+
+-------------------------------------------------------------------------------------------------------------------
+# DJI Super-Patcher 2.1 updates
+- No major changes
+- No changes to flight controllers
+
+## Minor changes 
+- Super-Patcher program files no longer need to be downloaded. Removes ability for hot fixes but simplifies program stucture and increases performance.
+- Fixed issue where paths with long directory names or directory names with spaces could't be found
+- Old downloaded flight controllers and stock firmware will be erased at run-time simplifying flashing process
+- Shortened or removed arbitrary wait times
+
+### Other Recent changes 
 - Added [documentation](https://github.com/brett8883/DJI_Super-Patcher#unlocks-the-limit-for-waypoint-missions) about the 5000m waypoint limit being removed with Super-Patcher
+  *- NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented*
 - Fixed a bug in the FCC mod script for Spark (delayed expansion ingnored the ! in the shebang. If this caused an issue before is unclear since users reported that FCC mod for Spark was working)
 
-  *- NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented*
+
 -------------------------------------------------------------------------------------------------------------------
 
 # DJI Super-Patcher
@@ -30,53 +61,15 @@ Super-Patcher now supports the following aircraft and firmwares:
 
 - Inspire 2 V01.02.0200
 
-## OBJECTIVE SUMMARY
-
-This package is for installing a custom flight controller for:
-
-- ***Mavic Pro,Mavic Pro Platinum, or MP Alpine White*** running a 100% stock version of the v01.04.0300 firmware.
-
-- ***Spark*** running a 100% stock version of the v01.00.0900 firmware.
-
-- ***Phantom 4 Professional*** running a 100% stock version of the v1.05.0600 firmware.
-
-- ***Phantom 4 advanced*** running a 100% sotock version of the v1.00.0128 firmware.
-
-- ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700 firmware.
-
-- ***Phantom 4 ProV2*** running a 100% stock version of the V01.00.1500 firmware.
-
-- ***Inspire 2*** running a 100% stock version of the V01.02.0200 firmware. 
-
-The purpose of this project is to liberate DJI aircraft from the limitations imposed by DJI. DJI Super-Patcher allows new features/abilities, unlocks arbutrary limitations, and allows DJI aircraft to be customized far beyond what is allowed by the factory firmware.
-
-Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. Super-Patchers patches the flight controller module that is already installed on your aircraft. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk. 
-
-While Super-Patcher removes the default altitude and GeoZone limitations that does not mean it is safe or legal to do so in your area without proper authorization. DJI Super-Patcher is meant to allow responsible pilots with the correct authorization to fly in areas and to heights that DJI does not offer a reasonable method or any method at all to unlock. It is solely the responsibility of the pilot to ensure local laws and regulations are adhered to and to fly safely just like with any other aircraft. 
-
-FLY RESPONSIBLY!
-***
- *[CLICK] On the photo below to watch @digdat0's turtorial on DJI Super-Patcher :*
+# Video Walkthrough by DigDat0
+ -[CLICK] On the photo below to watch @digdat0's turtorial on DJI Super-Patcher :*
+ 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=rFrQ52m8bos
 " target="_blank"><img src="https://raw.githubusercontent.com/brett8883/DJI_Super-Patcher/photos/sp2.0DigDat0.PNG" 
 alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
 *(Thanks @digdat0!)*
 ***************************************************************************************************************************
-
-**BENEFITS SUMMARY**
-
-*(PLEASE READ THE DETAILED LIST THAT FOLLOWS AS WELL)*
-
-- Remove height limitations
-- Remove NFZ and GeoZone limits
-- Enable Galileo satellite reception
-- No motors errors on Mavic Pro Platinum
-- Does NOT require an internal SD card be installed
-- Precision RTH and Precision Landing will work normally
-- Optionally enable slower more cinematic panning (yaw) speed
-- Optionally enable full time FCC or boost mode with jkson_fcc_mod by jkson5 built in (Mavic, Spark***(NEW!)***, and P4PV2 Only)
-
 ***************************************************************************************************************************
 **Please carefully read through the through explanation of the benefits below. Directions to get started will follow**
 ***************************************************************************************************************************
@@ -196,7 +189,7 @@ These options can be enabled in Assistant 2 1.1.2 ***OR*** they can be enabled b
 
 ***NOTE: The Smart Battery modifications can also be disabled or tweaked to user preference in Assistant 2 1.1.2 in debug mode***
 
-***FWIW: The Smart Battery Mod is a modification to how the aircraft responds to input from the Smart Battery. It is not a modification TO the Smart Battery***
+***FWIW: The Smart Battery Mod is a modification to how the aircraft responds to input from the Smart Battery. It is not a modification TO the Smart Battery itself***
 
 ***FURTHER DOCUMENTATION FOR SMART BATTERY MOD COMING SOON***
 
@@ -327,7 +320,7 @@ or
 2. Download or clone the entire repository
   - Be sure to keep all files in original folders
 
-3. Double click the DJI_Super-PatcherV2.0.1.cmd file to start the program
+3. Double click the DJI_Super-PatcherV2.1.cmd file to start the program
 
 4. Super-Patcher will check internet connection to GitHub which is required and the Windows version of the PC and then download the files it needs to run.
 
