@@ -4,7 +4,7 @@ title DJI Super-Patcher 2.0
 SETLOCAL EnableDelayedExpansion
 mode con: cols=160 lines=45
 set basever=2
-set branch=2.0
+set branch=2.1
 set sppath="%cd%"
 set PATH=%path%;%sppath%
 set autoheader="%cd%\autoheader.bat"
