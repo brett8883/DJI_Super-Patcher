@@ -24,18 +24,17 @@ echo                                           [5] Launch jkson fcc mod (Mavic, 
 echo                                           [6] Launch the free NoLimitDronez app
 echo.
 echo                                        ADVANCED
-echo                                           [7] Enable ADB and open a new CMD Prompt into ADB
+echo                                           [7] Enable Indoor Mode (forces OPTI mode positioning)
+echo                                           [8] Enable ADB and open a new CMD Prompt into ADB
 echo.
 echo                                        DONATE
-echo                                           [8]
-echo                                        EXIT
-echo                                           [9] Exit DJI Super-Patcher
+echo                                           [9] Donate
 echo.
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 Choice /c 123456789 /M "Please make a section with keyboard"
-if errorlevel 9 goto exit
-if errorlevel 8 goto donate
-if errorlevel 7 goto adb
+if errorlevel 9 goto donate
+if errorlevel 8 goto adb
+if errorlevel 7 goto indoor
 If Errorlevel 6 goto NLD
 If Errorlevel 5 goto jkson
 If Errorlevel 4 goto dumldore
@@ -43,6 +42,45 @@ If Errorlevel 3 goto getDownloader
 If Errorlevel 2 goto flashstock
 If Errorlevel 1 goto StartSP
 
+:indoor
+cls
+call %header%
+echo.
+echo INDOOR MODE
+echo.
+echo.
+echo Indoor Mode disables GPS positioning but still allows vision positioning, ideal for indoor flying or any other location where GPS unavailble or spotty
+echo.
+echo When Indoor Mode is enabled OPTI mode postioning allows precise positioning without GPS upto roughly 100 feet above the ground.
+echo.
+echo When Indoor Mode is enabled and GPS signal is suffient the drone's location will still be shown on the map, however, GPS postitioning will not be used
+echo.
+echo Return to home feature WILL NOT BE AVAILIBLE in Indoor Mode. Advanced Pilots ONLY
+echo.
+echo If conditions for VPS are not met the drone will revert to ATTI mode. Be prepared to take manual control in lighting conditions weaken 
+echo or height above the ground exceeds 100 feet.
+echo.
+echo Indoor mod cannot be turned on and off in flight. Users will need to do either the normal Super-Patcher process or flash back to stock to get GPS postioning back
+echo.
+echo If you are currently in a flight controller installed using Super-Patcher you do NOT need to flash back to stock first and do not need to flash to stock if going
+echo from Indoor Mode back to the normal Super-Patcher process.
+echo.
+echo If you are not on stock %stock% firmware or Super-Patcher firmware you should flash stock %stock% TWICE before proceeding
+echo.
+echo.
+echo
+echo Would you like to continue with enabling Indoor Mode?
+echo.
+echo [Y]
+echo [N]
+echo.
+choice /m "Please make selection with keyboard"
+if errorlevel 2 goto mainmenu
+if errorlevel 1 goto indoor2
+
+:indoor2
+call indoor.cmd
+goto mainmenu  
 :Donate
 rundll32 url.dll,FileProtocolHandler https://www.paypal.me/brett8883
 goto mainmenu

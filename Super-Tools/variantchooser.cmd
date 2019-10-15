@@ -1,6 +1,5 @@
 @echo off
-mode con: cols=160 lines=45
-title Super-Patcher 2.0
+:variantchooser
 cls
 call %header%
 Echo Super-Patcher features optional modifications.
@@ -11,36 +10,36 @@ echo Continue when ready...
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 pause
 cls
-REM call %header%
-REM echo.
-REM echo GALILEO SATELLITE RECEPTION
-REM echo.
-REM echo Super-Patcher can enable your aircraft to now connect to the new Galileo GPS satellite system.
-REM echo.
-REM echo This allows the %AC% to connect to more satellities for a more accurate, stonger, and more resiliant connection to GPS.
-REM echo.
-REM if "%AC%"=="MavicPro" echo Mavic Pro handles Galileo excetionally well. This is reccomended to all Mavic Pro users.
-REM echo.
-REM echo Galileo reception is hard-coded into the firmware. If you choose this option and decide later you would like to turn off this feature you will need to flash the stock firmware.
-REM echo.
-REM echo After flashing back to stock firmware you can redo Super-Patcher without the Galileo option enabled
-REM echo.
-REM ECHO Would you like to ENABLE Galileo reception?
-REM echo.
-REM echo [Y] YES
-REM echo [N] No
-REM echo.
-REM choice /m "Please make selection with keyboard"
-REM if errorlevel 2 goto gal2
-REM if errorlevel 1 goto gal1
+call %header%
+echo.
+echo GALILEO SATELLITE RECEPTION
+echo.
+echo Super-Patcher can enable your aircraft to now connect to the new Galileo GPS satellite system.
+echo.
+echo This allows the %AC% to connect to more satellities for a more accurate, stonger, and more resiliant connection to GPS.
+echo.
+if "%AC%"=="MavicPro" echo Mavic Pro handles Galileo excetionally well. This is reccomended to all Mavic Pro users.
+echo.
+echo Galileo reception is hard-coded into the firmware. If you choose this option and decide later you would like to turn off this feature you will need to flash the stock firmware.
+echo.
+echo After flashing back to stock firmware you can redo Super-Patcher without the Galileo option enabled
+echo.
+ECHO Would you like to ENABLE Galileo reception?
+echo.
+echo [Y] YES
+echo [N] No
+echo.
+choice /m "Please make selection with keyboard"
+if errorlevel 2 goto gal2
+if errorlevel 1 goto gal1
 
-REM :gal1
-REM set gal=1
-REM goto askbatmod
+:gal1
+set gal=1
+goto askbatmod
 
-REM :gal2
-REM set gal=2
-REM goto askbatmod
+:gal2
+set gal=2
+goto askbatmod
 
 :askBatmod
 cls
@@ -127,24 +126,53 @@ if errorlevel 1 goto stealthmod1
 
 :stealthmod1
 set stealthmod=1
-goto resolveurl1
+goto ask_NMR
 
 :stealthmod2
 set stealthmod=2
-goto resolveurl1
+goto ask_NMR
 
-REM :galresolve
-REM if "gal"="1" gotoresolveurl1
-REM if "gal"="2" gotoresolveurl2
+:ask_NMR
+set NMR=1
+goto confirmmods
+
+:confirmmods
+cls
+call %header%
+echo.
+echo You have chosen the following mods:
+echo.
+if "%gal%"=="1" echo Galileo: ENABLED
+if "%gal%"=="2" echo Galileo: DISABLED
+echo.
+if "%batmod%"=="1" echo Smart Battery Mod: ENABLED
+if "%batmod%"=="2" echo Smart Battery Mod: DISABLED
+echo.
+if "%stealthmod%"=="1" echo Stealth Mod: ENABLED
+if "%stealthmod%"=="2" echo Stealth Mod: DISABLED
+echo.
+echo.
+echo Are these the options you want?
+echo.
+echo [Y] Yes
+echo [N] no
+echo.
+choice /m "Please make a selection with your keyboard"
+if errorlevel 2 goto variantchooser
+if errorlevel 1 goto resolveurl1
 
 :resolveurl1
-echo %batmod%%stealthmod%
-set varchoice=%batmod%%stealthmod%
+echo %batmod%%stealthmod%%gal%%NMR%
+set varchoice=%batmod%%stealthmod%%gal%%NMR%
 echo %varchoice%
-if "%varchoice%"=="22" set varianturl=%standard% & set variant=Standard
-if "%varchoice%"=="12" set varianturl=%battmod% & set variant=BattMod
-if "%varchoice%"=="21" set varianturl=%stealth% & set variant=Stealth
-if "%varchoice%"=="11" set varianturl=%FullyLoaded% & set variant=FullyLoaded
+if "%varchoice%"=="2211" set varianturl=%standard% & set variant=Standard
+if "%varchoice%"=="1211" set varianturl=%battmod% & set variant=BattMod
+if "%varchoice%"=="2111" set varianturl=%stealth% & set variant=Stealth
+if "%varchoice%"=="1111" set varianturl=%FullyLoaded% & set variant=FullyLoaded
+if "%varchoice%"=="2221" set varianturl=%standard_NoGal% & set variant=Standard_NoGal
+if "%varchoice%"=="1221" set varianturl=%battmod_NoGal% & set variant=BattMod_NoGal
+if "%varchoice%"=="2121" set varianturl=%stealth_NoGal% & set variant=Stealth_NoGal
+if "%varchoice%"=="1121" set varianturl=%FullyLoaded_NoGal% & set variant=FullyLoaded_NoGal
 set fw2=%AC%_SP_2.0_%variant%_%fc%_dji_system.bin
 set fc=%fcbase%%varchoice%
 cls

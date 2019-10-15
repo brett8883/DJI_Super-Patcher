@@ -36,10 +36,32 @@ set battmod=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/F
 set stealth=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/MavicPro_SP_2.0_Stealth_03.02.44.21_dji_system.bin
 set FullyLoaded=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/MavicPro_SP_2.0_FullyLoaded_03.02.44.11_dji_system.bin
 set standard_NoGal=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/No_gal/MavicPro_Standard_NoGal_03.02.44.44_dji_system.bin
-set battmod_NoGal=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/No_gal/MavicPro_Batt-mod_no_gal_03.02.44.34_dji_system.bin
-set stealth_NoGal=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/No_gal/MavicPro_stealth_no_gal_03.02.44.43_dji_system.bin
-set FullyLoaded_NoGal=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/No_gal/MavicPro_FullyLoaded_no_gal_03.02.44.33_dji_system.bin
+set battmod_NoGal=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/No_gal/MavicPro_Batt-Mod_NoGal_03.02.44.34_dji_system.bin
+set stealth_NoGal=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/No_gal/MavicPro_Stealth_NoGal_03.02.44.43_dji_system.bin
+set FullyLoaded_NoGal=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/No_gal/MavicPro_FullyLoaded_NoGal_03.02.44.33_dji_system.bin
+set standard_NMR=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/NMR/MavicPro_Standard_NMR_03.02.44.66_dji_system.bin
+set battmod_NMR=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/NMR/MavicPro_Batt-mod_NMR_03.02.44.56_dji_system.bin
+set stealth_NMR=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/NMR/MavicPro_Stealth_NMR_03.02.44.65_dji_system.bin
+set FullyLoaded_NMR=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/NMR/MavicPro_FullyLoaded_NMR_03.02.44.55_dji_system.bin
+set standard_NoGal_NMR=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/NMR_NoGal/MavicPro_Standard_NMR_NoGal_03.02.44.77_dji_system.bin
+set battmod_NoGal_NMR=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/NMR_NoGal/MavicPro_Batt-mod_NMR_NoGal_03.02.44.67_dji_system.bin
+set stealth_NoGal_NMR=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/NMR_NoGal/MavicPro_Stealth_NMR_NoGal_03.02.44.76_dji_system.bin
+set FullyLoaded_NoGal_NMR=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/FC_bin/NMR_NoGal/MavicPro_FullyLoaded_NMR_NoGal_03.02.44.66_dji_system.bin
 goto mainmenu
+
+REM template for new mod urls
+REM set standard_NoGal=
+REM set battmod_NoGal=
+REM set stealth_NoGal=
+REM set FullyLoaded_NoGal=
+REM set standard_NoGal_NMR=
+REM set battmod_NoGal_NMR=
+REM set stealth_NoGal_NMR=
+REM set FullyLoaded_NoGal_NMR=
+REM set standard_NMR=
+REM set battmod_NMR=
+REM set stealth_NMR=
+REM set FullyLoaded_NMR=
 
 :SPK
 set AC=Spark
