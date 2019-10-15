@@ -2,6 +2,8 @@
 " target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png"
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
+# THIS BRANCH IS UNDER CONSTRUCTION!!! THIS BRANCH SHOULD NOT BE USED UNLESS I HAVE ASKED YOU TO USE IT AND ALREADY TOLD YOU OF ITS LIMITATIONS!! IT IS NOT READY FOR PRIME TIME AND MANY FEATURES MAY NOT WORK!!!!!
+
 The purpose of this project is to liberate DJI aircraft from the limitations imposed by DJI. DJI Super-Patcher allows new features/abilities, unlocks arbutrary limitations, and allows DJI aircraft to be customized far beyond what is allowed by the factory firmware.
 
 Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. Super-Patchers patches the flight controller module that is already installed on your aircraft. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk. 
