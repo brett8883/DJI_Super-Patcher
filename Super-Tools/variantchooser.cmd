@@ -30,16 +30,8 @@ echo [Y] YES
 echo [N] No
 echo.
 choice /m "Please make selection with keyboard"
-if errorlevel 2 goto gal2
-if errorlevel 1 goto gal1
-
-:gal1
-set gal=1
-goto askbatmod
-
-:gal2
-set gal=2
-goto askbatmod
+if errorlevel 2 set "gal=2"
+if errorlevel 1 set "gal=1"
 
 :askBatmod
 cls
@@ -83,16 +75,8 @@ echo [Y] YES
 echo [N] No
 echo.
 choice /m "Please make selection with keyboard"
-if errorlevel 2 goto batmod2
-if errorlevel 1 goto batmod1
-
-:batmod1
-set batmod=1
-goto askstealth
-
-:batmod2
-set batmod=2
-goto askstealth
+if errorlevel 2 set "batmod=2"
+if errorlevel 1 set "batmod=1"
 
 :askstealth
 cls
@@ -121,20 +105,49 @@ echo [Y] YES
 echo [N] No
 echo.
 choice /m "Please make selection with keyboard"
-if errorlevel 2 goto stealthmod2
-if errorlevel 1 goto stealthmod1
-
-:stealthmod1
-set stealthmod=1
-goto ask_NMR
-
-:stealthmod2
-set stealthmod=2
-goto ask_NMR
+if errorlevel 2 set "stealthmod=2"
+if errorlevel 1 set "stealthmod=1"
 
 :ask_NMR
-set NMR=1
-goto confirmmods
+cls
+call %header%
+echo.
+echo ABILITY TO START MOTORS WHEN AIRCRAFT IS INVERTED
+echo.
+echo.
+Echo The ABILITY TO START MOTORS WHEN AIRCRAFT IS INVERTED mod allows the pilot to start the motors if the aircraft is inverted (upside down.)
+echo.
+echo This mod is primarly for pilots who like to perform a CSC manuver in flight to cut the motors and allow the aircraft to free fall and then 
+echo starting the motors up again just before hitting the ground. Without this mod if the aircraft flips over while free falling then the aircraft will not allow
+echo the motors to be started and the aircraft will hit the ground.
+echo.
+echo With this modification the aircraft will start the motors even if flipped upside down and will right itself once the motors have restarted saving the aircraft.
+echo.
+echo This mod also has some secondary benefits that might be drawbacks to some users.
+echo.
+echo This mod also prevents the motors from turning off if the aircraft ends up inverted during flight.
+echo For example, if the aircraft hits an obstacle in flight that causes it to flip over, normally the motors would stop causing the aircraft to fall from the sky
+echo.
+echo With this mod the aircraft will attempt to right itself and recover from the colision. This can save an aircraft from crashing
+echo.
+echo The possible drawback to this is if hand catching the drone it cannot be turned off by flipping it. 
+echo The motors will continue to run and will try to right itself vigorously
+echo.
+echo This modification was previously not optional and enabled by default for all Super-Patcher users. Only a small number of users found it to be a drawback
+echo.
+echo The vast majority of users either did not notice it or liked the fuctionality.
+echo.
+echo You now have a choice.
+echo.
+echo This modification is hardcoded into the firmware. To disable it you can redo Super-Patcher or simply flash and stock version of the firmware.
+echo.
+echo WOULD YOU LIKE TO ENABLE ABILITY TO START MOTORS WHEN AIRCRAFT IS INVERTED?
+echo.
+echo [Y] Yes
+echo [N] no
+choice /m "Please make a selection with the keyboard"
+if errorlevel 2 set "NMR=2"
+if errorlevel 1 set "NMR=1"
 
 :confirmmods
 cls
@@ -151,6 +164,9 @@ echo.
 if "%stealthmod%"=="1" echo Stealth Mod: ENABLED
 if "%stealthmod%"=="2" echo Stealth Mod: DISABLED
 echo.
+if "%NMR%"=="1" echo ABILITY TO START MOTORS WHEN AIRCRAFT IS INVERTED: ENABLED
+if "%NMR%"=="2" echo ABILITY TO START MOTORS WHEN AIRCRAFT IS INVERTED: DISABLED
+echo.
 echo.
 echo Are these the options you want?
 echo.
@@ -165,16 +181,24 @@ if errorlevel 1 goto resolveurl1
 echo %batmod%%stealthmod%%gal%%NMR%
 set varchoice=%batmod%%stealthmod%%gal%%NMR%
 echo %varchoice%
-if "%varchoice%"=="2211" set varianturl=%standard% & set variant=Standard
-if "%varchoice%"=="1211" set varianturl=%battmod% & set variant=BattMod
-if "%varchoice%"=="2111" set varianturl=%stealth% & set variant=Stealth
-if "%varchoice%"=="1111" set varianturl=%FullyLoaded% & set variant=FullyLoaded
-if "%varchoice%"=="2221" set varianturl=%standard_NoGal% & set variant=Standard_NoGal
-if "%varchoice%"=="1221" set varianturl=%battmod_NoGal% & set variant=BattMod_NoGal
-if "%varchoice%"=="2121" set varianturl=%stealth_NoGal% & set variant=Stealth_NoGal
-if "%varchoice%"=="1121" set varianturl=%FullyLoaded_NoGal% & set variant=FullyLoaded_NoGal
+if "%varchoice%"=="2211" set varianturl=%standard% & set variant=Standard & set "fc2=22"
+if "%varchoice%"=="1211" set varianturl=%battmod% & set variant=BattMod & set "fc2=12"
+if "%varchoice%"=="2111" set varianturl=%stealth% & set variant=Stealth & set "fc2=21"
+if "%varchoice%"=="1111" set varianturl=%FullyLoaded% & set variant=FullyLoaded & set "fc2=11"
+if "%varchoice%"=="2221" set varianturl=%standard_NoGal% & set variant=Standard_NoGal & set "fc2=44"
+if "%varchoice%"=="1221" set varianturl=%battmod_NoGal% & set variant=BattMod_NoGal & set "fc2=34"
+if "%varchoice%"=="2121" set varianturl=%stealth_NoGal% & set variant=Stealth_NoGal & set "fc2=43"
+if "%varchoice%"=="1121" set varianturl=%FullyLoaded_NoGal% & set variant=FullyLoaded_NoGal & set "fc2=33"
+if "%varchoice%"=="2211" set varianturl=%standard_NMR% & set variant=Standard_NMR & set "fc2=66"
+if "%varchoice%"=="1211" set varianturl=%battmod_NMR% & set variant=BattMod_NMR & set "fc2=56"
+if "%varchoice%"=="2111" set varianturl=%stealth_NMR% & set variant=Stealth_NMR & set "fc2=65"
+if "%varchoice%"=="1111" set varianturl=%FullyLoaded_NMR% & set variant=FullyLoaded_NMR & set "fc2=55"
+if "%varchoice%"=="2222" set varianturl=%standard_NoGal_NMR% & set variant=Standard_NMR_NoGal & set "fc2=77"
+if "%varchoice%"=="1222" set varianturl=%battmod_NoGal_NMR% & set variant=BattMod_NMR_NoGal & set "fc2=67"
+if "%varchoice%"=="2122" set varianturl=%stealth_NoGal_NMR% & set variant=Stealth_NMR_NoGal & set "fc2=76"
+if "%varchoice%"=="1122" set varianturl=%FullyLoaded_NoGal_NMR% & set variant=FullyLoaded_NMR_NoGal & set "fc2=66"
+set fc=%fcbase%%fc2%
 set fw2=%AC%_SP_2.0_%variant%_%fc%_dji_system.bin
-set fc=%fcbase%%varchoice%
 cls
 call %header%
 title Super-Patcher 2.0 for %AC%
@@ -184,31 +208,10 @@ cd %sppath%
 rmdir /Q /S SP_Flight_Controllers 2>nul
 md SP_Flight_Controllers 2>nul
 cd SP_Flight_Controllers
-set FCfolderpath=%cd%
+set "FCfolderpath=%cd%"
 if exist %fw2% goto end
 %busybox% wget %varianturl%
 
-REM :resolveurl2
-REM echo %batmod%%stealthmod%
-REM set varchoice=%batmod%%stealthmod%
-REM echo %varchoice%
-REM if "%varchoice%"=="22" set varianturl=%standard_NoGal% & set variant=Standard_NoGal & set "varchoice=44"
-REM if "%varchoice%"=="12" set varianturl=%battmod_NoGal% & set variant=BattMod_NoGal & set "varchoice=34"
-REM if "%varchoice%"=="21" set varianturl=%stealth_NoGal% & set variant=Stealth_NoGal & set "varchoice=43"
-REM if "%varchoice%"=="11" set varianturl=%FullyLoaded_NoGal% & set variant=FullyLoaded_NoGal & set "varchoice=33"
-REM set fw2=%AC%_SP_2.0_%variant%_%fc%_dji_system.bin
-REM set fc=%fcbase%%varchoice%
-REM cls
-REM call %header%
-REM title Super-Patcher 2.0 for %AC%
-REM echo Wait just a moment...
-REM echo.
-REM cd %sppath%
-REM md SP_Flight_Controllers 2>nul
-REM cd SP_Flight_Controllers
-REM set FCfolderpath=%cd%
-REM if exist %fw2% goto end
-REM %busybox% wget %varianturl%
 :end
 cd %stpath%
 dd_checkprops.cmd
