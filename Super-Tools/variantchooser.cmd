@@ -30,8 +30,8 @@ echo [Y] YES
 echo [N] No
 echo.
 choice /m "Please make selection with keyboard"
-if errorlevel 2 set "gal=2"
-if errorlevel 1 set "gal=1"
+if errorlevel 2 set "gal=2" & set "galwords=NoGal"
+if errorlevel 1 set "gal=1" & set "galwords=YesGal"
 
 :askBatmod
 cls
@@ -181,24 +181,36 @@ if errorlevel 1 goto resolveurl1
 echo %batmod%%stealthmod%%gal%%NMR%
 set varchoice=%batmod%%stealthmod%%gal%%NMR%
 echo %varchoice%
-if "%varchoice%"=="2211" set varianturl=%standard% & set variant=Standard & set "fc2=22"
-if "%varchoice%"=="1211" set varianturl=%battmod% & set variant=BattMod & set "fc2=12"
-if "%varchoice%"=="2111" set varianturl=%stealth% & set variant=Stealth & set "fc2=21"
-if "%varchoice%"=="1111" set varianturl=%FullyLoaded% & set variant=FullyLoaded & set "fc2=11"
-if "%varchoice%"=="2221" set varianturl=%standard_NoGal% & set variant=Standard_NoGal & set "fc2=44"
-if "%varchoice%"=="1221" set varianturl=%battmod_NoGal% & set variant=BattMod_NoGal & set "fc2=34"
-if "%varchoice%"=="2121" set varianturl=%stealth_NoGal% & set variant=Stealth_NoGal & set "fc2=43"
-if "%varchoice%"=="1121" set varianturl=%FullyLoaded_NoGal% & set variant=FullyLoaded_NoGal & set "fc2=33"
-if "%varchoice%"=="2211" set varianturl=%standard_NMR% & set variant=Standard_NMR & set "fc2=66"
-if "%varchoice%"=="1211" set varianturl=%battmod_NMR% & set variant=BattMod_NMR & set "fc2=56"
-if "%varchoice%"=="2111" set varianturl=%stealth_NMR% & set variant=Stealth_NMR & set "fc2=65"
-if "%varchoice%"=="1111" set varianturl=%FullyLoaded_NMR% & set variant=FullyLoaded_NMR & set "fc2=55"
-if "%varchoice%"=="2222" set varianturl=%standard_NoGal_NMR% & set variant=Standard_NMR_NoGal & set "fc2=77"
-if "%varchoice%"=="1222" set varianturl=%battmod_NoGal_NMR% & set variant=BattMod_NMR_NoGal & set "fc2=67"
-if "%varchoice%"=="2122" set varianturl=%stealth_NoGal_NMR% & set variant=Stealth_NMR_NoGal & set "fc2=76"
-if "%varchoice%"=="1122" set varianturl=%FullyLoaded_NoGal_NMR% & set variant=FullyLoaded_NMR_NoGal & set "fc2=66"
+if "%varchoice%"=="2211" set varianturl=%standard% & set "variant=Standard_YesGal" & set "fc2=22"
+if "%varchoice%"=="1211" set varianturl=%battmod% & set "variant=BattMod_YesGal" & set "fc2=12"
+if "%varchoice%"=="2111" set varianturl=%stealth% & set "variant=Stealth_YesGal" & set "fc2=21"
+if "%varchoice%"=="1111" set varianturl=%FullyLoaded% & set "variant=FullyLoaded_YesGal" & set "fc2=11"
+if "%varchoice%"=="2212" set varianturl=%standard_NMR% & set "variant=Standard_NMR" & set "fc2=44"
+if "%varchoice%"=="1212" set varianturl=%battmod_NMR% & set "variant=BattMod_NMR" & set "fc2=34"
+if "%varchoice%"=="2112" set varianturl=%stealth_NMR% & set "variant=Stealth_NMR" & set "fc2=43"
+if "%varchoice%"=="1112" set varianturl=%FullyLoaded_NMR% & set "variant=FullyLoaded_NMR" & set "fc2=33"
+if "%varchoice%"=="2221" set varianturl=%standard_NoGal% & set "variant=Standard_NoGal" & set "fc2=66"
+if "%varchoice%"=="1221" set varianturl=%battmod_NoGal% & set "variant=BattMod_NoGal" & set "fc2=56"
+if "%varchoice%"=="2121" set varianturl=%stealth_NoGal% & set "variant=Stealth_NoGal" & set "fc2=65"
+if "%varchoice%"=="1121" set varianturl=%FullyLoaded_NoGal% & set "variant=FullyLoaded_NoGal" & set "fc2=55"
+if "%varchoice%"=="2222" set varianturl=%standard_NoGal_NMR% & set "variant=Standard_NMR_NoGal" & set "fc2=88"
+if "%varchoice%"=="1222" set varianturl=%battmod_NoGal_NMR% & set "variant=BattMod_NMR_NoGal" & set "fc2=78"
+if "%varchoice%"=="2122" set varianturl=%stealth_NoGal_NMR% & set "variant=Stealth_NMR_NoGal" & set "fc2=87"
+if "%varchoice%"=="1122" set varianturl=%FullyLoaded_NoGal_NMR% & set "variant=FullyLoaded_NMR_NoGal" & set "fc2=77"
 set fc=%fcbase%%fc2%
 set fw2=%AC%_SP_2.0_%variant%_%fc%_dji_system.bin
+set varianturl1=%AC%_%variant%_%fcbase%%fc2%_dji_system.bin
+set varianturl2=%baseurl%%varianturl1%
+echo %baseurl%
+echo %variant%
+echo %fcbase%%fc2%
+echo %varianturl1%
+echo %baseurl%%varianturl1%
+echo %AC%_%variant%_%fcbase%%fc2%_dji_system.bin
+echo %varianturl2%
+echo %varianturl2%
+https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/Hotpoint_mod_bin/MavicPro_Standard_YesGal_03.02.44.22_dji_system.bin
+pause
 cls
 call %header%
 title Super-Patcher 2.0 for %AC%
@@ -210,7 +222,9 @@ md SP_Flight_Controllers 2>nul
 cd SP_Flight_Controllers
 set "FCfolderpath=%cd%"
 if exist %fw2% goto end
-%busybox% wget %varianturl%
+echo %varianturl2%
+pause
+%busybox% wget %varianturl2%
 
 :end
 cd %stpath%
