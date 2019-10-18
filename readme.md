@@ -72,9 +72,10 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 - Remove NFZ and GeoZone limits
 - Enable Galileo satellite reception
 - Customize the Smart Battery settings
- - Customize or disable low battery forced auto-landing.
- - Customize or disable low battery return-to-home
- - Customize or disable low battery warnings
+  - Customize or disable low battery forced auto-landing.
+  - Customize or disable low battery return-to-home
+  - Customize or disable low battery warnings
+- Motors can be started when aircraft is inverted
 - No motors errors on Mavic Pro Platinum
 - Does NOT require an internal SD card be installed
 - Precision RTH and Precision Landing will work normally
