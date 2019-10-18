@@ -71,11 +71,16 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 - Remove height limitations
 - Remove NFZ and GeoZone limits
 - Enable Galileo satellite reception
+- Customize the Smart Battery settings
+ - Customize or disable low battery forced auto-landing.
+ - Customize or disable low battery return-to-home
+ - Customize or disable low battery warnings
 - No motors errors on Mavic Pro Platinum
 - Does NOT require an internal SD card be installed
 - Precision RTH and Precision Landing will work normally
 - Optionally enable slower more cinematic panning (yaw) speed
 - Optionally enable full time FCC or boost mode with jkson_fcc_mod by jkson5 built in (Mavic, Spark***(NEW!)***, and P4PV2 Only)
+- Optionally disable external aircraft LEDS lighting for stealthy night flying. 
 
 ***************************************************************************************************************************
 **Please carefully read through the through explanation of the benefits below. Directions to get started will follow**
@@ -166,11 +171,16 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 - Because Super-Patcher is not a mixed firmware mod it does **NOT** affect these functions and so they will work as expected.
 
 ***************************************************************************************************************************
-  **Motors will restart when aircraft is inverted**
+### Motors can be restarted when aircraft is inverted
 
-- By default the aircraft will allow the motors to be restarted even if the aircraft is inverted. This parameter is hardcoded and will not be visable in Assistant 2. One can remove the props and hold the aircraft upside down and then arm the motors with a CSC to verify this parameter is working.
+- By default the aircraft will allow the motors to be restarted even if the aircraft is inverted. 
+ - This parameter is hardcoded and will not be visable in Assistant 2. One can remove the props and hold the aircraft upside down and then arm the motors with a CSC to verify this parameter is working.
 
-- Note: This also means the motors cannot be turned off by turning it upside down. When hand catching use the free hand to push down on the throttle stick (left stick in RC type 2) to turn off the motors when hand catching.
+- This is primarily to allow pilots that preform a CSC maneuver while in flight(cut the motors while flying either as an emergency maneuver or as a daredevil stunt) to turn the motors back on even if the aircraft flips in flight.
+
+- This setting also can save the aircraft from a catastrophic crash after a colision that turns the aircraft upside down.
+ - The aircraft will immediately right itself rather than cutting the motors automatically which is the factory default behavior when being flipped in flight.
+  - *NOTE:* **This also means the motors cannot be turned off by turning it upside down when hand catching. When hand catching, use the free hand to push down on the throttle stick (left stick in RC type 2) to turn off the motors when hand catching.**
 ***************************************************************************************************************************
 ## **OPTIONAL FEATURES**
 
@@ -181,9 +191,9 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
    - Smart battery mod can be custom configured by the user in Assistant 2 1.1.2 in debug mode or be pre-configured by Super-Patcher
     - NOTE: Default parameters for DJI Smart Battery remain factory default unless "YES" is selected by the user during the Super-Patcher process to have the Smart Battery pre-configured by Super-Patcher
 
-   **Super-Patcher pre-configured battery mod option**
+   **Super-Patcher pre-configured battery mod option (select [YES] to SMART BATTERY MOD)**
      - Disable Forced Auto-Landing due to Smart Battery low battery
-      -*NOTE:* A final "emergency auto-landing" will only occur at the emergency low voltage level which is at 3.0v per cell (well below the safe voltage to fly.) This can also be disabled in Assistant 2 1.1.2 in debug mode.  
+      -*NOTE:A final "emergency auto-landing" will only occur at the emergency low voltage level which is at 3.0v per cell (well below the safe voltage to fly.) This can also be disabled in Assistant 2 1.1.2 in debug mode.*
      - Re-calibrated Smart Battery "Only enough battery remaining to return to the home point" calculation to be more accurate
       - Can be further customized by the user in Assistant 2 1.1.2 in debug mode
 
@@ -196,7 +206,7 @@ These options can be enabled in Assistant 2 1.1.2 ***OR*** they can be enabled b
 
 ***NOTE: The Smart Battery modifications can also be disabled or tweaked to user preference in Assistant 2 1.1.2 in debug mode***
 
-***FWIW: The Smart Battery Mod is a modification to how the aircraft responds to input from the Smart Battery. It is not a modification TO the Smart Battery***
+***NOTE: The Smart Battery Mod is a modification to how the aircraft responds to input from the Smart Battery. It is not a modification TO the Smart Battery***
 
 ***FURTHER DOCUMENTATION FOR SMART BATTERY MOD COMING SOON***
 
