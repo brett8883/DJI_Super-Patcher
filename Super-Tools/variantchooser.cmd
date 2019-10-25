@@ -221,6 +221,7 @@ cd SP_Flight_Controllers
 set "FCfolderpath=%cd%"
 if exist %fw2% goto end
 echo %varianturl2%
+ECho https://github.com/brett8883/Super-Firmware_Cache/blob/2.0/P4A/2.1/fc_bin/P4A_Standard_YesGal_03.02.35.22_dji_system.bin
 %busybox% wget %varianturl2%
 
 :end
