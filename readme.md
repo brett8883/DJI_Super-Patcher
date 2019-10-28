@@ -7,7 +7,7 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 - No major changes 
 - Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
 - Added [documentation](https://github.com/brett8883/DJI_Super-Patcher/blob/master/readme.md#unlocks-the-max-distance-limit-for-waypoint-missions) about the 5000m waypoint limit being removed with Super-Patcher
-*- NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented*
+  - *NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented*
 
 - Fixed a bug in the FCC mod script for Spark (delayed expansion ingnored the ! in the shebang. If this caused an issue before is unclear since users reported that FCC mod for Spark was working)
 -------------------------------------------------------------------------------------------------------------------
@@ -32,27 +32,11 @@ Super-Patcher now supports the following aircraft and firmwares:
 
 ## OBJECTIVE SUMMARY
 
-This package is for installing a custom flight controller for:
-
-- ***Mavic Pro,Mavic Pro Platinum, or MP Alpine White*** running a 100% stock version of the v01.04.0300 firmware.
-
-- ***Spark*** running a 100% stock version of the v01.00.0900 firmware.
-
-- ***Phantom 4 Professional*** running a 100% stock version of the v1.05.0600 firmware.
-
-- ***Phantom 4 advanced*** running a 100% sotock version of the v1.00.0128 firmware.
-
-- ***Phantom 4 Standard*** running a 100% stock version of the v2.00.0700 firmware.
-
-- ***Phantom 4 ProV2*** running a 100% stock version of the V01.00.1500 firmware.
-
-- ***Inspire 2*** running a 100% stock version of the V01.02.0200 firmware. 
-
 The purpose of this project is to liberate DJI aircraft from the limitations imposed by DJI. DJI Super-Patcher allows new features/abilities, unlocks arbutrary limitations, and allows DJI aircraft to be customized far beyond what is allowed by the factory firmware.
 
-Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. Super-Patchers patches the flight controller module that is already installed on your aircraft. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk. 
+Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. Super-Patcher patches the flight controller module that is already installed on your aircraft. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk. 
 
-While Super-Patcher removes the default altitude and GeoZone limitations that does not mean it is safe or legal to do so in your area without proper authorization. DJI Super-Patcher is meant to allow responsible pilots with the correct authorization to fly in areas and to heights that DJI does not offer a reasonable method or any method at all to unlock. It is solely the responsibility of the pilot to ensure local laws and regulations are adhered to and to fly safely just like with any other aircraft. 
+While Super-Patcher removes the default altitude and GeoZone limitations, that does not mean it is safe or legal to do so in your area without proper authorization. DJI Super-Patcher is meant to allow responsible pilots with the correct authorization to fly in areas and to heights that DJI does not offer a reasonable method or any method at all to unlock. It is solely the responsibility of the pilot to ensure local laws and regulations are adhered to and to fly safely just like with any other aircraft. 
 
 FLY RESPONSIBLY!
 ***
