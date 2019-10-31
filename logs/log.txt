@@ -1,0 +1,327 @@
+START SUPER_PATCHER 
+Thu 10/31/2019_11:09:50.47 
+Windows 10 is detected 
+I have verified internet access to GitHub 
+11:09:54.07 
+Downloading the latest version of DUMLdore 
+DEBUG output created by Wget 1.20.3 on mingw32.
+
+Reading HSTS entries from C:\Users\Brett\Documents\GitHub\DJI_Super-Patcher\Super-Tools\TOOLS/.wget-hsts
+URI encoding = 'CP1252'
+iconv UTF-8 -> CP1252
+iconv outlen=120 inlen=60
+converted 'https://github.com/jezzab/DUMLdore/raw/master/DUMLdoreV3.exe' (CP1252) -> 'https://github.com/jezzab/DUMLdore/raw/master/DUMLdoreV3.exe' (UTF-8)
+Converted file name 'DUMLdoreV3.exe' (UTF-8) -> 'DUMLdoreV3.exe' (CP1252)
+File 'DUMLdoreV3.exe' already there; not retrieving.
+
+DUMLdore downloaded successfully 
+Downloading NLD app 
+DEBUG output created by Wget 1.20.3 on mingw32.
+
+Reading HSTS entries from C:\Users\Brett\Documents\GitHub\DJI_Super-Patcher\Super-Tools\TOOLS/.wget-hsts
+URI encoding = 'CP1252'
+iconv UTF-8 -> CP1252
+iconv outlen=92 inlen=46
+converted 'https://nolimitdronez.com/downloads/nldapp.zip' (CP1252) -> 'https://nolimitdronez.com/downloads/nldapp.zip' (UTF-8)
+Converted file name 'nldapp.zip' (UTF-8) -> 'nldapp.zip' (CP1252)
+--2019-10-31 11:09:54--  https://nolimitdronez.com/downloads/nldapp.zip
+Resolving nolimitdronez.com (nolimitdronez.com)... seconds 0.00, 85.184.161.145
+Caching nolimitdronez.com => 85.184.161.145
+Connecting to nolimitdronez.com (nolimitdronez.com)|85.184.161.145|:443... seconds 0.00, connected.
+Created socket 4.
+Releasing 0x00000000012e1ad0 (new refcount 1).
+Initiating SSL handshake.
+seconds 900.00, Winsock error: 0
+Handshake successful; connected socket 4 to SSL handle 0x00000000012e3600
+certificate:
+  subject: CN=*.nolimitdronez.com,OU=EssentialSSL Wildcard,OU=Domain Control Validated
+  issuer:  CN=Sectigo RSA Domain Validation Secure Server CA,O=Sectigo Limited,L=Salford,ST=Greater Manchester,C=GB
+X509 certificate successfully verified and matches host nolimitdronez.com
+
+---request begin---
+GET /downloads/nldapp.zip HTTP/1.1
+User-Agent: Wget/1.20.3 (mingw32)
+Accept: */*
+Accept-Encoding: identity
+Host: nolimitdronez.com
+Connection: Keep-Alive
+
+---request end---
+HTTP request sent, awaiting response... seconds 900.00, Winsock error: 0
+
+---response begin---
+HTTP/1.1 200 OK
+Content-Type: application/x-zip-compressed
+Last-Modified: Sun, 15 Sep 2019 17:01:41 GMT
+Accept-Ranges: bytes
+ETag: "d010393fe76bd51:0"
+Server: Microsoft-IIS/10.0
+Date: Thu, 31 Oct 2019 16:03:34 GMT
+Content-Length: 2072635
+
+---response end---
+200 OK
+Registered socket 4 for persistent reuse.
+Length: 2072635 (2.0M) [application/x-zip-compressed]
+Saving to: 'nldapp.zip'
+
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+seconds 900.00, Winsock error: 0
+
+2019-10-31 11:09:58 (736 KB/s) - 'nldapp.zip' saved [2072635/2072635]
+
+NLDapp downloaded successfully 
+starting dummy_verify_step 

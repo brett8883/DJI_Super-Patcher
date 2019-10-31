@@ -1,7 +1,7 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
 :: Set cmd window size
-mode con: cols=160 lines=45
+mode con: cols=160 lines=50
 :: set basic envirnment variables
 set appver=2.1
 set basever=2.1
@@ -22,11 +22,11 @@ rmdir /Q /S nonemptydir SP_Flight_Controllers 2>nul
 del /f /s SP_Flight_Controllers 2>nul
 md logs
 ::set absolute path to busybox and logs folder
-set "logpath=%cd%\logs"
+set logpath="%cd%\logs"
 echo START SUPER_PATCHER > %logpath%\log.txt
-set "log=%cd%\logs\log.txt"
+set log="%cd%\logs\log.txt"
 echo %date%_%time% >> %log%
-set "busybox=%cd%\Super-Tools\busybox.exe"
+set busybox="%cd%\Super-Tools\busybox.exe"
 echo Please Wait
 :: Kill adb. In the early days of SP this solved an issue where multiple instances of adb running would cause errors
 taskkill /im adb.exe 2>>nul

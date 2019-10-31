@@ -11,16 +11,19 @@ echo ---------------------------------------------------------------------------
 pause
 cls
 call %header%
-echo.
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 echo GALILEO SATELLITE RECEPTION
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Super-Patcher can enable your aircraft to now connect to the new Galileo GPS satellite system.
 echo.
 echo This allows the %AC% to connect to more satellities for a more accurate, stonger, and more resiliant connection to GPS.
 echo.
-if "%AC%"=="MavicPro" echo Mavic Pro handles Galileo excetionally well. This is reccomended to all Mavic Pro users.
+if "%AC%"=="MavicPro" echo Mavic Pro handles Galileo excetionally well. This is recommend to all Mavic Pro users.
 echo.
-echo Galileo reception is hard-coded into the firmware. If you choose this option and decide later you would like to turn off this feature you will need to flash the stock firmware.
+echo Galileo reception is hard-coded into the firmware.
+echo.
+echo If you choose this option and decide later you would like to turn Galileo off you will need to flash the stock firmware.
 echo.
 echo After flashing back to stock firmware you can redo Super-Patcher without the Galileo option enabled
 echo.
@@ -36,30 +39,23 @@ if errorlevel 1 set "gal=1" & set "galwords=YesGal"
 :askBatmod
 cls
 call %header%
-echo.
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 echo **SMART BATTERY MODIFICATION**
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+echo *Advanced Pilots only!*
+echo -NOTE: This modification disables some "idiot-proofing" features from DJI. Pilots must be able to monitor battery levels in flight without the need of an alert  
 echo.
-echo Advanced Pilots only!
-echo  NOTE: This modification disables some "idiot-proofing" features from DJI. Pilots must be able to monitor battery levels in flight without the need of an alert  
-echo.
-echo The Smart Battery modification will pre-configure your aircraft with settings to unlock the limitations caused by the smart battery
-echo while still allowing the benefits of the DJI Smart Battery
+echo The Smart Battery modification will pre-configure your aircraft with settings to remove limitations on the Smart Battery
 echo.
 echo - Disable Forced Auto-Landing due to Smart Battery low battery
 echo     NOTE: Aircraft will still force auto-land at emergency voltage level at 3.0v per cell (well below the safe voltage for flight)
 echo.
-echo - Calibrated Smart Battery "Only enough battery remaining to return to the home point" calculation to be more accurate
-echo.
-echo    NOTE: With the Smart Battery Modification automatic low battery Return to Home can be enabled in DJI Go 4, however,
+echo    NOTE: With the Smart Battery Modification, automatic low battery Return to Home can be enabled in DJI Go 4, however,
 echo the aircraft will only automatically return to home when there is barely enough power remaining to make it back to the home point.
-echo This feature should only be used as a fail-safe. All Smart Battery setting can be adjusted in Assistant 1.1.2 in debug mode
+echo This feature should only be used as a fail-safe and not relied upon regularly.
 echo. 
-echo - Disabled low battery warning when using DJI Smart Battery
-echo - Disabled critical low battery warning when using DJI Smart Battery
-echo.
-echo These are OPTIONAL
+echo - Disabled low battery warning
+echo - Disabled critical low battery
 echo.
 echo These options can be enabled in Assistant 2 1.1.2 OR they can be enabled by AUTOMATICALLY by indicating "YES" below.
 echo   NOTTE: The Smart Battery modifications can also be disabled or tweaked to user preference in Assistant 2 1.1.2 in debug mode
@@ -111,35 +107,29 @@ if errorlevel 1 set "stealthmod=1"
 :ask_NMR
 cls
 call %header%
-echo.
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ABILITY TO START MOTORS WHEN AIRCRAFT IS INVERTED
-echo.
-echo.
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 Echo The ABILITY TO START MOTORS WHEN AIRCRAFT IS INVERTED mod allows the pilot to start the motors if the aircraft is inverted (upside down.)
 echo.
 echo This mod is primarly for pilots who like to perform a CSC manuver in flight to cut the motors and allow the aircraft to free fall and then 
-echo starting the motors up again just before hitting the ground. Without this mod if the aircraft flips over while free falling then the aircraft will not allow
+echo start the motors up again just before hitting the ground. Without this mod if the aircraft flips over while free falling then the aircraft will not allow
 echo the motors to be started and the aircraft will hit the ground.
 echo.
 echo With this modification the aircraft will start the motors even if flipped upside down and will right itself once the motors have restarted saving the aircraft.
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+echo This mod also has some secondary benefits that might be drawbacks to some users. 
 echo.
-echo This mod also has some secondary benefits that might be drawbacks to some users.
-echo.
-echo This mod also prevents the motors from turning off if the aircraft ends up inverted during flight.
-echo For example, if the aircraft hits an obstacle in flight that causes it to flip over, normally the motors would stop causing the aircraft to fall from the sky
-echo.
-echo With this mod the aircraft will attempt to right itself and recover from the colision. This can save an aircraft from crashing
+echo With this mod the aircraft will attempt to right itself and recover after a colision. This can save an aircraft from crashing
 echo.
 echo The possible drawback to this is if hand catching the drone it cannot be turned off by flipping it. 
 echo The motors will continue to run and will try to right itself vigorously
-echo.
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 echo This modification was previously not optional and enabled by default for all Super-Patcher users. Only a small number of users found it to be a drawback
 echo.
-echo The vast majority of users either did not notice it or liked the fuctionality.
+echo The vast majority of users either did not notice it or liked the fuctionality. You now have a choice.
 echo.
-echo You now have a choice.
-echo.
-echo This modification is hardcoded into the firmware. To disable it you can redo Super-Patcher or simply flash and stock version of the firmware.
+echo You can change this function with DJI Assistant 2 1.1.2 in debug mode. The parameter is [g_config.fdi_open.close_auto_stop_motor_check]
 echo.
 echo WOULD YOU LIKE TO ENABLE ABILITY TO START MOTORS WHEN AIRCRAFT IS INVERTED?
 echo.
@@ -201,6 +191,8 @@ set fc=%fcbase%%fc2%
 set fw2=%AC%_SP_2.0_%variant%_%fc%_dji_system.bin
 set varianturl1=%AC%_%variant%_%fcbase%%fc2%_dji_system.bin
 set varianturl2=%baseurl%%varianturl1%
+rem https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/2.1/MavicPro_Standard_YesGal_03.02.44.22_dji_system.bin
+set varianturl2=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/%AC%/2.1/%AC%_%variant%_%fcbase%%fc2%_dji_system.bin
 REM echo %baseurl%
 REM echo %variant%
 REM echo %fcbase%%fc2%
@@ -211,7 +203,6 @@ REM echo %varianturl2%
 REM echo %varianturl2%
 cls
 call %header%
-title Super-Patcher 2.0 for %AC%
 echo Wait just a moment...
 echo.
 cd %sppath%
@@ -219,11 +210,10 @@ rmdir /Q /S SP_Flight_Controllers 2>nul
 md SP_Flight_Controllers 2>nul
 cd SP_Flight_Controllers
 set "FCfolderpath=%cd%"
-if exist %fw2% goto end
 echo %varianturl2%
-ECho https://github.com/brett8883/Super-Firmware_Cache/blob/2.0/P4A/2.1/fc_bin/P4A_Standard_YesGal_03.02.35.22_dji_system.bin
+Echo https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/2.1/MavicPro_Standard_YesGal_03.02.44.22_dji_system.bin
 %busybox% wget %varianturl2%
 
 :end
 cd %stpath%
-dd_checkprops.cmd
+call dd_checkprops.cmd
