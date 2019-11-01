@@ -194,10 +194,8 @@ echo.
 Echo The front lights will sometimes flash, turn on, or turn off but not always
 Echo.
 Echo Continue once ADB has been enabled and DUMLdore is closed
-start %dumldore%
+call %dumldore%
 echo.
-echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-pause
 cd %tpath%
 start cmd /k adb shell
 cd %stpath%
