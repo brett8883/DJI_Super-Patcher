@@ -1,5 +1,7 @@
 @echo off
 :variantchooser
+echo. >>%log%
+echo START VARIANT CHOOSER>>%log%
 cls
 call %header%
 Echo Super-Patcher features optional modifications.
@@ -169,7 +171,8 @@ if errorlevel 1 goto resolveurl1
 :resolveurl1
 echo %batmod%%stealthmod%%gal%%NMR%
 set varchoice=%batmod%%stealthmod%%gal%%NMR%
-echo %varchoice%
+echo 1^=yes 2^=no (galileo SmartBat Stealth MotorsAbleToBeRestartedWhenInverted)>>%log%
+echo %varchoice%>>%log%
 if "%varchoice%"=="2211" set "variant=Standard_YesGal" & set "fc2=22"
 if "%varchoice%"=="1211" set "variant=Batt-Mod_YesGal" & set "fc2=12"
 if "%varchoice%"=="2111" set "variant=Stealth_YesGal" & set "fc2=21"
@@ -186,12 +189,18 @@ if "%varchoice%"=="2222" set "variant=Standard_NMR_NoGal" & set "fc2=88"
 if "%varchoice%"=="1222" set "variant=Batt-Mod_NMR_NoGal" & set "fc2=78"
 if "%varchoice%"=="2122" set "variant=Stealth_NMR_NoGal" & set "fc2=87"
 if "%varchoice%"=="1122" set "variant=FullyLoaded_NMR_NoGal" & set "fc2=77"
-set fc=%fcbase%%fc2%
+:setFCnumber
+if "%AC%"=="I2" (set "fc=%fcbase%%fc2%.%fc2%") ELSE (set "fc=%fcbase%%fc2%")
+echo %fc%
+echo flight controller number is %fc%>>%log%
+echo variant is %variant%>>%log%
+pause
 REM set fw2=%AC%_SP_2.0_%variant%_%fc%_dji_system.bin
 REM set varianturl1=%AC%_%variant%_%fcbase%%fc2%_dji_system.bin
 REM set varianturl2=%baseurl%%varianturl1%
 rem https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/2.1/MavicPro_Standard_YesGal_03.02.44.22_dji_system.bin
 set varianturl2=https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/%AC%/2.1/%AC%_%variant%_%fc%_dji_system.bin
+echo download URL resolves to %varianturl2%>>%log%
 REM echo %baseurl%
 REM echo %variant%
 REM echo %fcbase%%fc2%
