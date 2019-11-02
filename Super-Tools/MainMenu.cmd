@@ -1,7 +1,9 @@
 @echo off
 :mainmenu
 cd %stpath%
-title Super-Patcher 2.0
+echo ------------------------------------------>>%log%
+ECHO START MAINMENU >>%log%
+echo ------------------------------------------>>%log%
 cls
 call header.bat
 echo " _  __  __  _ __  _   __ __ ___ __  _ _  _                                                                                                                   ";

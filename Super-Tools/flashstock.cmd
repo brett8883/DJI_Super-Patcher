@@ -1,10 +1,12 @@
 @echo off
 cls
+echo ---------------------------------------------------------------- >>%log%
+echo DOWNLOADING AND FLASHING STOCK FIRMWARE FOR %AC% >>%log%
 call %header%
 cd %Sppath%
 md Stock_Firmware 2>>nul
 cd Stock_Firmware
-set sfwpath=%cd%
+set sfwpath="%cd%"
 if exist %stockfw% (goto flash) else (goto download)
 
 :download
@@ -13,7 +15,7 @@ Echo.
 echo When it's ready it will be in %sfwpath%
 Echo.
 echo.
-%busybox% wget %stockdl%
+%wget% %stockdl% --show-progress -nc --no-check-certificate -a %log% && echo downloaded Stock firmware %stockfw% successfully
 goto flash
 
 :flash
@@ -67,4 +69,7 @@ ECHO.
 start %dumldore%
 Pause
 :end
+echo END FLASH STOCK FIRMWARE>>%log%
+echo ---------------------------------------------------------------- >>%log%
+echo GOING BACK TO MAINMENU >> %log%
 call mainmmenu.cmd

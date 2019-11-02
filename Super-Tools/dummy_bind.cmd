@@ -189,7 +189,7 @@ echo Start flash step >> %log%
 cls
 call %header%
 echo Starting flash step...
-PING -n 2 127.0.0.1>nul
+PING -n 1 127.0.0.1>nul
 cls
 call %header%
 echo ***DO NOT TURN OFF AIRCRAFT!***
@@ -205,7 +205,7 @@ Echo ---------------------------------------------------------------------------
 ECHO 4. Please allow DUMLdore to flash to the aircraft.
 echo   NOTE: Progress bar in DUMLdore is not accurate and may go above 100^% or may seem to hang at 100^% for some time but will complete
 echo.
-echo   NOTE: Spark ESCs may chirp. This is normal and a good sign.
+if "%AC%"=="Spark" echo   NOTE: Spark ESCs may chirp. This is normal and a good sign.
 echo.
 echo If successful, %AC% will reboot itself 1 or more times- but will still need to be rebooted after the flashing process manually
 Echo ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -217,7 +217,7 @@ Echo.
 echo 6. Once aircraft has restarted fully and connected to PC. Please continue
 echo.
 PING -n 1 127.0.0.1>nul
-start %dumldore%
+call %dumldore%
 Echo ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 pause
 echo dummy_bind complete >> %log%

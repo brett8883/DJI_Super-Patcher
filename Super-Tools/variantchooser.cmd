@@ -35,8 +35,8 @@ echo [Y] YES
 echo [N] No
 echo.
 choice /m "Please make selection with keyboard"
-if errorlevel 2 set "gal=2" & set "galwords=NoGal"
-if errorlevel 1 set "gal=1" & set "galwords=YesGal"
+if errorlevel 2 set "gal=2" & set "galwords=NoGal" & echo User DECLINED Galileo >>%log%
+if errorlevel 1 set "gal=1" & set "galwords=YesGal" & echo User ACCEPTED Galileo >>%log%
 
 :askBatmod
 cls
@@ -73,11 +73,12 @@ echo [Y] YES
 echo [N] No
 echo.
 choice /m "Please make selection with keyboard"
-if errorlevel 2 set "batmod=2"
-if errorlevel 1 set "batmod=1"
+if errorlevel 2 set "batmod=2" & echo User DECLINED SMART BATTERY MOD >>%log%
+if errorlevel 1 set "batmod=1" & echo User APPROVED SMART BATTERY MOD >>%log%
 
 :askstealth
 cls
+echo 
 call %header%
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 echo **STEALTH MODIFICATION**
@@ -102,8 +103,8 @@ echo [Y] YES
 echo [N] No
 echo.
 choice /m "Please make selection with keyboard"
-if errorlevel 2 set "stealthmod=2"
-if errorlevel 1 set "stealthmod=1"
+if errorlevel 2 set "stealthmod=2" & echo User DECLINED STEALTH >>%log%
+if errorlevel 1 set "stealthmod=1" & echo User APPROVED STEALTH >>%log%
 
 :ask_NMR
 cls
@@ -137,8 +138,8 @@ echo.
 echo [Y] Yes
 echo [N] no
 choice /m "Please make a selection with the keyboard"
-if errorlevel 2 set "NMR=2"
-if errorlevel 1 set "NMR=1"
+if errorlevel 2 set "NMR=2" & echo User DECLINED START MOTORS INVERTED >>%log%
+if errorlevel 1 set "NMR=1" & Echo User ACCEPTED START MOTORS INVERTED >>%log%
 
 :confirmmods
 cls
@@ -165,11 +166,10 @@ echo [Y] Yes
 echo [N] no
 echo.
 choice /m "Please make a selection with your keyboard"
-if errorlevel 2 goto variantchooser
-if errorlevel 1 goto resolveurl1
+if errorlevel 2 echo User does not confirm optional mods. Restart variant chooser script.>>%log% & goto variantchooser
+if errorlevel 1 echo User CONFIRMS optional mods >>%log% & goto resolveurl1
 
 :resolveurl1
-echo %batmod%%stealthmod%%gal%%NMR%
 set varchoice=%batmod%%stealthmod%%gal%%NMR%
 echo 1^=yes 2^=no (galileo SmartBat Stealth MotorsAbleToBeRestartedWhenInverted)>>%log%
 echo %varchoice%>>%log%
@@ -191,11 +191,9 @@ if "%varchoice%"=="2122" set "variant=Stealth_NMR_NoGal" & set "fc2=87"
 if "%varchoice%"=="1122" set "variant=FullyLoaded_NMR_NoGal" & set "fc2=77"
 :setFCnumber
 if "%AC%"=="I2" (set "fc=%fcbase%%fc2%.%fc2%") ELSE (set "fc=%fcbase%%fc2%")
-echo %fc%
 echo flight controller number is %fc%>>%log%
 echo variant is %variant%>>%log%
-pause
-REM set fw2=%AC%_SP_2.0_%variant%_%fc%_dji_system.bin
+set fw2=%AC%_%variant%_%fc%_dji_system.bin
 REM set varianturl1=%AC%_%variant%_%fcbase%%fc2%_dji_system.bin
 REM set varianturl2=%baseurl%%varianturl1%
 rem https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/2.1/MavicPro_Standard_YesGal_03.02.44.22_dji_system.bin
@@ -220,9 +218,7 @@ cd SP_Flight_Controllers
 set FCfolderpath="%cd%"
 echo %varianturl2%
 Echo https://github.com/brett8883/Super-Firmware_Cache/raw/2.0/MavicPro/2.1/MavicPro_Standard_YesGal_03.02.44.22_dji_system.bin
-pause
-%busybox% wget %varianturl2% && echo downloaded successfully
-pause
+%busybox% wget %varianturl2% && echo Flight Controller downloaded successfully>>%log%
 
 :end
 cd %stpath%
