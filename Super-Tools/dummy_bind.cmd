@@ -141,7 +141,7 @@ cls
 call %header%
 echo Starting bind step... >> %log%
 echo Starting bind step...
-PING -n 3 127.0.0.1>nul
+PING -n 2 127.0.0.1>nul
 cls
 call %header%
 echo click "Enable ADB" in DUMLdore and then close DUMLdore before proceeding
@@ -164,11 +164,12 @@ echo adb shell mount -o bind /vendor/bin/dummy_verify.sh /sbin/dji_verify >> %lo
 adb shell mount -o bind /vendor/bin/dummy_verify.sh /sbin/dji_verify 2> log6.txt
 type log6.txt
 type log6.txt >> %log%
+PING -n 1 127.0.0.1>nul
 goto endbind
 
 :bind2
 echo.
-echo bind2 engaged based on AC type is %AC%, verify type is %vt%
+echo adb shell mount -o bind /vendor/bin/dummy_verify.sh /system/bin/dji_verify
 echo bind2 engaged based on AC type is %AC%, verify type is %vt% >> %log%
 adb shell mount -o bind /vendor/bin/dummy_verify.sh /system/bin/dji_verify 2> log6.txt
 echo.
