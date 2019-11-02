@@ -38,7 +38,9 @@ Super-Patcher works differently than other methods for unlocking firmware. It is
 
 While Super-Patcher removes the default altitude and GeoZone limitations, that does not mean it is safe or legal to do so in your area without proper authorization. DJI Super-Patcher is meant to allow responsible pilots with the correct authorization to fly in areas and to heights that DJI does not offer a reasonable method or any method at all to unlock. It is solely the responsibility of the pilot to ensure local laws and regulations are adhered to and to fly safely just like with any other aircraft. 
 
-FLY RESPONSIBLY!
+PLEASE FLY RESPONSIBLY!
+
+Super-Patcher has been designed to be used by the average joe and much of the design and development has been to make the process as easy as possible. It only requires very basic computer skills, such as clicking buttons and navigating to a folder using the file explorer. Super-Patcher is a batch script that runs natively on all Windows PCs and all dependancies are downloaded automatically by the program. No prior set up is required. Super-Patcher is interactive and walks the user through step-by-step dynamically based on user selections. It doesn't get much easier than this.
 ***
  *[CLICK] On the photo below to watch @digdat0's turtorial on DJI Super-Patcher :*
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=rFrQ52m8bos
