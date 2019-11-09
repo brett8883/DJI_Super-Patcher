@@ -3,7 +3,7 @@
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
 # DJI Super-Patcher 2.0.2 updates
--*No Major changes*
+-Changed downloaded file location to the current directory
 - Updated the verification process
   - Check DJI Go 4 "About" menu and look for firmware version 00.00.0000 to confirm a successful patch.
 - Moved firmware downloads location to increase overall reliability and preformance.
