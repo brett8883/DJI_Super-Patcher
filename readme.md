@@ -6,7 +6,7 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 -Changed downloaded file location to the current directory
 - Updated the verification process
   - Check DJI Go 4 "About" menu and look for firmware version 00.00.0000 to confirm a successful patch.
-- Moved firmware downloads location to increase overall reliability and preformance.
+- Moved firmware downloads location to increase overall reliability and performance.
 
 ### Other recent changes
 - Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
