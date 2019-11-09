@@ -5,10 +5,10 @@ alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 # DJI Super-Patcher 2.0.2 updates
 -*No Major changes*
 - Updated the verification process
- -Check DJI Go 4 "About" menu and look for firmware version 00.00.0000 to confirm a successful patch.
+  - Check DJI Go 4 "About" menu and look for firmware version 00.00.0000 to confirm a successful patch.
 - Moved firmware downloads location to increase overall reliability and preformance.
 
-###Other recent changes
+### Other recent changes
 - Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
 - Added [documentation](https://github.com/brett8883/DJI_Super-Patcher/blob/master/readme.md#unlocks-the-max-distance-limit-for-waypoint-missions) about the 5000m waypoint limit being removed with Super-Patcher
   - *NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented*
@@ -388,7 +388,8 @@ Done!
 ***************************************************************************************************************************
 ***************************************************************************************************************************
 
-# Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883)
+## Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883)
+- Note that donating here does not donate to the other repos that make Super-Patcher possible. 
 
 ***************************************************************************************************************************
 ## Acknowledgments
