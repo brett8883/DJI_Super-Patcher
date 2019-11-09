@@ -1,14 +1,13 @@
 @echo off
 :: set basic envirnment variables
-title DJI Super-Patcher 2.0
+title DJI Super-Patcher 2.0.2
 SETLOCAL EnableDelayedExpansion
 mode con: cols=160 lines=45
 set basever=2
 set branch=2.0
 set sppath="%cd%"
 set PATH=%path%;%sppath%
-set autoheader="%cd%\autoheader.bat"
-Title DJI Super-Patcher 2.0
+Title DJI Super-Patcher 2.0.2
 echo ===============================================================================================================================================================
 echo "  /$$$$$$                                                  /$$$$$$$             /$$               /$$                                  /$$$$$$       /$$$$$$ ";
 echo " /$$__  $$                                                | $$__  $$           | $$              | $$                                 /$$__  $$     /$$$_  $$";
@@ -70,7 +69,7 @@ pause
 
 :main
 cls
-Title DJI Super-Patcher 2.0
+Title DJI Super-Patcher 2.0.2
 echo ===============================================================================================================================================================
 echo "  /$$$$$$                                                  /$$$$$$$             /$$               /$$                                  /$$$$$$       /$$$$$$ ";
 echo " /$$__  $$                                                | $$__  $$           | $$              | $$                                 /$$__  $$     /$$$_  $$";
@@ -88,12 +87,12 @@ echo "                                                                          
 echo ===============================================================================================================================================================
 :: detect if internet is availible and can connect to github otherwise check if Super-Tools-%branch% is already availble
 echo PLEASE WAIT..
-title DJI Super-Patcher 2.0
+title DJI Super-Patcher 2.0.2
 PING -n 1 140.82.113.4 |find "TTL=" && goto downloadtools
 :nointernet
 :: Give Error message giving user opertunity to turn on internet
 cls
-Title DJI Super-Patcher 2.0
+Title DJI Super-Patcher 2.0.2
 echo ===============================================================================================================================================================
 echo "  /$$$$$$                                                  /$$$$$$$             /$$               /$$                                  /$$$$$$       /$$$$$$ ";
 echo " /$$__  $$                                                | $$__  $$           | $$              | $$                                 /$$__  $$     /$$$_  $$";
@@ -122,7 +121,7 @@ goto main
 
 :downloadtools
 cls
-Title DJI Super-Patcher 2.0
+Title DJI Super-Patcher 2.0.2
 echo ===============================================================================================================================================================
 echo "  /$$$$$$                                                  /$$$$$$$             /$$               /$$                                  /$$$$$$       /$$$$$$ ";
 echo " /$$__  $$                                                | $$__  $$           | $$              | $$                                 /$$__  $$     /$$$_  $$";
@@ -144,10 +143,6 @@ echo I have verified internet access to GitHub >> %log%
 echo %time% >> %log%
 echo Please wait while I set things up. This wont take long...
 echo.
-cd %appdata%
-mkdir DJI_Super-Patcher 2>>nul
-cd DJI_Super-Patcher
-set SUPERPATCHER=%cd%
 %busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success!
 %busybox% unzip -o -q %branch%.zip
 del /f /s %branch%.zip

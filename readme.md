@@ -2,13 +2,16 @@
 " target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png"
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
-# DJI Super-Patcher 2.0.1 updates
+# DJI Super-Patcher 2.0.2 updates
+-*No Major changes*
+- Updated the verification process
+ -Check DJI Go 4 "About" menu and look for firmware version 00.00.0000 to confirm a successful patch.
+- Moved firmware downloads location to increase overall reliability and preformance.
 
-- No major changes 
+###Other recent changes
 - Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
 - Added [documentation](https://github.com/brett8883/DJI_Super-Patcher/blob/master/readme.md#unlocks-the-max-distance-limit-for-waypoint-missions) about the 5000m waypoint limit being removed with Super-Patcher
   - *NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented*
-
 - Fixed a bug in the FCC mod script for Spark (delayed expansion ingnored the ! in the shebang. If this caused an issue before is unclear since users reported that FCC mod for Spark was working)
 -------------------------------------------------------------------------------------------------------------------
 
@@ -169,7 +172,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
  - The aircraft will immediately right itself rather than cutting the motors automatically which is the factory default behavior when being flipped in flight.
   - *NOTE:* **This also means the motors cannot be turned off by turning it upside down when hand catching. When hand catching, use the free hand to push down on the throttle stick (left stick in RC type 2) to turn off the motors when hand catching.**
 ***************************************************************************************************************************
-## **OPTIONAL FEATURES**
+## OPTIONAL FEATURES
 
 ### SMART BATTERY MOD
 ***Super-Patcher unlocks the DJI Smart Battery to its full potential making it 100% customizable.***
@@ -345,7 +348,7 @@ or
       - these are the main reasons for Super-Patcher not being successful
 
 
-8. You will be prompted to verify flight controller version at the end to confirm Super-Patcher is successful
+8. You will be prompted to verify the firmware version with the DJI Go 4 app. If Super-Patcher was successful DJI Go 4 will show the firmware version as 00.00.0000. This is normal and a good thing.
 
 9. You may optionally use the simulator in Assistant 2 or DJI Go 4 to verify working order before testing outside.
 
@@ -406,14 +409,10 @@ A special thanks to jezzab and the [jezzab/DUMLdore](https://github.com/jezzab/D
 
 Thanks to Mefistotelis for his [dji-firmware-tools](https://github.com/o-gs/dji-firmware-tools) and tutoring me on how to use them.
 
-Thanks to cs2000 and his [DankDroneDownloader](https://github.com/cs2000/DankDroneDownloader) without which this project would have been much more difficult or impossible. Also thanks to cs2000 for hosting the custom flight controller files and providing continued mentoring.
-
 Thanks to DigDat0 for helping with the 1.3 upgrades which were influenced by his [fcchooser](https://github.com/digdat0/fcchooser) project and for teaching me various programming techniques.
 
 Thanks to jkson5 who is the author of the jkson fcc mod which I have barrowed and intregrated into Super-Patcher 1.3 and above
 
 Thanks to the other OGs who have contributed to the dependencies required for Super-Patche and who have, by making their work open, helped me liberate my drone from the limits imposed on it by DJI and inspired me to help others liberate theirs.
-
-Thanks to the [NoLimitDronez team](https://nolimitdronez.com/) for letting me embed their free desktop app into Super-Patcher
 
 There are many whos names I do not know that contributed to the dependencies required for this project. I apologize for not having all of their names acknowledged but I will update this list as I discover them.
