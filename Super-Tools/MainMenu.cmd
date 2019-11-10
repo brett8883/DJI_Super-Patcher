@@ -5,7 +5,7 @@ echo ------------------------------------------>>%log%
 ECHO START MAINMENU >>%log%
 echo ------------------------------------------>>%log%
 cls
-call header.bat
+call %header%
 echo " _  __  __  _ __  _   __ __ ___ __  _ _  _                                                                                                                   ";
 echo "|  V  |/  \| |  \| | |  V  | __|  \| | || |                                                                                                                  ";
 echo "| \_/ | /\ | | | ' | | \_/ | _|| | ' | \/ |                                                                                                                  ";
@@ -20,29 +20,54 @@ echo                                         **[1] Run Super-Patcher!**
 echo                                           [2] Download ^& Flash the correct stock firmware needed for Super-Patcher
 echo.
 echo                                        UTILITIES
-echo                                           [3] Open DankDroneDownloader by CS2000 to download any other firmware files
-echo                                           [4] Launch DUMLdore by Jezzeb
-echo                                           [5] Launch jkson fcc mod (Mavic, Spark, and P4Pv2 only) by jkson5
-echo                                           [6] Launch the free NoLimitDronez app
+echo                                           [3] Launch DUMLdore by Jezzeb
+echo                                           [4] Launch jkson fcc mod (Mavic, Spark, and P4Pv2 only) by jkson5
+echo.
+echo                                        INSTALL ASSISTANT 2 ^& SET UP DEBUG mode
+echo                                           [5] Download and install Assistant 1.1.2 and set up debug mode to modify parameters
 echo.
 echo                                        ADVANCED
-echo                                           [7] Enable Indoor Mode (forces OPTI mode positioning)
-echo                                           [8] Enable ADB and open a new CMD Prompt into ADB
-echo.
-echo                                        DONATE
-echo                                           [9] Donate
+echo                                           [6] Enable Indoor Mode (forces OPTI mode positioning)
+echo                                           [7] Enable ADB and open a new CMD Prompt into ADB
 echo.
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-Choice /c 123456789 /M "Please make a section with keyboard"
-if errorlevel 9 goto donate
-if errorlevel 8 goto adb
-if errorlevel 7 goto indoor
-If Errorlevel 6 goto NLD
-If Errorlevel 5 goto jkson
-If Errorlevel 4 goto dumldore
-If Errorlevel 3 goto getDownloader
+Choice /c 1234567 /M "Please make a section with keyboard"
+if errorlevel 7 goto adb
+if errorlevel 6 goto indoor
+if errorlevel 5 goto assistant
+If Errorlevel 4 goto jkson
+If Errorlevel 3 goto dumldore
 If Errorlevel 2 goto flashstock
 If Errorlevel 1 goto StartSP
+
+:assistant
+cls
+cd %tpath%
+call %header%
+Echo Please wait while Assistant 2 1.1.2 is downloaded
+echo.
+echo Depending on your connection speed this may take some time as it is a big file
+echo.
+echo Make sure that any newer versions of Assistant 2 are uninstalled 
+echo.
+wget https://www.sekidorc.com/press/DJI_Assistant2_Installer_v1.1.2_20170527.zip && echo Assistant 2 1.1.2 downloaded successfully & Assistant 2 1.1.2 downloaded successfully>>%log%
+echo.
+echo Please continue when ready.
+pause
+cls
+call %header%
+echo I will start the install process for Assistant 2 1.1.2 but you will need to finish the process manually. Just follow the prompts
+echo.
+echo continue oncw the install process is finished.
+timeout 5
+7za.exe e DJI_Assistant2_Installer_v1.1.2_20170527.zip
+cls
+call %header%
+call "DJI Assistant 2 1.1.2.573 2017_05_27 16_41_02 6e0216bf(b21de8d8).exe"
+cd "%ProgramFiles(x86)%\DJI Product\DJI Assistant 2\AppFiles"
+cp main.js %sppath%
+pause
+goto mainmenu
 
 :indoor
 cls
@@ -83,32 +108,9 @@ if errorlevel 1 goto indoor2
 :indoor2
 call indoor.cmd
 goto mainmenu  
-:Donate
-rundll32 url.dll,FileProtocolHandler https://www.paypal.me/brett8883
-goto mainmenu
 
 :flashstock
 call flashstock.cmd
-goto mainmenu
-
-:getDownloader
-echo start getdankdownloaderMM >> %log%
-cls
-call %header%
-cd %tpath%
-cd %DDMpath% 2>>nul
-if exist DankDroneDownloader.exe start DankDroneDownloader.exe & echo DDD exists >> %log% & goto mainmenu
-Echo Hold on just a sec...
-cd %tpath%
-%busybox% wget https://github.com/cs2000/DankDroneDownloader/archive/master.zip 2>> %log%
-%busybox% unzip master.zip
-cd DankDroneDownloader-master
-set DDD=%cd%\DankDroneDownloader.exe
-set DDMpath=%cd%
-start DankDroneDownloader.exe
-del master.zip
-cd %stpath%
-cd %tpath%
 goto mainmenu
 
 :dumldore
@@ -161,24 +163,6 @@ goto mainmenu
 :startSp
 cls
 call variantchooser.cmd
-goto mainmenu
-
-:NLD
-@echo off
-cls
-call %header%
-echo PLEASE WAIT just a moment..
-echo.
-cd %tpath%
-if exist NLDapp.exe (goto startNLD) else (goto downloadNLD)
-
-:downloadNLD
-wget https://nolimitdronez.com/downloads/nldapp.zip
-7za.exe -e nldapp.zip
-set %NLD%=nldapp.exe
-:startNLD
-start %NLD%
-cd %stpath%
 goto mainmenu
 
 :adb
