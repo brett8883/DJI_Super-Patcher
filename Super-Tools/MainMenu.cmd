@@ -50,7 +50,7 @@ echo Depending on your connection speed this may take some time as it is a big f
 echo.
 echo Make sure that any newer versions of Assistant 2 are uninstalled 
 echo.
-wget https://www.sekidorc.com/press/DJI_Assistant2_Installer_v1.1.2_20170527.zip && echo Assistant 2 1.1.2 downloaded successfully & Assistant 2 1.1.2 downloaded successfully>>%log%
+wget https://www.sekidorc.com/press/DJI_Assistant2_Installer_v1.1.2_20170527.zip --show-progress -nc --no-check-certificate -a %log% && echo Assistant 2 1.1.2 downloaded successfully & Assistant 2 1.1.2 downloaded successfully>>%log%
 echo.
 echo Please continue when ready.
 pause
