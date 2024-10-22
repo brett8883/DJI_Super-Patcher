@@ -2,17 +2,11 @@
 " target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png"
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
-# DJI Super-Patcher 2.0.2 updates
--Changed downloaded file location to the current directory
-- Updated the verification process
-  - Check DJI Go 4 "About" menu and look for firmware version to have changed to either "00.00.0000"(iOS), "N/A", or for the firmware version to be completely blank to confirm a successful patch.
-- Moved firmware downloads location to increase overall reliability and performance.
+# DJI Super-Patcher 2.0.3 updates
+There was a problem some users reported that the included version of Busybox.exe wasn't working so I added 64 bit and 64 bit ARM versions for the program to try. I also added more error handling during start up to prevent a complete crash
 
-### Other recent changes
-- Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
-- Added [documentation](https://github.com/brett8883/DJI_Super-Patcher/blob/master/readme.md#unlocks-the-max-distance-limit-for-waypoint-missions) about the 5000m waypoint limit being removed with Super-Patcher
-  - *NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented*
-- Fixed a bug in the FCC mod script for Spark (delayed expansion ingnored the ! in the shebang. If this caused an issue before is unclear since users reported that FCC mod for Spark was working)
+There are no new features. If the old version works for you just keep it
+
 -------------------------------------------------------------------------------------------------------------------
 
 # DJI Super-Patcher
@@ -43,7 +37,7 @@ While Super-Patcher removes the default altitude and GeoZone limitations, that d
 
 PLEASE FLY RESPONSIBLY!
 
-Super-Patcher has been designed to be used by the average joe and much of the design and development has been to make the process as easy as possible. It only requires very basic computer skills, such as clicking buttons and navigating to a folder using the file explorer. Super-Patcher is a batch script that runs natively on all Windows 10 PCs and all dependancies are downloaded automatically by the program. No prior set up is required. Super-Patcher is interactive and walks the user through step-by-step dynamically based on user selections. It doesn't get much easier than this.
+Super-Patcher has been designed to be used by the average joe and much of the design and development has been to make the process as easy as possible. It only requires very basic computer skills, such as clicking buttons and navigating to a folder using the file explorer. Super-Patcher is a batch script that runs natively on all Windows PCs and all dependancies are downloaded automatically by the program. No prior set up is required. Super-Patcher is interactive and walks the user through step-by-step dynamically based on user selections. It doesn't get much easier than this.
 ***
  *[CLICK] On the photo below to watch @digdat0's turtorial on DJI Super-Patcher :*
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=rFrQ52m8bos
@@ -116,7 +110,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
     - Your drone will not be forced to auto-land.
 
-    - You drone will not be prevented from taking off
+    - You drone will not be preventing from taking off
 
       - **Please fly with caution!**
 
@@ -311,8 +305,8 @@ or
     https://github.com/jezzab/DUMLdore/releases/tag/v3.20
 ***
 
-- **Super-Patcher only runs on Windows 10**
-
+- **Super-Patcher only runs on Windows**
+  - *Works best on Windows 10*
 	- Mileage may vary on other versions of Windows
 
  - Mac users can run Windows 10 in bootcamp mode on their Mac for best results. With Virtual Machines such as Virtual Box, mileage may vary.
@@ -321,7 +315,7 @@ or
 ***************************************************************************************************************************
 
 ## DIRECTIONS
- 
+
 1. Ensure the prerequisites above are met
 
 2. Download or clone the entire repository
@@ -389,7 +383,7 @@ Done!
 ***************************************************************************************************************************
 
 ## Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883)
-- Donating here donates to Brett8883 for the work on the Super-Patcher process and program. 
+- Note that donating here does not donate to the other repos that make Super-Patcher possible. 
 
 ***************************************************************************************************************************
 ## Acknowledgments

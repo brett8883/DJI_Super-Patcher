@@ -143,8 +143,59 @@ echo I have verified internet access to GitHub >> %log%
 echo %time% >> %log%
 echo Please wait while I set things up. This wont take long...
 echo.
-%busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success!
+%busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success! || goto Busyboxerror
 %busybox% unzip -o -q %branch%.zip
 del /f /s %branch%.zip
 cd Super-Tools-%branch%
-call startup.cmd
+call startup.cmd || goto crash
+
+
+:Busyboxerror
+cls
+Title DJI Super-Patcher 2.0.2
+echo ===============================================================================================================================================================
+echo "  /$$$$$$                                                  /$$$$$$$             /$$               /$$                                  /$$$$$$       /$$$$$$ ";
+echo " /$$__  $$                                                | $$__  $$           | $$              | $$                                 /$$__  $$     /$$$_  $$";
+echo "| $$  \__/ /$$   /$$  /$$$$$$   /$$$$$$   /$$$$$$         | $$  \ $$ /$$$$$$  /$$$$$$    /$$$$$$$| $$$$$$$   /$$$$$$   /$$$$$$       |__/  \ $$    | $$$$\ $$";
+echo "|  $$$$$$ | $$  | $$ /$$__  $$ /$$__  $$ /$$__  $$ /$$$$$$| $$$$$$$/|____  $$|_  $$_/   /$$_____/| $$__  $$ /$$__  $$ /$$__  $$        /$$$$$$/    | $$ $$ $$";
+echo " \____  $$| $$  | $$| $$  \ $$| $$$$$$$$| $$  \__/|______/| $$____/  /$$$$$$$  | $$    | $$      | $$  \ $$| $$$$$$$$| $$  \__/       /$$____/     | $$\ $$$$";
+echo " /$$  \ $$| $$  | $$| $$  | $$| $$_____/| $$              | $$      /$$__  $$  | $$ /$$| $$      | $$  | $$| $$_____/| $$            | $$          | $$ \ $$$";
+echo "|  $$$$$$/|  $$$$$$/| $$$$$$$/|  $$$$$$$| $$              | $$     |  $$$$$$$  |  $$$$/|  $$$$$$$| $$  | $$|  $$$$$$$| $$            | $$$$$$$$ /$$|  $$$$$$/";
+echo " \______/  \______/ | $$____/  \_______/|__/              |__/      \_______/   \___/   \_______/|__/  |__/ \_______/|__/            |________/|__/ \______/ ";
+echo "                    | $$                                                     ___         ___          __  __  ___  ___  ___  ____                            ";
+echo "                    | $$                                                    / _ )__ __  / _ )_______ / /_/ /_( _ )( _ )( _ )|_  /                            ";
+echo "                    |__/                                                   / _  / // / / _  / __/ -_) __/ __/ _  / _  / _  |/_ <                             ";
+echo "                                                                          /____/\_, / /____/_/  \__/\__/\__/\___/\___/\___/____/                             ";
+echo "                                                                               /___/                                                                         ";
+echo ===============================================================================================================================================================
+echo.
+Echo. BUSYBOX ERROR Handling 
+echo
+echo 32 bit busybox not working, will try 64 bit version >> %log%
+echo There is an issue running the included 32 bit version of Busybox on your machine. I am going to try using the 32 bit version now. If you continue to see this message there is a problem with your machine running BusyBox and you may need to download the correct version of Busybox for your machine
+Echo. 
+set busybox=%sppath%\busybox64.exe
+%busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success! || goto Busyboxerrorarm
+%busybox% unzip -o -q %branch%.zip
+del /f /s %branch%.zip
+cd Super-Tools-%branch%
+call startup.cmd || echo SuperTools has not downloaded properly and this program is about to crash. 
+
+:crash
+Echo UNRECOVERABLE EROOR
+ECHO.
+Echo There has been an error that this program has not been designed to handle. I have added in this message to prevent the program from crashing but after you read this message please close Super-Patcher and try again
+Pause
+
+:Busyboxerrorarm
+echo There is an issue running the included 64 and 32 bit version of Busybox on your machine. I am going to try using the 64 bit ARM version now. If you continue to see this message there is a problem with your machine running BusyBox and you may need to download the correct version of Busybox for your machine
+Echo. 
+pause
+set busybox=%sppath%\busybox64a.exe
+%busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success! || goto crash
+%busybox% unzip -o -q %branch%.zip
+del /f /s %branch%.zip
+cd Super-Tools-%branch%
+call startup.cmd || goto crash 
+
+
