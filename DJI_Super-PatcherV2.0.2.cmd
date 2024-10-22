@@ -1,6 +1,6 @@
 @echo off
 :: set basic envirnment variables
-title DJI Super-Patcher 2.0.3
+title DJI Super-Patcher 2.0.2
 SETLOCAL EnableDelayedExpansion
 mode con: cols=160 lines=45
 set basever=2
@@ -32,7 +32,7 @@ set logpath="%cd%\logs"
 echo START SUPER_PATCHER > %logpath%\log.txt
 set log="%cd%\logs\log.txt"
 echo %date%_%time% >> %log%
-set busybox=%sppath%\busybox.exe
+set busybox=%sppath%\busybox\busybox.exe
 echo Please Wait
 taskkill /im adb.exe 2>>nul
 adb kill-server 2>>nul
@@ -152,7 +152,7 @@ call startup.cmd || goto crash
 
 :Busyboxerror
 cls
-Title DJI Super-Patcher 2.0.2
+Title DJI Super-Patcher 2.0.3
 echo ===============================================================================================================================================================
 echo "  /$$$$$$                                                  /$$$$$$$             /$$               /$$                                  /$$$$$$       /$$$$$$ ";
 echo " /$$__  $$                                                | $$__  $$           | $$              | $$                                 /$$__  $$     /$$$_  $$";
@@ -171,10 +171,10 @@ echo ===========================================================================
 echo.
 Echo. BUSYBOX ERROR Handling 
 echo
-echo 32 bit busybox not working, will try 32 bit version >> %log%
-echo There is an issue running the included 64 bit version of Busybox on your machine. I am going to try using the 32 bit version now. If you continue to see this message there is a problem with your machine running BusyBox and you may need to download the correct version of Busybox for your machine
+echo 32 bit busybox not working, will try 64 bit version >> %log%
+echo There is an issue running the included 32 bit version of Busybox on your machine. I am going to try using the 32 bit version now. If you continue to see this message there is a problem with your machine running BusyBox and you may need to download the correct version of Busybox for your machine
 Echo. 
-set busybox=%sppath%\busybox64.exe
+set busybox=%sppath%\busybox\busybox64.exe
 %busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success! || goto Busyboxerrorarm
 %busybox% unzip -o -q %branch%.zip
 del /f /s %branch%.zip
@@ -188,10 +188,10 @@ Echo There has been an error that this program has not been designed to handle. 
 Pause
 
 :Busyboxerrorarm
-echo There is an issue running the included 64 bit version of Busybox on your machine. I am going to try using the 32 bit version now. If you continue to see this message there is a problem with your machine running BusyBox and you may need to download the correct version of Busybox for your machine
+echo There is an issue running the included 64 and 32 bit version of Busybox on your machine. I am going to try using the 64 bit ARM version now. If you continue to see this message there is a problem with your machine running BusyBox and you may need to download the correct version of Busybox for your machine
 Echo. 
 pause
-set busybox=%sppath%\busybox64a.exe
+set busybox=%sppath%\busybox\busybox64a.exe
 %busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success! || goto crash
 %busybox% unzip -o -q %branch%.zip
 del /f /s %branch%.zip
