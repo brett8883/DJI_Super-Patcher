@@ -3,7 +3,9 @@
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
 # DJI Super-Patcher 2.0.3 updates
-There was a problem some users reported that the included version of Busybox.exe wasn't working so I added 64 bit and 64 bit ARM versions for the program to try. I also added more error handling during start up to prevent a complete crash
+There was a problem some users reported that the included version of Busybox.exe wasn't working so I added 64 bit and 64 bit ARM versions for the program to try. I also added more error handling during start up to prevent a complete crash.
+
+Be sure to unzip the Super-Patcher folder and dont run it from with the zip archive. 
 
 There are no new features. If the old version works for you just keep it
 
