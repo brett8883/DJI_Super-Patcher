@@ -32,7 +32,7 @@ set logpath="%cd%\logs"
 echo START SUPER_PATCHER > %logpath%\log.txt
 set log="%cd%\logs\log.txt"
 echo %date%_%time% >> %log%
-set busybox=%sppath%\busybox\busybox.exe
+set busybox=%sppath%\busybox.exe
 echo Please Wait
 taskkill /im adb.exe 2>>nul
 adb kill-server 2>>nul
@@ -174,7 +174,7 @@ echo
 echo 32 bit busybox not working, will try 64 bit version >> %log%
 echo There is an issue running the included 32 bit version of Busybox on your machine. I am going to try using the 32 bit version now. If you continue to see this message there is a problem with your machine running BusyBox and you may need to download the correct version of Busybox for your machine
 Echo. 
-set busybox=%sppath%\busybox\busybox64.exe
+set busybox=%sppath%\busybox64.exe
 %busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success! || goto Busyboxerrorarm
 %busybox% unzip -o -q %branch%.zip
 del /f /s %branch%.zip
@@ -191,7 +191,7 @@ Pause
 echo There is an issue running the included 64 and 32 bit version of Busybox on your machine. I am going to try using the 64 bit ARM version now. If you continue to see this message there is a problem with your machine running BusyBox and you may need to download the correct version of Busybox for your machine
 Echo. 
 pause
-set busybox=%sppath%\busybox\busybox64a.exe
+set busybox=%sppath%\busybox64a.exe
 %busybox% wget https://github.com/brett8883/Super-Tools/archive/%branch%.zip && echo Download success! || goto crash
 %busybox% unzip -o -q %branch%.zip
 del /f /s %branch%.zip
