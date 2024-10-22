@@ -2,17 +2,10 @@
 " target="_blank"><img src="https://github.com/brett8883/DJI_Super-Patcher/blob/photos/readmephotos/super-Patcher.png"
 alt="IMAGE ALT TEXT HERE" width="950" height="180" border="10" /></a>
 
-# DJI Super-Patcher 2.0.2 updates
--Changed downloaded file location to the current directory
-- Updated the verification process
-  - Check DJI Go 4 "About" menu and look for firmware version to have changed to either "00.00.0000"(iOS), "N/A", or for the firmware version to be completely blank to confirm a successful patch.
-- Moved firmware downloads location to increase overall reliability and performance.
+# DJI Super-Patcher 2.0.3 updates
+I heard there were issues with the 32 bit version of busybox on new machines so I added new error handling for that and added additional versions of Busybox for the program to try in case of an error with 32 bit version. Also added a crash message so that instead of just crashing the program will show a message at start up.
 
-### Other recent changes
-- Swapped the executable file out for a batch file instead. The executable file was being falsely flagged as malicious software by anti-virus software because it was unsigned.
-- Added [documentation](https://github.com/brett8883/DJI_Super-Patcher/blob/master/readme.md#unlocks-the-max-distance-limit-for-waypoint-missions) about the 5000m waypoint limit being removed with Super-Patcher
-  - *NOTE: This is NOT a new feature. It has always been enabled on all versions of Super-Patcher but was never documented*
-- Fixed a bug in the FCC mod script for Spark (delayed expansion ingnored the ! in the shebang. If this caused an issue before is unclear since users reported that FCC mod for Spark was working)
+If you see the Crash message it is likely due to a busybox error or an error downloading the super tools files
 -------------------------------------------------------------------------------------------------------------------
 
 # DJI Super-Patcher
@@ -37,17 +30,17 @@ Super-Patcher now supports the following aircraft and firmwares:
 
 The purpose of this project is to liberate DJI aircraft from the limitations imposed by DJI. DJI Super-Patcher allows new features/abilities, unlocks arbutrary limitations, and allows DJI aircraft to be customized far beyond what is allowed by the factory firmware.
 
-Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. Super-Patcher patches the flight controller module that is already installed on your aircraft. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk. 
+Super-Patcher works differently than other methods for unlocking firmware. It is not a modification that mixes old firmware with new firmware. Super-Patcher patches the flight controller module that is already installed on your aircraft. This ability to patch the actual firmware itself means that new capabilities are unlocked. Super-Patcher has been tested and verified. You can trust that it has been proven but you still use at your own risk.
 
-While Super-Patcher removes the default altitude and GeoZone limitations, that does not mean it is safe or legal to do so in your area without proper authorization. DJI Super-Patcher is meant to allow responsible pilots with the correct authorization to fly in areas and to heights that DJI does not offer a reasonable method or any method at all to unlock. It is solely the responsibility of the pilot to ensure local laws and regulations are adhered to and to fly safely just like with any other aircraft. 
+While Super-Patcher removes the default altitude and GeoZone limitations, that does not mean it is safe or legal to do so in your area without proper authorization. DJI Super-Patcher is meant to allow responsible pilots with the correct authorization to fly in areas and to heights that DJI does not offer a reasonable method or any method at all to unlock. It is solely the responsibility of the pilot to ensure local laws and regulations are adhered to and to fly safely just like with any other aircraft.
 
 PLEASE FLY RESPONSIBLY!
 
-Super-Patcher has been designed to be used by the average joe and much of the design and development has been to make the process as easy as possible. It only requires very basic computer skills, such as clicking buttons and navigating to a folder using the file explorer. Super-Patcher is a batch script that runs natively on all Windows 10 PCs and all dependancies are downloaded automatically by the program. No prior set up is required. Super-Patcher is interactive and walks the user through step-by-step dynamically based on user selections. It doesn't get much easier than this.
+Super-Patcher has been designed to be used by the average joe and much of the design and development has been to make the process as easy as possible. It only requires very basic computer skills, such as clicking buttons and navigating to a folder using the file explorer. Super-Patcher is a batch script that runs natively on all Windows PCs and all dependancies are downloaded automatically by the program. No prior set up is required. Super-Patcher is interactive and walks the user through step-by-step dynamically based on user selections. It doesn't get much easier than this.
 ***
  *[CLICK] On the photo below to watch @digdat0's turtorial on DJI Super-Patcher :*
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=rFrQ52m8bos
-" target="_blank"><img src="https://raw.githubusercontent.com/brett8883/DJI_Super-Patcher/photos/sp2.0DigDat0.PNG" 
+" target="_blank"><img src="https://raw.githubusercontent.com/brett8883/DJI_Super-Patcher/photos/sp2.0DigDat0.PNG"
 alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
 *(Thanks @digdat0!)*
@@ -70,7 +63,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 - Precision RTH and Precision Landing will work normally
 - Optionally enable slower more cinematic panning (yaw) speed
 - Optionally enable full time FCC or boost mode with jkson_fcc_mod by jkson5 built in (Mavic, Spark***(NEW!)***, and P4PV2 Only)
-- Optionally disable external aircraft LEDS lighting for stealthy night flying. 
+- Optionally disable external aircraft LEDS lighting for stealthy night flying.
 
 ***************************************************************************************************************************
 **Please carefully read through the through explanation of the benefits below. Directions to get started will follow**
@@ -116,7 +109,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 
     - Your drone will not be forced to auto-land.
 
-    - You drone will not be prevented from taking off
+    - You drone will not be preventing from taking off
 
       - **Please fly with caution!**
 
@@ -163,7 +156,7 @@ alt="IMAGE ALT TEXT HERE" width="800" height="500" border="10" /></a>
 ***************************************************************************************************************************
 ### Motors can be restarted when aircraft is inverted
 
-- By default the aircraft will allow the motors to be restarted even if the aircraft is inverted. 
+- By default the aircraft will allow the motors to be restarted even if the aircraft is inverted.
  - This parameter is hardcoded and will not be visable in Assistant 2. One can remove the props and hold the aircraft upside down and then arm the motors with a CSC to verify this parameter is working.
 
 - This is primarily to allow pilots that preform a CSC maneuver while in flight(cut the motors while flying either as an emergency maneuver or as a daredevil stunt) to turn the motors back on even if the aircraft flips in flight.
@@ -299,7 +292,7 @@ or
   - *This means if your firmware is mixed with the flight controller of another firmware, even though it says you are on the correct firmware, you will need to flash a stock version of the correct firmware for you aircraft listed above TWICE to ensure all modules get flashed.*
 
     - When in doubt flash the correct stock firmware **TWICE** with DUMLdore
-	
+
 **Super Patcher 2.0 and above includes a utility to automatically download and install the correct stock firmware. Use this for best results**
 
 or
@@ -311,8 +304,8 @@ or
     https://github.com/jezzab/DUMLdore/releases/tag/v3.20
 ***
 
-- **Super-Patcher only runs on Windows 10**
-
+- **Super-Patcher only runs on Windows**
+  - *Works best on Windows 10*
 	- Mileage may vary on other versions of Windows
 
  - Mac users can run Windows 10 in bootcamp mode on their Mac for best results. With Virtual Machines such as Virtual Box, mileage may vary.
@@ -321,7 +314,7 @@ or
 ***************************************************************************************************************************
 
 ## DIRECTIONS
- 
+
 1. Ensure the prerequisites above are met
 
 2. Download or clone the entire repository
@@ -389,7 +382,7 @@ Done!
 ***************************************************************************************************************************
 
 ## Donations are very welcome and very much appreciated via [paypal.me/brett8883](https://www.paypal.com/paypalme2/brett8883)
-- Donating here donates to Brett8883 for the work on the Super-Patcher process and program. 
+- Note that donating here does not donate to the other repos that make Super-Patcher possible.
 
 ***************************************************************************************************************************
 ## Acknowledgments
